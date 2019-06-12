@@ -1,0 +1,20 @@
+[
+    {
+        "description": "This is a case study of the Standard Media Playback team that builds the media playback capability for one of the UKs biggest VOD and AOD apps: iPlayer and BBC Sounds and how their test automation has evolved over the last 5 years. From rounds of manual regression testing then onto automated UI testing now to isolated code level tests and what’s next for the team. Then: How we started with UI automation to help us release quicker and what it actually gave us: fast checks of key user journeys but not an automated regression test suite that could help us release faster. Now: How we looked to push more of our testing down the stack into unit testing, but starting with building a team understanding of what unit tests actually are. How we broke down our system into interdependent components that could be tested in isolation and the architecture we used to push this further. All explained through a real life example of how we moved to the new ExoPlayer from google. Next: What new problems this approach has given us, how we plan tackle them and how we will bring this approach this to other teams across the BBC. Key takeaways - Testing: What has and hasn’t worked with our testing from manual to automated testing and everything in between - Pairing: How we collaboratively pair tester and developers to write code level tests - Team structure: How our teams are organised and why Risk Vs Value: How we balance the risk of not testing Vs value of testing it",
+        "day": "Monday", 
+        "title": "Mobile Test Automation at the BBC: Then, Now and Next",
+        "speaker": "Jitesh Gosai", 
+        "stage": "Pie", 
+        "startTime": "10:00", 
+        "endTime": "11:00"
+    },
+    {
+        "description": "Hannes is an enthusiastic android engineer who takes the green little robot very close to his heart. He works as Lead Android Developer at Freeletics. If Hannes is not coding then he is recording new episodes as co-host for TheContext podcast or writing his thoughts down in his blog (hannesdorfmann.com).\n\nGabriel is originally from Berlin but now lives in Munich where he works at Freeletics. He is developing Android apps since 2011 and is particularly interested in app architecture and code generation.",
+        "day": "Monday", 
+        "title": "Flowing in the Deep",
+        "speaker": "Hannes Dorfmann & Gabriel Ittner", 
+        "stage": "Lollipop", 
+        "startTime": "11:30", 
+        "endTime": "12:30"
+    }
+]

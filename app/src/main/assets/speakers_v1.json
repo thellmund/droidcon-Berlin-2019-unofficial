@@ -1,0 +1,608 @@
+[
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_ed8e931f3ca04d99aacbbb94476bd1f5~mv2.png",
+        "company": "BBC Design & Engineering",
+        "name": "Jitesh Gosai",
+        "role": "Principal Tester"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_c7e2501d935f4de28dc1db5507343d9d~mv2.png",
+        "company": "Google Android Security",
+        "name": "Olivier Tuchon",
+        "role": "Reverse Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_54512eb13bcc4fdd9b5c1d3b6b4a77d7~mv2.png",
+        "company": "Google",
+        "name": "Ben Weiss",
+        "role": "Android Developer Relations"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_643ac4835d024ad987857c5c4d8f9e53~mv2.png",
+        "company": "Huawei",
+        "name": "Francesco Romano",
+        "role": "Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_dda0ca848c7e4d5d97c7423591220ebf~mv2_d_1284_1280_s_2.png",
+        "company": "Spotify",
+        "name": "Elin Nilsson",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_55a420b01ad24beca2114e1dfee4859d~mv2.png",
+        "company": "Freelancer",
+        "name": "Pascal Welsch",
+        "role": "Google Developer Expert"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_9d7d01f040cd411d934c8c0b0a4c7f9a~mv2.png",
+        "company": "​Backbase",
+        "name": "Vipul Shah",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_cd246bc777384564b308383711590bfd~mv2.png",
+        "company": "Android Software Engineer at Hipcam",
+        "name": "Adrian Catalan & Yury Camacho",
+        "role": "Innovation Lab Director"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_0d412d1f8ded40498a6a7eb916e03233~mv2.png",
+        "company": "1&1",
+        "name": "Sebastian Paulus & Yusuf Figanioglu",
+        "role": "Tech Lead of the Android Team & Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_29ecb7868167410cb664f2f21f29d9b0~mv2.png",
+        "company": "Gradle",
+        "name": "Volker Leck",
+        "role": "Senior Software Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_80ed0a35b1ff41e78d705143f6012ff3~mv2.png",
+        "company": "Lyft",
+        "name": "RJ Marsan",
+        "role": "Android lead of Mobility"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e804a409e68742a6906b254d2c12271d~mv2.png",
+        "company": "Google",
+        "name": "Nicole Borrelli",
+        "role": "Android DevRel"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_7076605ed26145509498b8b90737c515~mv2.png",
+        "company": "erasys",
+        "name": "Louis Tsai",
+        "role": "Android Dev"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_115f7fd49f274d608d3e4862a46746b9~mv2.png",
+        "company": "Coding Blocks",
+        "name": "Harshit Dwivedi",
+        "role": "Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_912ec2aacdc2410190bb87f6a589ad40~mv2.png",
+        "company": "Huawei",
+        "name": "Francesco Florio",
+        "role": "Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_745aea0eb2ac4f76aba7d8c51b4f8045~mv2.png",
+        "company": "Obvious",
+        "name": "Ragunath Jawahar",
+        "role": "Lead Product Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e14e7788588746f4ac02ad9aae3b273e~mv2.png",
+        "company": "Candide Ltd",
+        "name": "David Branton",
+        "role": "Lead Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_a258436e6e8544189a51e3b7ed48210e~mv2.png",
+        "company": "​Assistant GDE, GDG London Lead, WTM Ambassador",
+        "name": "Aygul Zagidullina",
+        "role": "Assistant GDE, GDG London Lead, WTM Ambassador"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6154fbd0d4b749ee89ee1a53b445cb19~mv2.png",
+        "company": "Philips Hue",
+        "name": "Jeroen Mols",
+        "role": "Lead Android Developer & GDE"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_bb452546c9514ed19e70f2ec5db444be~mv2.png",
+        "company": "Google",
+        "name": "Chris Banes",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_bcc4fd83a7cd406e8bcaad128079aab9~mv2.png",
+        "company": "AIFactory",
+        "name": "Maoz Tamir",
+        "role": "CTO"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_a42e2ba9d5c74e8f8597c183226f340b~mv2.png",
+        "company": "Monzo",
+        "name": "Ataul Munim",
+        "role": "Android Developer & GDE"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_b5bfa2c8aa954bf49b682773099d50cc~mv2.png",
+        "company": "Disney Streaming Services",
+        "name": "Remco Mokveld",
+        "role": "R&D"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_616c9a92b30649d98835b0f08be931c7~mv2.png",
+        "company": "mytaxi",
+        "name": "Luiz Santana",
+        "role": "Mobile Chapter Lead"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_4d7fca940039478cb0510a20173513d5~mv2.png",
+        "company": "Google",
+        "name": "Andrea Falcone",
+        "role": "Senior Software Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_7a2b2867093a4c36abfda7e87f3952a8~mv2.png",
+        "company": "Osborne Clarke",
+        "name": "Hans-Christian Woger & Felix Hilgert",
+        "role": "Lawyer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6e0b91b4f2684b4c9daf7e946225b1d3~mv2.png",
+        "company": "Freeletics",
+        "name": "Hannes Dorfmann & Gabriel Ittner",
+        "role": "Android Team Lead & Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e5fa8a1ef87942a5912debf398c788ca~mv2.png",
+        "company": "Autsoft",
+        "name": "Márton Braun",
+        "role": "Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f52f2cea6a6b4de4a79596299ba44d19~mv2.png",
+        "company": "Getaround",
+        "name": "Ishan Khanna",
+        "role": "Senior Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_dd56cf3ebade4e24830dc85fabd916e9~mv2.png",
+        "company": "Yahoo",
+        "name": "Yugo Matsuda & Saiki Iijima",
+        "role": "AndroidAppDeveloper"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_526feff6d66c48c6a7d658d240edf8d3~mv2.png",
+        "company": "Google",
+        "name": "Filip Hráček",
+        "role": "Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_5e4b8009af5f4877b77f7a0e6106fc91~mv2.png",
+        "company": "Blinkist",
+        "name": "Lara Martín",
+        "role": "Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_68e1fabff13f456c8d3ee7682d2bc0b2~mv2.png",
+        "company": "Monzo",
+        "name": "Niamh Power",
+        "role": "Mobile Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_da928c03733a4720a98f3e16e4482340~mv2.png",
+        "company": "X Factory on Moonshot Lab",
+        "name": "Panayotis Tzinis",
+        "role": "Intelligence Tech Lead"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_0d2fa48c595647028a51ee311b4a59af~mv2.png",
+        "company": "Moovel",
+        "name": "Niklas Baudy",
+        "role": "Senior Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_393d4f7c7e8c4ffc88e2abb0caf521b4~mv2.png",
+        "company": "​",
+        "name": "Sean Smith",
+        "role": "Security Program Manager"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e04fb94b308f43c28877ef18bdcb5aca~mv2.png",
+        "company": "HERE Technologies",
+        "name": "Richard Süselbeck",
+        "role": "Principal Developer Evangelist"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_5ed9454b62df421cb68974c45ac31adb~mv2.png",
+        "company": "Google",
+        "name": "Sean McQuillan",
+        "role": "Android"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_54a6edbaf4284dd4b573b107b4b06ddd~mv2.png",
+        "company": "Google Play Protect",
+        "name": "Sebastian Porst",
+        "role": "Engineering Manager"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_cc5940914564428db3b64dc894cf9cc4~mv2.png",
+        "company": "​",
+        "name": "Vladimir Ivanov",
+        "role": "EPAM Systems"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_66dd249692c54f81831947a61468d650~mv2.png",
+        "company": "CTO & Co-Founder @ Objectbox",
+        "name": "Vivien Dollinger & Markus Junginger",
+        "role": "Founder @ Objectbox"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_552a23cd2b844cf9a1120dceffccd457~mv2.png",
+        "company": "​",
+        "name": "Matthew Dolan",
+        "role": "Senior Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_db5f9bdd8a1d4917a62780ff9ff32bf1~mv2.png",
+        "company": "Yahoo! Japan/ Android Eng/ Love CleanArchitecture",
+        "name": "Hiroyuki Mori & Keisuke Kiuchi",
+        "role": "Android tech lead @ Yahoo! JAPAN, KURO-OBI (Blackbelt)"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_57d669ad5aba4d02981f8b30c02b8c8d~mv2.png",
+        "company": "Onefootball",
+        "name": "Salih Guler",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_0419f466c51e40bf91f2dfdef9924c7d~mv2.png",
+        "company": "​",
+        "name": "Pietro Maggi",
+        "role": "Android Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_9e5eaa29ab6d4d79a9738322f25076a9~mv2.png",
+        "company": "Nevercode",
+        "name": "Martin Jeret",
+        "role": "Business & Product expert"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_7ed7a86a04754b21a43a53308caff0df~mv2.png",
+        "company": "Buffer",
+        "name": "Joe Birch",
+        "role": "Senior Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_b9a6348abb054b4389e4016949b4cb87~mv2.png",
+        "company": "Blinkist",
+        "name": "Fred Porciúncula",
+        "role": "Android"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e90aa8a2af90450bb58f38b3d0211144~mv2.png",
+        "company": "​",
+        "name": "Filip Babić",
+        "role": "Self proclaimed Kotlin preacher, Android fanatic, speaker, mentor, article, tutorial and book writer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_b0ee15890d2a4a3eaa57fcf293f00a90~mv2.png",
+        "company": "Over",
+        "name": "Garima Jain",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_1e39fd4122294853b6a8f84b0ce5f015~mv2.png",
+        "company": "Onefootball",
+        "name": "Damian Burke",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_87c660d402f24daca8710e59c50a60c7~mv2.png",
+        "company": "ImmobilienScout24 GmbH",
+        "name": "Ash Davies",
+        "role": "Senior Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_cbbbea11d4424cef818aed775c01ca0e~mv2.png",
+        "company": "Google",
+        "name": "Manuel Vivo & Murat Yener",
+        "role": "Android DevRel & Android Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_ea67bb524fe14aaf8dd2476f6b565b5b~mv2.png",
+        "company": "Nike s23NYC Studio",
+        "name": "Stacy Devino",
+        "role": "Diversity Evangelist"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_1216fa8632324bdea5ca7712852a4896~mv2.png",
+        "company": "Swiggy",
+        "name": "Sourabh Gupta ",
+        "role": "Engineering Manager"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f673b5dab73e45b9934ef492f04b7bff~mv2.png",
+        "company": "Freelancer",
+        "name": "Kai Koenig",
+        "role": "Software Solutions Architect"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_af8a71c9bdd541c790a6472a815f3578~mv2.png",
+        "company": "tui.co.uk",
+        "name": "Enrico Bruno Del Zotto",
+        "role": "Senior android developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_ea26e4e73c3542ca9c5634a7233ac71a~mv2.png",
+        "company": "Wix.com",
+        "name": "Lev Vidrak ",
+        "role": "Leading the Guild-Masters Team"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6bab03303c684879bf85d511b6130ba1~mv2.png",
+        "company": "Yelp",
+        "name": "Nicola Corti",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_2f8463a1fd6d418a9eacd507849fd4c5~mv2.png",
+        "company": "Redmart",
+        "name": "Adnan A M ",
+        "role": "Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_bc0b14131a034e0f9d50ddb66c3b499b~mv2.png",
+        "company": "iwillteachyoukotlin.com",
+        "name": "Oleksii Fedorov ",
+        "role": "Founder"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_48a99a91455a4d6d8159d54f287f7aef~mv2.png",
+        "company": "Soundcloud",
+        "name": "Nelson Osacky",
+        "role": "Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f9de78c9fbd144c59037beb024516bb2~mv2.png",
+        "company": "Mews",
+        "name": "Kirill Bubochkin",
+        "role": "Head of Application Development "
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_cbc7cb1b39c2467d8f9435f2a42f4413~mv2.png",
+        "company": "GO-JEK",
+        "name": "Jitin Sharma",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_03046114326e456cacfc8aa396ff8247~mv2.png",
+        "company": "Callstack",
+        "name": "Krzysztof Sroka",
+        "role": "Lead Flutter Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_65d0183bb2a54e95bb21ae4b5c6113bc~mv2.png",
+        "company": "Google",
+        "name": "Florina Muntenescu",
+        "role": "Android Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_1151330a827a470a80c4216226604a99~mv2.png",
+        "company": "Hellman Software AB",
+        "name": "Erik Hellman",
+        "role": "Owner"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_4f40345bc44d4c01af89b5adc5809002~mv2.png",
+        "company": "Google",
+        "name": "Kenneth Ford",
+        "role": "Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6d0c60a55461419a9288a79addaef23f~mv2.png",
+        "company": "Unity Technologies",
+        "name": "Liam Sorta",
+        "role": "Technical Evangelist"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_ab151edabe8c4982b8c6b19ae2bb9394~mv2.png",
+        "company": "​",
+        "name": "Liz Louis",
+        "role": "Android Product Manager"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_640b2d49f8374e0eadc3cbbbc9cbc13e~mv2.png",
+        "company": "Google",
+        "name": "Carsten Isert",
+        "role": "Tech Lead & Engineering Manager Android Auto"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_83cc5bf29a16414f9fd156ee98267c33~mv2.png",
+        "company": "Bitrise",
+        "name": "Krisztián Gödrei & Tamás Papik",
+        "role": "Lead Tooling Engineer & Tooling Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_425b27f6ea97408f9cb88ed973e5d2dd~mv2.png",
+        "company": "Google",
+        "name": "Jon Markoff",
+        "role": "Developer Advocate"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_d582b7d3ee644039ab940a7f02b1208b~mv2.png",
+        "company": "Zebra Technologies",
+        "name": "Darryn Campbell",
+        "role": "Software architect"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_4c3ee0e8f8914caa83579e1fce11f089~mv2.png",
+        "company": "Softvision",
+        "name": "Alin Turcu",
+        "role": "Mobile Dev Manager"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_02f6abeab80247c3acd2cce9f6b15bb6~mv2.png",
+        "company": "Quizlet",
+        "name": "Ankush Gupta",
+        "role": "Senior Software Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e53f346d836a402197fe17ca283489ee~mv2.png",
+        "company": "Engineering Manager @ Hubble",
+        "name": "Anastasia López & Vivien Barousse",
+        "role": "Android Developer @ Movivo"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_87e5e88811d5462ba67492e639829fff~mv2.png",
+        "company": "Delivery Hero",
+        "name": "Rohan Taneja",
+        "role": "Flutter Evangelist"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f9cbeec5e1fb4fefa60d58f87b40188b~mv2.png",
+        "company": "August Home",
+        "name": "Parth Padgaonkar",
+        "role": "Android"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_278af4a8c78f4c879ab67162d46a6158~mv2.png",
+        "company": "trainer and consultant",
+        "name": "Marcin Moskała",
+        "role": "Kotlin developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_d5ddde88b1dd490f98c33eec6b2e97ed~mv2.png",
+        "company": "OLX Group",
+        "name": "JB Lorenzo",
+        "role": "Senior Android "
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_adb22b11e2314100b6ae1e18b4803ccd~mv2.png",
+        "company": "earlycamp",
+        "name": "Frank Tamre",
+        "role": "Lab Technician"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_3e89505c3bc6446dbd84060087c257f3~mv2.png",
+        "company": "​",
+        "name": "Enrique López Mañas",
+        "role": "Google Developer Expert"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_95cb21ccb1614e43b675ee749932e830~mv2.png",
+        "company": "SFEIR",
+        "name": "Elaine Dias Batista",
+        "role": "Team Leader"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_616364ff0087450a9614d0f668f1546e~mv2.png",
+        "company": "Facebook",
+        "name": "Aziz Murtazaev",
+        "role": "Software Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_4d4e735fb3254af3b8f33b0fa74d9fcc~mv2.png",
+        "company": "Google",
+        "name": "Al Sutton",
+        "role": "Software Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6dd15c1ee9b24bf9849efc65bfd526de~mv2.png",
+        "company": "Over",
+        "name": "Nick Rout",
+        "role": "Android Engineer and GDE"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_b31f4e86a080422291b9429c5a7dc912~mv2.png",
+        "company": "Android Engineer @ Google",
+        "name": "Nick Butcher & Chris Banes",
+        "role": "Android Designer & Developer @ Google"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_ff580782bff947b58583da9f2f9558a0~mv2.png",
+        "company": "Sky",
+        "name": "Marcos Holgado",
+        "role": "Señor Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_0497fba1f6314e0aa53116a6f935b048~mv2.png",
+        "company": "Coding Blocks Bootcamp",
+        "name": "Arnav Gupta ",
+        "role": "Mentoring budding Android Developers"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_96664a33b8d4447b87dd645928b8311f~mv2.png",
+        "company": "Clue",
+        "name": "Akshay Chordiya ",
+        "role": "Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_369140f6ec334e31804831a38618693a~mv2.png",
+        "company": "Deezer",
+        "name": "Jean-Baptiste Vincey",
+        "role": "Android engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_d3b5bfba378642f88bc7aae338b5e4cd~mv2.png",
+        "company": "​",
+        "name": "Miguel Beltran",
+        "role": "Freelancer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_660331d8cad24e95be0a40e53b690118~mv2.png",
+        "company": "Blinkist, GDE for Android",
+        "name": "Sebastiano Gottardo ",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_e330f6c6d520426c8e668fe88daf0d31~mv2.png",
+        "company": "Mobimeo",
+        "name": "Ivan Morgillo ",
+        "role": "Senior Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f52e059bc1034f0e83463568a929ccf0~mv2.png",
+        "company": "Avito",
+        "name": "Dima Merkurev ",
+        "role": "Senior Android Developer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_bf3489c5eee64d2fba150e4752af32ed~mv2.png",
+        "company": "VR/AR lovah",
+        "name": "Giovanni Laquidara ",
+        "role": "Android Engineer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_7cf35d0d1a694d7eba97ef59d03dc04b~mv2.png",
+        "company": "& Android Engineer at Freshworks ",
+        "name": "Vignesh Ramachandra & Jyoti Dubey",
+        "role": "Android Engineer at Uber"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_592243ee42334942b94fefb3ec1938f6~mv2.png",
+        "company": "N26",
+        "name": "Fábio Carballo",
+        "role": "Android @ N26"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_408df9574f824e0b870d7fff0fd83d80~mv2.png",
+        "company": "​",
+        "name": "Aleksander Piotrowski",
+        "role": "Android Dev Freelancer"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_8223f1dcfa964ea6b93355a600b932ba~mv2.png",
+        "company": "Google Play",
+        "name": "Purnima Kochikar",
+        "role": "Director,  Apps and Games Business Development"
+    }
+]

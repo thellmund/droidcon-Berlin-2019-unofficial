@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tiny_space">4dp</dimen>
+    <dimen name="small_space">8dp</dimen>
+    <dimen name="default_space">16dp</dimen>
+    <dimen name="large_space">24dp</dimen>
+    <dimen name="corner_radius">8dp</dimen>
+    <dimen name="material_list_inset">80dp</dimen>
+</resources>

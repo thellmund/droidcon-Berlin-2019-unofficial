@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/schedule"
+        android:icon="@drawable/ic_outline_calendar_view_day"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/speakers"
+        android:icon="@drawable/ic_outline_people"
+        android:title="@string/speakers" />
+
+</menu>

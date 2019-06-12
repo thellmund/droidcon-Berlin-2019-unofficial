@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="cardBackground">#424242</color>
+    <color name="detailsCardBackground">#212121</color>
+    <color name="cardBorderColor">#757575</color>
+
+    <color name="toolbar">#2D2D2D</color>
+    <color name="navbar">#2D2D2D</color>
+
+    <color name="contentBackground">#212121</color>
+    <color name="textColor">#D9FFFFFF</color>
+</resources>

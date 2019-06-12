@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#008577</color>
+
+    <color name="cardBackground">@android:color/white</color>
+    <color name="detailsCardBackground">#E0E0E0</color>
+    <color name="cardBorderColor">#E0E0E0</color>
+
+    <color name="toolbar">@android:color/white</color>
+    <color name="navbar">@android:color/white</color>
+
+    <color name="contentBackground">@android:color/white</color>
+    <color name="textColor">#D9000000</color>
+
+    <color name="chipUnselected">#E0E0E0</color>
+    <color name="chipSelected">#B3008577</color>
+</resources>

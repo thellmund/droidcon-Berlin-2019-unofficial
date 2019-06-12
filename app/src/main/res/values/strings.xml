@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">droidcon2019</string>
+    <string name="schedule">Schedule</string>
+    <string name="speakers">Speakers</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="search">Search</string>
+    <string name="my_favorites">My favorites</string>
+    <string name="stages">Stages</string>
+    <string name="types">Types</string>
+    <string name="filter">Filter</string>
+</resources>
