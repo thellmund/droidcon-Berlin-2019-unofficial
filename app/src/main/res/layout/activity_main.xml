@@ -25,9 +25,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_navigation" />
 
-    <br.com.mauker.materialsearchview.MaterialSearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
