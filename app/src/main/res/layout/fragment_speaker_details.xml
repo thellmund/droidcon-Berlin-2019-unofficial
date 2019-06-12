@@ -27,8 +27,8 @@
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageView"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
         android:scaleType="centerCrop"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toBottomOf="@id/companyTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/nameTextView"
-        app:riv_corner_radius="24dp" />
+        app:riv_corner_radius="32dp" />
 
     <TextView
         android:id="@+id/nameTextView"
@@ -48,7 +48,7 @@
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
         android:textIsSelectable="true"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageView"
         app:layout_constraintTop_toBottomOf="@id/appBarLayout"
@@ -60,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
         android:textIsSelectable="true"
         android:textSize="16sp"
@@ -75,6 +76,7 @@
         android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
         android:textColor="@color/textColor"
+        android:fontFamily="sans-serif-medium"
         android:textIsSelectable="true"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,9 +104,8 @@
         android:id="@+id/linksRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/default_space"
         android:layout_marginTop="@dimen/default_space"
-        android:layout_marginEnd="@dimen/default_space"
+        android:overScrollMode="never"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

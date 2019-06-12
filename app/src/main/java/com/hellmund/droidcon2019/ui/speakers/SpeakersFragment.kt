@@ -73,10 +73,6 @@ class SpeakersFragment : Fragment(), Reselectable, BackPressable {
         }
     }
 
-    override fun onReselected() {
-        recyclerView.scrollToPosition(0)
-    }
-
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_speakers, menu)
 
@@ -108,6 +104,10 @@ class SpeakersFragment : Fragment(), Reselectable, BackPressable {
             R.id.action_search -> true
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onReselected() {
+        recyclerView.smoothScrollToPosition(0)
     }
 
     override fun onBackPressed(): Boolean {

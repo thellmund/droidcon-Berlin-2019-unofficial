@@ -39,7 +39,15 @@ class MainActivity : AppCompatActivity() {
         bottomNavigation.setOnNavigationItemReselectedListener {
             val fragment = supportFragmentManager.findFragmentById(R.id.contentFrame)
             val reselectable = fragment as? Reselectable
-            reselectable?.onReselected()
+
+            if (reselectable != null) {
+                reselectable.onReselected()
+            } else {
+                val childFragmentManager = checkNotNull(fragment?.childFragmentManager)
+                while (childFragmentManager.backStackEntryCount > 0) {
+                    childFragmentManager.popBackStack()
+                }
+            }
         }
     }
 

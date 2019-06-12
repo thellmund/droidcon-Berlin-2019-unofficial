@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/schedule"
-        android:icon="@drawable/ic_outline_calendar_view_day"
+        android:icon="@drawable/selector_schedule_tab"
         android:title="@string/schedule" />
 
     <item
         android:id="@+id/speakers"
-        android:icon="@drawable/ic_outline_people"
+        android:icon="@drawable/selector_speakers_tab"
         android:title="@string/speakers" />
 
 </menu>

@@ -22,13 +22,17 @@
             android:layout_height="wrap_content"
             android:background="@color/toolbar"
             app:title="@string/schedule"
-            app:titleTextColor="@color/textColor" />
+            app:titleTextColor="@color/secondaryTextColor" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/toolbar" />
+            android:background="@color/toolbar"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="2dp"
+            app:tabTextAppearance="@style/MaterialTabTextAppearance" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

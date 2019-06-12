@@ -12,6 +12,11 @@ class EqualSpacingItemDecoration(
         val position = parent.getChildViewHolder(view).adapterPosition
         val itemCount = state.itemCount
 
+        /*val timeTextView: TextView? = view.findViewById(R.id.timeTextView)
+        if (timeTextView == null) {
+            // This is not a
+        }*/
+
         outRect.left = spacing
         outRect.right = spacing
         outRect.top = spacing

@@ -25,7 +25,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/default_space">
 
             <include layout="@layout/view_event_info_container" />
 
@@ -34,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/default_space"
-                android:layout_marginTop="@dimen/default_space"
+                android:layout_marginTop="@dimen/small_space"
                 android:layout_marginEnd="@dimen/default_space"
                 android:lineSpacingMultiplier="1.1"
                 android:nestedScrollingEnabled="true"
@@ -46,6 +47,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/infoContainer"
                 tools:text="Lorem ipsum" />
+
+            <TextView
+                android:id="@+id/speakersHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_space"
+                android:layout_marginTop="@dimen/large_space"
+                android:layout_marginEnd="@dimen/default_space"
+                android:layout_marginBottom="@dimen/small_space"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/speakers"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
 
             <include layout="@layout/view_speaker_card" />
 

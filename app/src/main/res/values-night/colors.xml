@@ -9,6 +9,7 @@
     <color name="cardBorderColor">#757575</color>
 
     <color name="toolbar">#2D2D2D</color>
+    <color name="bottom_nav">#2D2D2D</color>
     <color name="navbar">#2D2D2D</color>
 
     <color name="contentBackground">#212121</color>

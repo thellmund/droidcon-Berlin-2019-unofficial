@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/detailsCardBackground"
-    app:cardCornerRadius="@dimen/corner_radius"
-    app:contentPadding="@dimen/default_space">
+    android:background="?attr/selectableItemBackground"
+    android:padding="@dimen/default_space"
+    tools:ignore="UseCompoundDrawables">
 
-    <LinearLayout
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/twitter_icon" />
+
+    <TextView
+        android:id="@+id/linkTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginStart="@dimen/default_space"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:text="Link" />
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/twitter_icon" />
-
-        <TextView
-            android:id="@+id/linkTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/default_space"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@color/textColor"
-            android:textSize="16sp"
-            tools:text="Link" />
-
-    </LinearLayout>
-
-</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

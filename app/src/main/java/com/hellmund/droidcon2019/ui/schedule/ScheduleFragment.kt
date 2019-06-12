@@ -33,6 +33,7 @@ import kotlinx.android.synthetic.main.fragment_schedule.tabLayout
 import kotlinx.android.synthetic.main.fragment_schedule.toolbar
 import kotlinx.android.synthetic.main.fragment_schedule.viewPager
 import org.threeten.bp.LocalDate
+import org.threeten.bp.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
 class ScheduleFragment : Fragment() {
@@ -192,7 +193,9 @@ class ScheduleFragment : Fragment() {
         }
 
         override fun getPageTitle(position: Int): CharSequence? {
-            return EventDay.values()[position].name
+            val formatter = DateTimeFormatter.ofPattern("EEE, MMMM d")
+            // return DateTimeFormatter.ofPattern()
+            return EventDay.values()[position].toDate().format(formatter)
         }
 
     }

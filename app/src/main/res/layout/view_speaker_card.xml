@@ -1,68 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/speakerCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/default_space"
-    app:cardBackgroundColor="@color/detailsCardBackground"
-    app:cardCornerRadius="8dp"
-    app:contentPadding="@dimen/default_space">
+    android:background="?attr/selectableItemBackground"
+    android:paddingStart="@dimen/default_space"
+    android:paddingEnd="@dimen/default_space"
+    android:paddingTop="@dimen/small_space"
+    android:paddingBottom="@dimen/small_space">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/speakerImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@color/colorAccent"
+        app:riv_corner_radius="24dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/descriptionTextView">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/speakerImageView"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center_vertical"
-            android:scaleType="centerCrop"
-            android:src="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="@id/speakerCompanyTextView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/speakerNameTextView"
-            app:riv_corner_radius="24dp" />
-
-        <LinearLayout
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/speakerNameTextView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginStart="@dimen/default_space"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            tools:text="Presenter" />
 
-            <TextView
-                android:id="@+id/speakerNameTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_space"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="@color/textColor"
-                tools:text="Presenter" />
+        <TextView
+            android:id="@+id/speakerRoleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_space"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            tools:text="Role" />
 
-            <TextView
-                android:id="@+id/speakerRoleTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_space"
-                android:textColor="@color/textColor"
-                tools:text="Role" />
-
-            <TextView
-                android:id="@+id/speakerCompanyTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/default_space"
-                android:textColor="@color/textColor"
-                tools:text="Company" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/speakerCompanyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_space"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            tools:text="Company" />
 
     </LinearLayout>
 
-</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

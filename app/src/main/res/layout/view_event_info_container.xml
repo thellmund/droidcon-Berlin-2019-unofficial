@@ -15,22 +15,25 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
-        android:textSize="16sp"
+        android:textSize="24sp"
         tools:text="Title" />
 
     <TextView
         android:id="@+id/timeTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/tiny_space"
+        android:layout_marginTop="@dimen/small_space"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
         android:textSize="16sp"
-        tools:text="10:00 – 11:00" />
+        tools:text="Mon, July 1, 10:00 – 11:00" />
 
     <TextView
         android:id="@+id/stageTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tiny_space"
+        android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
         android:textSize="16sp"
         tools:text="Stage" />

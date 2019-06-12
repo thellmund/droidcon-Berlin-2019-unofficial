@@ -19,6 +19,7 @@ import com.hellmund.droidcon2019.util.NotificationScheduler
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_event_details.descriptionTextView
 import kotlinx.android.synthetic.main.fragment_event_details.scrollView
+import kotlinx.android.synthetic.main.fragment_event_details.speakersHeader
 import kotlinx.android.synthetic.main.fragment_event_details.toolbar
 import kotlinx.android.synthetic.main.view_event_info_container.addToFavoritesButton
 import kotlinx.android.synthetic.main.view_event_info_container.removeFromFavoritesButton
@@ -68,9 +69,15 @@ class EventDetailsFragment : Fragment() {
 
         titleTextView.text = event.title
 
-        val formattedStart = event.startTime.format(DateTimeFormatter.ISO_LOCAL_TIME)
-        val formattedEnd = event.endTime.format(DateTimeFormatter.ISO_LOCAL_TIME)
-        timeTextView.text = "$formattedStart – $formattedEnd"
+        val dateFormatter = DateTimeFormatter.ofPattern("EEE, MMMM d")
+        val startFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        val endFormatter = DateTimeFormatter.ofPattern("HH:mm")
+
+        val formattedDate = dateFormatter.format(event.day.toDate())
+        val formattedStart = startFormatter.format(event.startTime)
+        val formattedEnd = endFormatter.format(event.endTime)
+
+        timeTextView.text = "$formattedDate, $formattedStart – $formattedEnd"
 
         stageTextView.text = event.stage.name
         descriptionTextView.text = event.description
@@ -94,7 +101,8 @@ class EventDetailsFragment : Fragment() {
                 }
             }
         } else {
-            speakerCard.isVisible = true
+            speakersHeader.isVisible = false
+            speakerCard.isVisible = false
         }
 
         scrollView.viewTreeObserver.addOnScrollChangedListener(onScrollListener)

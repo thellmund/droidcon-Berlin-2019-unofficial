@@ -9,7 +9,8 @@
     <color name="cardBorderColor">#E0E0E0</color>
 
     <color name="toolbar">@android:color/white</color>
-    <color name="navbar">@android:color/white</color>
+    <color name="bottom_nav">#F5F5F5</color>
+    <color name="navbar">#EEEEEE</color>
 
     <color name="contentBackground">@android:color/white</color>
     <color name="textColor">#D9000000</color>
