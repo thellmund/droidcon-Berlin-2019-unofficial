@@ -12,13 +12,11 @@ import com.hellmund.droidcon2019.data.model.EventDay
 import com.hellmund.droidcon2019.data.model.Talk
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
-import com.hellmund.droidcon2019.ui.shared.EqualSpacingItemDecoration
 import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_day.eventsRecyclerView
 import org.jetbrains.anko.defaultSharedPreferences
 import org.threeten.bp.LocalDate
 import org.threeten.bp.LocalTime
-import kotlin.math.roundToInt
 
 class DayFragment : Fragment() {
 
@@ -48,9 +46,6 @@ class DayFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewModel.events.observe(viewLifecycleOwner, this::render)
         eventsRecyclerView.adapter = adapter
-
-        val spacing = requireContext().resources.getDimension(R.dimen.default_space).roundToInt()
-        eventsRecyclerView.addItemDecoration(EqualSpacingItemDecoration(spacing))
 
         val intent = requireActivity().intent
         val eventFromNotification = intent.getParcelableExtra(KEY_EVENT) as? Talk
