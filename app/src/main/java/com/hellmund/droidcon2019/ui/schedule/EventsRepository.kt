@@ -28,6 +28,8 @@ class EventsRepository(
         events += gson.fromJson<List<Talk>>(text, type)
     }
 
+    fun getAll(): List<Talk> = events
+
     fun getEventId(event: Talk): Int {
         return events.indexOf(event)
     }

@@ -5,6 +5,7 @@ import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import kotlinx.android.parcel.Parcelize
 import org.threeten.bp.LocalTime
+import java.util.Locale
 
 interface Filterable {
     fun isInFilter(filter: Filter, favoritesStore: FavoritesStore): Boolean
@@ -42,6 +43,21 @@ data class Talk(
             }
             return result
         }
+    }
+
+    fun contains(query: String): Boolean {
+        val text = query.toLowerCase(Locale.getDefault())
+        var result = false
+
+        result = result || title.toLowerCase(Locale.getDefault()).contains(text)
+
+        if (speaker != null) {
+            result = result || speaker.toLowerCase(Locale.getDefault()).contains(text)
+        }
+
+        result = result || description.toLowerCase(Locale.getDefault()).contains(text)
+
+        return result
     }
 
 }

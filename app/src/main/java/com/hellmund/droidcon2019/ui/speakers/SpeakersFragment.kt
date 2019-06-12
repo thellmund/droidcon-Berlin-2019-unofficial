@@ -72,8 +72,6 @@ class SpeakersFragment : Fragment(), Reselectable, BackPressable {
     }
 
     private fun onItemClick(speaker: Speaker) {
-        // val fragment = SpeakerDetailsFragment.newInstance(speaker)
-        // fragment.show(childFragmentManager, fragment.tag)
         requireFragmentManager().transaction {
             replace(R.id.contentFrame, SpeakerDetailsFragment.newInstance(speaker))
             addToBackStack(null)
