@@ -7,22 +7,17 @@
     android:orientation="vertical"
     tools:context=".ui.schedule.details.EventDetailsFragment">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/toolbar"
-            app:title="@string/speakers"
-            app:titleTextColor="@color/colorPrimary" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:stateListAnimator="@animator/animator_toolbar_elevation"
+        app:title="@string/speakers"
+        app:titleTextColor="@color/colorPrimary" />
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -40,10 +35,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/default_space"
                 android:layout_marginTop="@dimen/default_space"
-                android:lineSpacingMultiplier="1.1"
                 android:layout_marginEnd="@dimen/default_space"
+                android:lineSpacingMultiplier="1.1"
                 android:nestedScrollingEnabled="true"
                 android:textColor="@color/textColor"
+                android:textIsSelectable="true"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toTopOf="@id/speakerCard"
                 app:layout_constraintEnd_toEndOf="parent"

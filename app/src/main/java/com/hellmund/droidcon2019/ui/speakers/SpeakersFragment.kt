@@ -20,7 +20,6 @@ import com.hellmund.droidcon2019.ui.shared.BackPressable
 import com.hellmund.droidcon2019.ui.shared.MaterialDividerItemDecoration
 import com.hellmund.droidcon2019.ui.shared.Reselectable
 import com.hellmund.droidcon2019.ui.speakers.details.SpeakerDetailsFragment
-import com.hellmund.droidcon2019.ui.speakers.search.SearchHistoryStore
 import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_speakers.recyclerView
 import kotlinx.android.synthetic.main.fragment_speakers.toolbar
@@ -30,10 +29,6 @@ class SpeakersFragment : Fragment(), Reselectable, BackPressable {
 
     private val viewModel: SpeakersViewModel by lazy {
         ViewModelProviders.of(requireActivity()).get(SpeakersViewModel::class.java)
-    }
-
-    private val searchHistoryStore: SearchHistoryStore by lazy {
-        SearchHistoryStore(requireContext())
     }
 
     private lateinit var searchView: SearchView

@@ -15,6 +15,7 @@ import com.hellmund.droidcon2019.ui.speakers.SpeakersRepository
 import com.hellmund.droidcon2019.util.NotificationScheduler
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_event_details.descriptionTextView
+import kotlinx.android.synthetic.main.fragment_event_details.scrollView
 import kotlinx.android.synthetic.main.fragment_event_details.toolbar
 import kotlinx.android.synthetic.main.view_event_info_container.addToFavoritesButton
 import kotlinx.android.synthetic.main.view_event_info_container.removeFromFavoritesButton
@@ -85,6 +86,11 @@ class EventDetailsFragment : Fragment() {
             }
         } else {
             speakerCard.isVisible = true
+        }
+
+        scrollView.viewTreeObserver.addOnScrollChangedListener {
+            val isAtTop = scrollView.canScrollVertically(-1)
+            toolbar.isSelected = isAtTop
         }
 
         updateFavoriteIcon()
