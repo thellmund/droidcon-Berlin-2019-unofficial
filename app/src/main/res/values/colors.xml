@@ -13,6 +13,7 @@
 
     <color name="contentBackground">@android:color/white</color>
     <color name="textColor">#D9000000</color>
+    <color name="secondaryTextColor">#A6000000</color>
 
     <color name="chipUnselected">#AEAEAE</color>
     <color name="chipSelected">#B3F7835F</color>

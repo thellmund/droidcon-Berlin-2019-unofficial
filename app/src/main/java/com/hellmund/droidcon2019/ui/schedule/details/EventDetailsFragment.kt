@@ -4,14 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewTreeObserver
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.transaction
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Talk
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.speakers.SpeakersRepository
+import com.hellmund.droidcon2019.ui.speakers.details.SpeakerDetailsFragment
 import com.hellmund.droidcon2019.util.NotificationScheduler
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_event_details.descriptionTextView
@@ -42,6 +45,11 @@ class EventDetailsFragment : Fragment() {
 
     private val event: Talk by lazy {
         checkNotNull(arguments?.getParcelable<Talk>(KEY_EVENT))
+    }
+
+    private val onScrollListener = ViewTreeObserver.OnScrollChangedListener {
+        val isAtTop = scrollView.canScrollVertically(-1)
+        toolbar.isSelected = isAtTop
     }
 
     override fun onCreateView(
@@ -80,18 +88,16 @@ class EventDetailsFragment : Fragment() {
             speakerCompanyTextView.text = speaker.company
 
             speakerCard.setOnClickListener {
-                TODO()
-                // val fragment = SpeakerDetailsFragment.newInstance(speaker)
-                // fragment.show(childFragmentManager, fragment.tag)
+                requireFragmentManager().transaction {
+                    replace(R.id.contentFrame, SpeakerDetailsFragment.newInstance(speaker))
+                    addToBackStack(null)
+                }
             }
         } else {
             speakerCard.isVisible = true
         }
 
-        scrollView.viewTreeObserver.addOnScrollChangedListener {
-            val isAtTop = scrollView.canScrollVertically(-1)
-            toolbar.isSelected = isAtTop
-        }
+        scrollView.viewTreeObserver.addOnScrollChangedListener(onScrollListener)
 
         updateFavoriteIcon()
 
@@ -114,6 +120,11 @@ class EventDetailsFragment : Fragment() {
         val isFavorite = favoritesRepository.isFavorite(event)
         addToFavoritesButton.isVisible = isFavorite.not()
         removeFromFavoritesButton.isVisible = isFavorite
+    }
+
+    override fun onDestroyView() {
+        scrollView.viewTreeObserver.removeOnScrollChangedListener(onScrollListener)
+        super.onDestroyView()
     }
 
     companion object {

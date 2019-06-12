@@ -13,6 +13,7 @@
 
     <color name="contentBackground">#212121</color>
     <color name="textColor">#D9FFFFFF</color>
+    <color name="secondaryTextColor">#A6FFFFFF</color>
 
     <color name="chipUnselected">#616161</color>
     <color name="chipSelected">#B3F7835F</color>
