@@ -14,7 +14,7 @@
         android:background="@color/toolbar"
         android:stateListAnimator="@animator/animator_toolbar_elevation"
         app:title="@string/speakers"
-        app:titleTextColor="@color/colorPrimary" />
+        app:titleTextColor="@color/textColor" />
 
     <ScrollView
         android:id="@+id/scrollView"

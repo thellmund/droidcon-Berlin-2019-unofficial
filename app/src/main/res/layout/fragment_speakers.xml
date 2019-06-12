@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:background="@color/toolbar"
             app:title="@string/speakers"
-            app:titleTextColor="@color/colorPrimary" />
+            app:titleTextColor="@color/textColor" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -1,7 +1,6 @@
 package com.hellmund.droidcon2019.ui.schedule.filter
 
 import android.content.Context
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.util.AttributeSet
 import com.google.android.material.chip.Chip
@@ -18,18 +17,7 @@ class FilterChip @JvmOverloads constructor(
         isClickable = true
         isCheckedIconVisible = false
         isCloseIconVisible = false
-
-        setTextColor(colorStateList)
+        setTextColor(Color.WHITE)
         setChipBackgroundColorResource(R.color.selector_chip_background)
     }
-
-    private companion object {
-        val states = arrayOf(
-            intArrayOf(android.R.attr.state_checked),
-            intArrayOf(-android.R.attr.state_checked)
-        )
-        val colors = intArrayOf(Color.WHITE, Color.DKGRAY)
-        val colorStateList = ColorStateList(states, colors)
-    }
-
 }
