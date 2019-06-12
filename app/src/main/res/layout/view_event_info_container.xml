@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners_background"
+    android:backgroundTint="#EEE"
+    android:orientation="vertical"
+    android:padding="@dimen/default_space">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tiny_space"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:text="10:00 – 11:00" />
+
+    <TextView
+        android:id="@+id/stageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        tools:text="Stage" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addToFavoritesButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/default_space"
+        android:text="@string/add_to_favorites"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="@dimen/corner_radius"
+        app:icon="@drawable/ic_baseline_star"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/default_space" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/removeFromFavoritesButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/default_space"
+        android:text="@string/remove_from_favorites"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/corner_radius"
+        app:icon="@drawable/outline_star_border"
+        app:iconGravity="textStart"
+        app:iconPadding="@dimen/default_space"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>

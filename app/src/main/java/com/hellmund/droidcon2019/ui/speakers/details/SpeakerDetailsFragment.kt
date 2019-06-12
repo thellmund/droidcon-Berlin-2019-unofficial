@@ -4,12 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Speaker
-import com.hellmund.droidcon2019.ui.shared.RoundedBottomSheetDialogFragment
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_event_details.toolbar
 import kotlinx.android.synthetic.main.fragment_speaker_details.companyTextView
 import kotlinx.android.synthetic.main.fragment_speaker_details.descriptionTextView
 import kotlinx.android.synthetic.main.fragment_speaker_details.imageView
@@ -17,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_speaker_details.linksRecyclerView
 import kotlinx.android.synthetic.main.fragment_speaker_details.nameTextView
 import kotlinx.android.synthetic.main.fragment_speaker_details.roleTextView
 
-class SpeakerDetailsFragment : RoundedBottomSheetDialogFragment() {
+class SpeakerDetailsFragment : Fragment() {
 
     private val speaker: Speaker by lazy {
         checkNotNull(arguments?.getParcelable<Speaker>(KEY_SPEAKER))
@@ -30,6 +32,13 @@ class SpeakerDetailsFragment : RoundedBottomSheetDialogFragment() {
     ): View? = inflater.inflate(R.layout.fragment_speaker_details, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val activity = requireActivity() as AppCompatActivity
+        activity.setSupportActionBar(toolbar)
+        activity.supportActionBar?.let {
+            it.setDisplayHomeAsUpEnabled(true)
+            it.title = null
+        }
+
         Picasso.get()
             .load(speaker.imageUrl)
             .into(imageView)

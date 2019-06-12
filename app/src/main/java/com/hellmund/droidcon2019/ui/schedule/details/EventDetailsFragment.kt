@@ -4,32 +4,32 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
+import androidx.fragment.app.Fragment
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Talk
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
-import com.hellmund.droidcon2019.ui.shared.RoundedBottomSheetDialogFragment
 import com.hellmund.droidcon2019.ui.speakers.SpeakersRepository
-import com.hellmund.droidcon2019.ui.speakers.details.SpeakerDetailsFragment
 import com.hellmund.droidcon2019.util.NotificationScheduler
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_event_details.descriptionTextView
-import kotlinx.android.synthetic.main.fragment_event_details.favoriteButton
-import kotlinx.android.synthetic.main.fragment_event_details.speakerCard
-import kotlinx.android.synthetic.main.fragment_event_details.speakerCompanyTextView
-import kotlinx.android.synthetic.main.fragment_event_details.speakerImageView
-import kotlinx.android.synthetic.main.fragment_event_details.speakerNameTextView
-import kotlinx.android.synthetic.main.fragment_event_details.speakerRoleTextView
-import kotlinx.android.synthetic.main.fragment_event_details.stageTextView
-import kotlinx.android.synthetic.main.fragment_event_details.timeTextView
-import kotlinx.android.synthetic.main.fragment_event_details.titleTextView
+import kotlinx.android.synthetic.main.fragment_event_details.toolbar
+import kotlinx.android.synthetic.main.view_event_info_container.addToFavoritesButton
+import kotlinx.android.synthetic.main.view_event_info_container.removeFromFavoritesButton
+import kotlinx.android.synthetic.main.view_event_info_container.stageTextView
+import kotlinx.android.synthetic.main.view_event_info_container.timeTextView
+import kotlinx.android.synthetic.main.view_event_info_container.titleTextView
+import kotlinx.android.synthetic.main.view_speaker_card.speakerCard
+import kotlinx.android.synthetic.main.view_speaker_card.speakerCompanyTextView
+import kotlinx.android.synthetic.main.view_speaker_card.speakerImageView
+import kotlinx.android.synthetic.main.view_speaker_card.speakerNameTextView
+import kotlinx.android.synthetic.main.view_speaker_card.speakerRoleTextView
 import org.jetbrains.anko.defaultSharedPreferences
 import org.threeten.bp.format.DateTimeFormatter
 
-class EventDetailsFragment : RoundedBottomSheetDialogFragment() {
-
-    private var onFavoriteClick: () -> Unit = {}
+class EventDetailsFragment : Fragment() {
 
     private val favoritesRepository: FavoritesStore by lazy {
         FavoritesStore(requireContext().defaultSharedPreferences)
@@ -50,6 +50,13 @@ class EventDetailsFragment : RoundedBottomSheetDialogFragment() {
     ): View? = inflater.inflate(R.layout.fragment_event_details, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val activity = requireActivity() as AppCompatActivity
+        activity.setSupportActionBar(toolbar)
+        activity.supportActionBar?.let {
+            it.setDisplayHomeAsUpEnabled(true)
+            it.title = null
+        }
+
         titleTextView.text = event.title
 
         val formattedStart = event.startTime.format(DateTimeFormatter.ISO_LOCAL_TIME)
@@ -72,8 +79,9 @@ class EventDetailsFragment : RoundedBottomSheetDialogFragment() {
             speakerCompanyTextView.text = speaker.company
 
             speakerCard.setOnClickListener {
-                val fragment = SpeakerDetailsFragment.newInstance(speaker)
-                fragment.show(childFragmentManager, fragment.tag)
+                TODO()
+                // val fragment = SpeakerDetailsFragment.newInstance(speaker)
+                // fragment.show(childFragmentManager, fragment.tag)
             }
         } else {
             speakerCard.isVisible = true
@@ -81,24 +89,25 @@ class EventDetailsFragment : RoundedBottomSheetDialogFragment() {
 
         updateFavoriteIcon()
 
-        favoriteButton.setOnClickListener {
-            favoritesRepository.toggleFavorite(event)
-            updateFavoriteIcon()
+        addToFavoritesButton.setOnClickListener { toggleFavorite() }
+        removeFromFavoritesButton.setOnClickListener { toggleFavorite() }
+    }
 
-            if (favoritesRepository.isFavorite(event)) {
-                NotificationScheduler(requireContext()).schedule(event)
-            } else {
-                NotificationScheduler(requireContext()).remove(event)
-            }
+    private fun toggleFavorite() {
+        favoritesRepository.toggleFavorite(event)
+        updateFavoriteIcon()
 
-            onFavoriteClick()
+        if (favoritesRepository.isFavorite(event)) {
+            NotificationScheduler(requireContext()).schedule(event)
+        } else {
+            NotificationScheduler(requireContext()).remove(event)
         }
     }
 
     private fun updateFavoriteIcon() {
         val isFavorite = favoritesRepository.isFavorite(event)
-        val resId = if (isFavorite) R.drawable.ic_baseline_star else R.drawable.outline_star_border
-        favoriteButton.setImageResource(resId)
+        addToFavoritesButton.isVisible = isFavorite.not()
+        removeFromFavoritesButton.isVisible = isFavorite
     }
 
     companion object {
@@ -106,11 +115,9 @@ class EventDetailsFragment : RoundedBottomSheetDialogFragment() {
         private const val KEY_EVENT = "KEY_EVENT"
 
         fun newInstance(
-            event: Talk,
-            onFavoriteClick: () -> Unit
+            event: Talk
         ) = EventDetailsFragment().apply {
             arguments = bundleOf(KEY_EVENT to event)
-            this.onFavoriteClick = onFavoriteClick
         }
 
     }

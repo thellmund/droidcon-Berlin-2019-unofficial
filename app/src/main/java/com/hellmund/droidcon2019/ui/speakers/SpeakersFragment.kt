@@ -12,15 +12,16 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.transaction
 import androidx.lifecycle.ViewModelProviders
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Speaker
-import com.hellmund.droidcon2019.util.observe
 import com.hellmund.droidcon2019.ui.shared.BackPressable
 import com.hellmund.droidcon2019.ui.shared.MaterialDividerItemDecoration
 import com.hellmund.droidcon2019.ui.shared.Reselectable
 import com.hellmund.droidcon2019.ui.speakers.details.SpeakerDetailsFragment
 import com.hellmund.droidcon2019.ui.speakers.search.SearchHistoryStore
+import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_speakers.recyclerView
 import kotlinx.android.synthetic.main.fragment_speakers.toolbar
 import kotlin.math.roundToInt
@@ -71,8 +72,12 @@ class SpeakersFragment : Fragment(), Reselectable, BackPressable {
     }
 
     private fun onItemClick(speaker: Speaker) {
-        val fragment = SpeakerDetailsFragment.newInstance(speaker)
-        fragment.show(childFragmentManager, fragment.tag)
+        // val fragment = SpeakerDetailsFragment.newInstance(speaker)
+        // fragment.show(childFragmentManager, fragment.tag)
+        requireFragmentManager().transaction {
+            replace(R.id.contentFrame, SpeakerDetailsFragment.newInstance(speaker))
+            addToBackStack(null)
+        }
     }
 
     override fun onReselected() {

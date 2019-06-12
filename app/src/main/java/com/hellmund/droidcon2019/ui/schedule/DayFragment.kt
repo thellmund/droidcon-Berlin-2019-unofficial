@@ -11,7 +11,6 @@ import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.EventDay
 import com.hellmund.droidcon2019.data.model.Talk
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
-import com.hellmund.droidcon2019.ui.schedule.details.EventDetailsFragment
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.ui.shared.EqualSpacingItemDecoration
 import com.hellmund.droidcon2019.util.observe
@@ -54,11 +53,10 @@ class DayFragment : Fragment() {
         eventsRecyclerView.addItemDecoration(EqualSpacingItemDecoration(spacing))
 
         val intent = requireActivity().intent
-        val eventFromNotification = intent.getParcelableExtra("KEY_EVENT") as? Talk
+        val eventFromNotification = intent.getParcelableExtra(KEY_EVENT) as? Talk
         eventFromNotification?.let {
-            val fragment = EventDetailsFragment.newInstance(it, this::onFavoriteClick)
-            fragment.show(childFragmentManager, fragment.tag)
-            intent.removeExtra("KEY_EVENT")
+            showEventDetails(it)
+            intent.removeExtra(KEY_EVENT)
         }
     }
 
@@ -81,8 +79,13 @@ class DayFragment : Fragment() {
     }
 
     private fun onEventClick(event: Talk) {
-        val fragment = EventDetailsFragment.newInstance(event, this::onFavoriteClick)
-        fragment.show(childFragmentManager, fragment.tag)
+        showEventDetails(event)
+    }
+
+    private fun showEventDetails(event: Talk) {
+        onEventClick.invoke(event)
+        /*val fragment = EventDetailsFragment.newInstance(event, this::onFavoriteClick)
+        fragment.show(childFragmentManager, fragment.tag)*/
     }
 
     private fun onFavoriteClick() {
@@ -93,14 +96,19 @@ class DayFragment : Fragment() {
         adapter.applyFilter(filter)
     }
 
+    private var onEventClick: (Talk) -> Unit = {}
+
     companion object {
 
         private const val KEY_EVENT_DAY = "KEY_EVENT_DAY"
+        private const val KEY_EVENT = "KEY_EVENT"
 
         fun newInstance(
-            day: EventDay
+            day: EventDay,
+            onEventClick: (Talk) -> Unit
         ) = DayFragment().apply {
             arguments = bundleOf(KEY_EVENT_DAY to day)
+            this.onEventClick = onEventClick
         }
 
     }

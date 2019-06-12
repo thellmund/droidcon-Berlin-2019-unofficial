@@ -9,9 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.transaction
 import com.google.android.material.tabs.TabLayout
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.EventDay
+import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.ui.schedule.details.EventDetailsFragment
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.ui.schedule.filter.FilterFragment
 import kotlinx.android.synthetic.main.fragment_schedule.fab
@@ -32,6 +35,11 @@ class ScheduleFragment : Fragment() {
 
     private val adapter: DaysAdapter by lazy {
         DaysAdapter(childFragmentManager)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
@@ -55,7 +63,6 @@ class ScheduleFragment : Fragment() {
     }
 
     private fun onFilterChanged(filter: Filter) {
-        println("isInFilter changed")
         val fragment = adapter.getFragmentAt(viewPager.currentItem)
         fragment?.applyFilter(filter)
     }
@@ -74,6 +81,13 @@ class ScheduleFragment : Fragment() {
         viewPager.currentItem = index
     }
 
+    private fun onEventClick(event: Talk) {
+        requireFragmentManager().transaction {
+            replace(R.id.contentFrame, EventDetailsFragment.newInstance(event))
+            addToBackStack(null)
+        }
+    }
+
     override fun onDestroyView() {
         tabLayout.removeOnTabSelectedListener(onTabSelectedListener)
         super.onDestroyView()
@@ -87,7 +101,7 @@ class ScheduleFragment : Fragment() {
 
         override fun getItem(position: Int): Fragment {
             val eventDay = EventDay.values()[position]
-            return DayFragment.newInstance(eventDay).also {
+            return DayFragment.newInstance(eventDay, ::onEventClick).also {
                 cache[position] = it
             }
         }

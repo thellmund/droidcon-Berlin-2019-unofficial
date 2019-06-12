@@ -39,9 +39,8 @@ class NotificationScheduler(
     }
 
     fun remove(event: Talk) {
-        val eventsRepository = EventsRepository.getInstance(context)
-        val id = eventsRepository.getEventId(event)
-        notificationManager.cancel(id)
+        val alarmIntent = getAlarmIntent(event)
+        alarmManager.cancel(alarmIntent)
     }
 
     private fun getAlarmIntent(event: Talk): PendingIntent {
