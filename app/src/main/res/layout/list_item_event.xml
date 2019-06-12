@@ -8,15 +8,42 @@
     android:padding="@dimen/default_space">
 
     <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10:00" />
+
+    <TextView
+        android:id="@+id/timePeriodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/timeTextView"
+        app:layout_constraintTop_toBottomOf="@id/timeTextView"
+        tools:text="AM" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/timeContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="timeTextView,timePeriodTextView" />
+
+    <TextView
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/textColor"
-        android:textSize="18sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toStartOf="@id/favoriteButton"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/timeTextView"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Title" />
 
@@ -24,11 +51,12 @@
         android:id="@+id/presenterTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
         android:textColor="@color/secondaryTextColor"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@id/favoriteButton"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/timeTextView"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         tools:text="Presenter" />
 
@@ -36,11 +64,12 @@
         android:id="@+id/stageTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
         android:textColor="@color/secondaryTextColor"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@id/favoriteButton"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/timeTextView"
         app:layout_constraintTop_toBottomOf="@id/presenterTextView"
         tools:text="Stage" />
 

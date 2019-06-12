@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:background="@color/toolbar"
             app:title="@string/schedule"
-            app:titleTextColor="@color/secondaryTextColor" />
+            app:titleTextColor="@color/textColor" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"

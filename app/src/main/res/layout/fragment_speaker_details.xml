@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/contentBackground"
     tools:context=".ui.speakers.details.SpeakerDetailsFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -75,8 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_space"
         android:layout_marginEnd="@dimen/default_space"
-        android:textColor="@color/textColor"
         android:fontFamily="sans-serif-medium"
+        android:textColor="@color/textColor"
         android:textIsSelectable="true"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +108,6 @@
         android:layout_marginTop="@dimen/default_space"
         android:overScrollMode="never"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/descriptionTextView" />

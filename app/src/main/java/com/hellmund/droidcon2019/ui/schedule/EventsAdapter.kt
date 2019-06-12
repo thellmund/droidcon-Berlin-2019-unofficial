@@ -1,9 +1,13 @@
 package com.hellmund.droidcon2019.ui.schedule
 
+import android.text.format.DateFormat
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Talk
@@ -13,8 +17,10 @@ import com.hellmund.droidcon2019.util.NotificationScheduler
 import kotlinx.android.synthetic.main.list_item_event.view.favoriteButton
 import kotlinx.android.synthetic.main.list_item_event.view.presenterTextView
 import kotlinx.android.synthetic.main.list_item_event.view.stageTextView
+import kotlinx.android.synthetic.main.list_item_event.view.timeContainer
+import kotlinx.android.synthetic.main.list_item_event.view.timePeriodTextView
+import kotlinx.android.synthetic.main.list_item_event.view.timeTextView
 import kotlinx.android.synthetic.main.list_item_event.view.titleTextView
-import kotlinx.android.synthetic.main.list_item_schedule_header.view.timeTextView
 import org.threeten.bp.LocalTime
 import org.threeten.bp.format.DateTimeFormatter
 
@@ -32,17 +38,30 @@ sealed class AdapterItem {
             onItemClick: (Talk) -> Unit,
             favoritesStore: FavoritesStore
         ) = with(holder.itemView) {
-            timeTextView.text = time.format(DateTimeFormatter.ISO_LOCAL_TIME).substring(0, 5)
+            //timeTextView.text = time.format(DateTimeFormatter.ISO_LOCAL_TIME).substring(0, 5)
         }
     }
 
-    data class Event(val event: Talk) : AdapterItem() {
+    data class Event(
+        val event: Talk,
+        val isFirst: Boolean = false
+    ) : AdapterItem() {
+
+        private val timeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+        private val timePeriodFormatter = DateTimeFormatter.ofPattern("a")
 
         override fun bind(
             holder: EventsAdapter.ViewHolder,
             onItemClick: (Talk) -> Unit,
             favoritesStore: FavoritesStore
         ) = with(holder.itemView) {
+            timeContainer.visibility = if (isFirst) VISIBLE else INVISIBLE
+            timeTextView.text = timeFormatter.format(event.startTime)
+
+            val is24Hours = DateFormat.is24HourFormat(context)
+            timePeriodTextView.isVisible = is24Hours.not()
+            timePeriodTextView.text = timePeriodFormatter.format(event.startTime)
+
             titleTextView.text = event.title
             presenterTextView.text = event.speaker
             stageTextView.text = event.stage.name
@@ -108,9 +127,11 @@ class EventsAdapter(
         val eventsByTime = events.groupBy { it.startTime }
         val newItems = mutableListOf<AdapterItem>()
 
-        for ((time, eventsAtTime) in eventsByTime.entries) {
-            newItems += AdapterItem.Header(time)
-            newItems += eventsAtTime.map { AdapterItem.Event(it) }
+        for (time in eventsByTime.keys) {
+            val items = eventsByTime[time].orEmpty()
+            newItems += items.mapIndexed { index, event ->
+                AdapterItem.Event(event, isFirst = index == 0)
+            }
         }
 
         allItems.clear()
@@ -124,9 +145,11 @@ class EventsAdapter(
         val filteredEventsByTime = filteredEvents.groupBy { it.startTime }
         val newFilteredItems = mutableListOf<AdapterItem>()
 
-        for ((time, eventsAtTime) in filteredEventsByTime.entries) {
-            newFilteredItems += AdapterItem.Header(time)
-            newFilteredItems += eventsAtTime.map { AdapterItem.Event(it) }
+        for (eventsAtTime in filteredEventsByTime.values) {
+            // newFilteredItems += AdapterItem.Header(time)
+            newFilteredItems += eventsAtTime.mapIndexed { index, event ->
+                AdapterItem.Event(event, isFirst = index == 0)
+            }
         }
 
         filteredItems = newFilteredItems

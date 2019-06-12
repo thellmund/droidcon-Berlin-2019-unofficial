@@ -27,7 +27,8 @@ class LinksAdapter(
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(link: String) = with(itemView) {
-            linkTextView.text = "@" + link.replace("https://twitter.com/", "")
+            val twitterHandle = link.replace("https://twitter.com/", "")
+            linkTextView.text = "Follow @$twitterHandle"
             setOnClickListener {
                 context.browse(link)
             }
