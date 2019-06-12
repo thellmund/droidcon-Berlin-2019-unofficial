@@ -21,76 +21,55 @@ import kotlinx.android.synthetic.main.list_item_event.view.timeContainer
 import kotlinx.android.synthetic.main.list_item_event.view.timePeriodTextView
 import kotlinx.android.synthetic.main.list_item_event.view.timeTextView
 import kotlinx.android.synthetic.main.list_item_event.view.titleTextView
-import org.threeten.bp.LocalTime
 import org.threeten.bp.format.DateTimeFormatter
 
-sealed class AdapterItem {
+class AdapterItem(
+    val event: Talk,
+    val isFirst: Boolean = false
+) {
 
-    abstract fun bind(
+    private val timeFormatter = DateTimeFormatter.ofPattern("HH:mm")
+    private val timePeriodFormatter = DateTimeFormatter.ofPattern("a")
+
+    fun bind(
         holder: EventsAdapter.ViewHolder,
         onItemClick: (Talk) -> Unit,
         favoritesStore: FavoritesStore
-    )
+    ) = with(holder.itemView) {
+        timeContainer.visibility = if (isFirst) VISIBLE else INVISIBLE
+        timeTextView.text = timeFormatter.format(event.startTime)
 
-    data class Header(val time: LocalTime) : AdapterItem() {
-        override fun bind(
-            holder: EventsAdapter.ViewHolder,
-            onItemClick: (Talk) -> Unit,
-            favoritesStore: FavoritesStore
-        ) = with(holder.itemView) {
-            //timeTextView.text = time.format(DateTimeFormatter.ISO_LOCAL_TIME).substring(0, 5)
-        }
-    }
+        val is24Hours = DateFormat.is24HourFormat(context)
+        timePeriodTextView.isVisible = is24Hours.not()
+        timePeriodTextView.text = timePeriodFormatter.format(event.startTime)
 
-    data class Event(
-        val event: Talk,
-        val isFirst: Boolean = false
-    ) : AdapterItem() {
+        titleTextView.text = event.title
+        presenterTextView.text = event.speaker
+        stageTextView.text = event.stage.name
 
-        private val timeFormatter = DateTimeFormatter.ofPattern("HH:mm")
-        private val timePeriodFormatter = DateTimeFormatter.ofPattern("a")
+        updateFavoriteIcon(favoriteButton, favoritesStore)
 
-        override fun bind(
-            holder: EventsAdapter.ViewHolder,
-            onItemClick: (Talk) -> Unit,
-            favoritesStore: FavoritesStore
-        ) = with(holder.itemView) {
-            timeContainer.visibility = if (isFirst) VISIBLE else INVISIBLE
-            timeTextView.text = timeFormatter.format(event.startTime)
-
-            val is24Hours = DateFormat.is24HourFormat(context)
-            timePeriodTextView.isVisible = is24Hours.not()
-            timePeriodTextView.text = timePeriodFormatter.format(event.startTime)
-
-            titleTextView.text = event.title
-            presenterTextView.text = event.speaker
-            stageTextView.text = event.stage.name
-
+        favoriteButton.setOnClickListener {
+            favoritesStore.toggleFavorite(event)
             updateFavoriteIcon(favoriteButton, favoritesStore)
 
-            favoriteButton.setOnClickListener {
-                favoritesStore.toggleFavorite(event)
-                updateFavoriteIcon(favoriteButton, favoritesStore)
-
-                if (favoritesStore.isFavorite(event)) {
-                    NotificationScheduler(context).schedule(event)
-                } else {
-                    NotificationScheduler(context).remove(event)
-                }
+            if (favoritesStore.isFavorite(event)) {
+                NotificationScheduler(context).schedule(event)
+            } else {
+                NotificationScheduler(context).remove(event)
             }
-
-            setOnClickListener { onItemClick(event) }
         }
 
-        private fun updateFavoriteIcon(
-            favoriteButton: ImageButton,
-            favoritesRepository: FavoritesStore
-        ) {
-            val isFavorite = favoritesRepository.isFavorite(event)
-            val resId = if (isFavorite) R.drawable.ic_baseline_star else R.drawable.outline_star_border
-            favoriteButton.setImageResource(resId)
-        }
+        setOnClickListener { onItemClick(event) }
+    }
 
+    private fun updateFavoriteIcon(
+        favoriteButton: ImageButton,
+        favoritesRepository: FavoritesStore
+    ) {
+        val isFavorite = favoritesRepository.isFavorite(event)
+        val resId = if (isFavorite) R.drawable.ic_baseline_star else R.drawable.outline_star_border
+        favoriteButton.setImageResource(resId)
     }
 
 }
@@ -110,7 +89,7 @@ class EventsAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(viewType, parent, false)
+            .inflate(R.layout.list_item_event, parent, false)
         return ViewHolder(view)
     }
 
@@ -130,7 +109,7 @@ class EventsAdapter(
         for (time in eventsByTime.keys) {
             val items = eventsByTime[time].orEmpty()
             newItems += items.mapIndexed { index, event ->
-                AdapterItem.Event(event, isFirst = index == 0)
+                AdapterItem(event, isFirst = index == 0)
             }
         }
 
@@ -146,9 +125,8 @@ class EventsAdapter(
         val newFilteredItems = mutableListOf<AdapterItem>()
 
         for (eventsAtTime in filteredEventsByTime.values) {
-            // newFilteredItems += AdapterItem.Header(time)
             newFilteredItems += eventsAtTime.mapIndexed { index, event ->
-                AdapterItem.Event(event, isFirst = index == 0)
+                AdapterItem(event, isFirst = index == 0)
             }
         }
 
@@ -163,14 +141,6 @@ class EventsAdapter(
         }
 
         notifyDataSetChanged()
-    }
-
-    override fun getItemViewType(position: Int): Int {
-        return if (items[position] is AdapterItem.Header) {
-            R.layout.list_item_schedule_header
-        } else {
-            R.layout.list_item_event
-        }
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

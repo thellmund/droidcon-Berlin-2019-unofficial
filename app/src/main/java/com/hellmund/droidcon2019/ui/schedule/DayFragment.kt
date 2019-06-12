@@ -61,11 +61,11 @@ class DayFragment : Fragment() {
         if (LocalDate.now() == day.toDate()) {
             val now = LocalTime.now()
 
+            // TODO Test
             val currentTime = adapter.items
                 .mapIndexed { index, item -> index to item }
-                .filter { (_, item) -> item is AdapterItem.Header }
-                .map { (index, item) -> index to (item as AdapterItem.Header) }
-                .lastOrNull { (_, item) -> item.time.isBefore(now) }
+                .filter { (_, item) -> item.isFirst }
+                .lastOrNull { (_, item) -> item.event.startTime.isBefore(now) }
 
             currentTime?.let { (index, _) ->
                 eventsRecyclerView.scrollToPosition(index)
@@ -79,12 +79,6 @@ class DayFragment : Fragment() {
 
     private fun showEventDetails(event: Talk) {
         onEventClick.invoke(event)
-        /*val fragment = EventDetailsFragment.newInstance(event, this::onFavoriteClick)
-        fragment.show(childFragmentManager, fragment.tag)*/
-    }
-
-    private fun onFavoriteClick() {
-        adapter.notifyDataSetChanged()
     }
 
     fun applyFilter(filter: Filter) {

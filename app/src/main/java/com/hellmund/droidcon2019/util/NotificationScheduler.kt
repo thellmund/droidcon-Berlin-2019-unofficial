@@ -19,9 +19,6 @@ class NotificationScheduler(
     private val alarmManager: AlarmManager
         get() = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
-    private val notificationManager: NotificationManager
-        get() = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-
     fun schedule(event: Talk) {
         val time = event.day.toDate()
             .atStartOfDay()

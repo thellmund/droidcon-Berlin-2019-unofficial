@@ -194,7 +194,6 @@ class ScheduleFragment : Fragment() {
 
         override fun getPageTitle(position: Int): CharSequence? {
             val formatter = DateTimeFormatter.ofPattern("EEE, MMMM d")
-            // return DateTimeFormatter.ofPattern()
             return EventDay.values()[position].toDate().format(formatter)
         }
 
