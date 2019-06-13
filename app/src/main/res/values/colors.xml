@@ -17,5 +17,5 @@
     <color name="secondaryTextColor">#A6000000</color>
 
     <color name="chipUnselected">#AEAEAE</color>
-    <color name="chipSelected">#B3F7835F</color>
+    <color name="chipSelected">#F7835F</color>
 </resources>

@@ -8,11 +8,11 @@
     <color name="detailsCardBackground">#212121</color>
     <color name="cardBorderColor">#757575</color>
 
-    <color name="toolbar">#212121</color>
-    <color name="bottom_nav">#212121</color>
-    <color name="navbar">#212121</color>
+    <color name="toolbar">#1F1F1F</color>
+    <color name="bottom_nav">#1F1F1F</color>
+    <color name="navbar">#1F1F1F</color>
 
-    <color name="contentBackground">#212121</color>
+    <color name="contentBackground">#1F1F1F</color>
     <color name="textColor">#D9FFFFFF</color>
     <color name="secondaryTextColor">#A6FFFFFF</color>
 
