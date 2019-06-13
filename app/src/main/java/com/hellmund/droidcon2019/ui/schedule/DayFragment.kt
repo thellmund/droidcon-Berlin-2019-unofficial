@@ -5,20 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.EventDay
 import com.hellmund.droidcon2019.data.model.Talk
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
+import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_day.eventsRecyclerView
 import org.jetbrains.anko.defaultSharedPreferences
 import org.threeten.bp.LocalDate
 import org.threeten.bp.LocalTime
 
-class DayFragment : Fragment() {
+class DayFragment : BaseFragment() {
 
     private val viewModel: DayViewModel by lazy {
         val factory = DayViewModel.Factory(day, requireActivity().application)

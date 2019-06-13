@@ -25,6 +25,7 @@ import com.hellmund.droidcon2019.ui.schedule.details.EventDetailsFragment
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.ui.schedule.filter.FilterFragment
 import com.hellmund.droidcon2019.ui.schedule.search.SearchResultsAdapter
+import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.ui.shared.EqualSpacingItemDecoration
 import kotlinx.android.synthetic.main.fragment_schedule.contentContainer
 import kotlinx.android.synthetic.main.fragment_schedule.fab
@@ -36,7 +37,7 @@ import org.threeten.bp.LocalDate
 import org.threeten.bp.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
-class ScheduleFragment : Fragment() {
+class ScheduleFragment : BaseFragment() {
 
     private lateinit var searchView: SearchView
 
@@ -106,6 +107,7 @@ class ScheduleFragment : Fragment() {
 
     private fun onEventClick(event: Talk) {
         requireFragmentManager().transaction {
+            setCustomAnimations(R.anim.slide_in_right, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out_right)
             replace(R.id.contentFrame, EventDetailsFragment.newInstance(event))
             addToBackStack(null)
         }

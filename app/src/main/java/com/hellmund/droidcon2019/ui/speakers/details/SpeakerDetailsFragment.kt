@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Speaker
+import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_event_details.toolbar
 import kotlinx.android.synthetic.main.fragment_speaker_details.companyTextView
@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_speaker_details.linksRecyclerView
 import kotlinx.android.synthetic.main.fragment_speaker_details.nameTextView
 import kotlinx.android.synthetic.main.fragment_speaker_details.roleTextView
 
-class SpeakerDetailsFragment : Fragment() {
+class SpeakerDetailsFragment : BaseFragment() {
 
     private val speaker: Speaker by lazy {
         checkNotNull(arguments?.getParcelable<Speaker>(KEY_SPEAKER))

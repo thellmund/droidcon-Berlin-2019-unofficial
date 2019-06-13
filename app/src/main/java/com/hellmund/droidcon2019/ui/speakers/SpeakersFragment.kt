@@ -11,12 +11,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.transaction
 import androidx.lifecycle.ViewModelProviders
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Speaker
 import com.hellmund.droidcon2019.ui.shared.BackPressable
+import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.ui.shared.MaterialDividerItemDecoration
 import com.hellmund.droidcon2019.ui.shared.Reselectable
 import com.hellmund.droidcon2019.ui.speakers.details.SpeakerDetailsFragment
@@ -25,7 +25,7 @@ import kotlinx.android.synthetic.main.fragment_speakers.recyclerView
 import kotlinx.android.synthetic.main.fragment_speakers.toolbar
 import kotlin.math.roundToInt
 
-class SpeakersFragment : Fragment(), Reselectable, BackPressable {
+class SpeakersFragment : BaseFragment(), Reselectable, BackPressable {
 
     private val viewModel: SpeakersViewModel by lazy {
         ViewModelProviders.of(requireActivity()).get(SpeakersViewModel::class.java)
@@ -68,6 +68,7 @@ class SpeakersFragment : Fragment(), Reselectable, BackPressable {
 
     private fun onItemClick(speaker: Speaker) {
         requireFragmentManager().transaction {
+            setCustomAnimations(R.anim.slide_in_right, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out_right)
             replace(R.id.contentFrame, SpeakerDetailsFragment.newInstance(speaker))
             addToBackStack(null)
         }
