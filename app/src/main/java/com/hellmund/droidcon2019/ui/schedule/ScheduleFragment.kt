@@ -26,7 +26,6 @@ import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.ui.schedule.filter.FilterFragment
 import com.hellmund.droidcon2019.ui.schedule.search.SearchResultsAdapter
 import com.hellmund.droidcon2019.ui.shared.BaseFragment
-import com.hellmund.droidcon2019.ui.shared.EqualSpacingItemDecoration
 import kotlinx.android.synthetic.main.fragment_schedule.contentContainer
 import kotlinx.android.synthetic.main.fragment_schedule.fab
 import kotlinx.android.synthetic.main.fragment_schedule.searchRecyclerView
@@ -35,7 +34,6 @@ import kotlinx.android.synthetic.main.fragment_schedule.toolbar
 import kotlinx.android.synthetic.main.fragment_schedule.viewPager
 import org.threeten.bp.LocalDate
 import org.threeten.bp.format.DateTimeFormatter
-import kotlin.math.roundToInt
 
 class ScheduleFragment : BaseFragment() {
 
@@ -71,9 +69,6 @@ class ScheduleFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewPager.adapter = daysAdapter
         searchRecyclerView.adapter = searchResultsAdapter
-
-        val spacing = requireContext().resources.getDimension(R.dimen.default_space).roundToInt()
-        searchRecyclerView.addItemDecoration(EqualSpacingItemDecoration(spacing))
 
         tabLayout.addOnTabSelectedListener(onTabSelectedListener)
         tabLayout.setupWithViewPager(viewPager)
