@@ -1,7 +1,7 @@
 package com.hellmund.droidcon2019.data.repository
 
 import android.content.SharedPreferences
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 
 private const val KEY_FAVORITES = "KEY_FAVORITES"
 
@@ -12,11 +12,11 @@ class FavoritesStore(
     private val favorites: Set<String>
         get() = sharedPrefs.getStringSet(KEY_FAVORITES, emptySet())
 
-    fun isFavorite(event: Talk): Boolean {
+    fun isFavorite(event: Session): Boolean {
         return favorites.contains(event.title)
     }
 
-    fun toggleFavorite(event: Talk) {
+    fun toggleFavorite(event: Session) {
         val items = favorites.toMutableSet()
 
         if (items.contains(event.title)) {

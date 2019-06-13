@@ -10,7 +10,7 @@ import android.widget.ImageButton
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.hellmund.droidcon2019.R
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.util.NotificationScheduler
@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.list_item_event.view.titleTextView
 import org.threeten.bp.format.DateTimeFormatter
 
 class AdapterItem(
-    val event: Talk,
+    val event: Session,
     val isFirst: Boolean = false
 ) {
 
@@ -33,7 +33,7 @@ class AdapterItem(
 
     fun bind(
         holder: EventsAdapter.ViewHolder,
-        onItemClick: (Talk) -> Unit,
+        onItemClick: (Session) -> Unit,
         favoritesStore: FavoritesStore
     ) = with(holder.itemView) {
         timeContainer.visibility = if (isFirst) VISIBLE else INVISIBLE
@@ -76,10 +76,10 @@ class AdapterItem(
 
 class EventsAdapter(
     private val favoritesStore: FavoritesStore,
-    private val onItemClick: (Talk) -> Unit
+    private val onItemClick: (Session) -> Unit
 ) : RecyclerView.Adapter<EventsAdapter.ViewHolder>() {
 
-    private val rawItems = mutableListOf<Talk>()
+    private val rawItems = mutableListOf<Session>()
 
     private val allItems = mutableListOf<AdapterItem>()
     private var filteredItems: MutableList<AdapterItem>? = null
@@ -99,7 +99,7 @@ class EventsAdapter(
 
     override fun getItemCount() = items.size
 
-    fun update(events: List<Talk>) {
+    fun update(events: List<Session>) {
         rawItems.clear()
         rawItems += events
 
@@ -119,7 +119,7 @@ class EventsAdapter(
         notifyDataSetChanged()
     }
 
-    private fun filterItems(events: List<Talk>, currentFilter: Filter) {
+    private fun filterItems(events: List<Session>, currentFilter: Filter) {
         val filteredEvents = events.filter { it.isInFilter(currentFilter, favoritesStore) }
         val filteredEventsByTime = filteredEvents.groupBy { it.startTime }
         val newFilteredItems = mutableListOf<AdapterItem>()

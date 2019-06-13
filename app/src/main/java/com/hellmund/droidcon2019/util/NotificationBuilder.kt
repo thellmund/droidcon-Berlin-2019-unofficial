@@ -6,7 +6,7 @@ import android.content.Context
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import com.hellmund.droidcon2019.R
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.ui.MainActivity
 
 object NotificationBuilder {
@@ -14,7 +14,7 @@ object NotificationBuilder {
     fun buildNotification(
         context: Context,
         id: Int,
-        event: Talk
+        event: Session
     ): Notification {
         val launchIntent = MainActivity.newNotificationIntent(context, event)
         val launchPendingIntent = PendingIntent.getActivity(

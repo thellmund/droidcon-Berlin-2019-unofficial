@@ -12,7 +12,7 @@ interface Filterable {
 }
 
 @Parcelize
-data class Talk(
+data class Session(
     val title: String,
     val stage: Stage,
     val speaker: String? = null,

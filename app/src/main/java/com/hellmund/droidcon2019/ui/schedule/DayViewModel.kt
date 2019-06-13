@@ -7,7 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.hellmund.droidcon2019.data.model.EventDay
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.util.plusAssign
 import io.reactivex.disposables.CompositeDisposable
 
@@ -18,8 +18,8 @@ class DayViewModel(
 
     private val repository = EventsRepository.getInstance(application.applicationContext)
 
-    private val _events = MutableLiveData<List<Talk>>()
-    val events: LiveData<List<Talk>> = _events
+    private val _events = MutableLiveData<List<Session>>()
+    val events: LiveData<List<Session>> = _events
 
     private val compositeDisposable = CompositeDisposable()
 

@@ -10,7 +10,7 @@ import androidx.core.os.bundleOf
 import androidx.core.view.isVisible
 import androidx.fragment.app.transaction
 import com.hellmund.droidcon2019.R
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.ui.speakers.SpeakersRepository
@@ -44,8 +44,8 @@ class EventDetailsFragment : BaseFragment() {
         SpeakersRepository(requireContext())
     }
 
-    private val event: Talk by lazy {
-        checkNotNull(arguments?.getParcelable<Talk>(KEY_EVENT))
+    private val event: Session by lazy {
+        checkNotNull(arguments?.getParcelable<Session>(KEY_EVENT))
     }
 
     private val onScrollListener = ViewTreeObserver.OnScrollChangedListener {
@@ -141,7 +141,7 @@ class EventDetailsFragment : BaseFragment() {
         private const val KEY_EVENT = "KEY_EVENT"
 
         fun newInstance(
-            event: Talk
+            event: Session
         ) = EventDetailsFragment().apply {
             arguments = bundleOf(KEY_EVENT to event)
         }

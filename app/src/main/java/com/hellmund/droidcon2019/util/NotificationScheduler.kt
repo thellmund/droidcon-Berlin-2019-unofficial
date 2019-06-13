@@ -8,7 +8,7 @@ import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.hellmund.droidcon2019.BuildConfig
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.ui.schedule.EventsRepository
 import org.threeten.bp.ZoneId
 
@@ -19,7 +19,7 @@ class NotificationScheduler(
     private val alarmManager: AlarmManager
         get() = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
-    fun schedule(event: Talk) {
+    fun schedule(event: Session) {
         val time = event.day.toDate()
             .atStartOfDay()
             .withHour(event.startTime.hour)
@@ -35,12 +35,12 @@ class NotificationScheduler(
         alarmManager.setExact(AlarmManager.RTC, notificationTime, alarmIntent)
     }
 
-    fun remove(event: Talk) {
+    fun remove(event: Session) {
         val alarmIntent = getAlarmIntent(event)
         alarmManager.cancel(alarmIntent)
     }
 
-    private fun getAlarmIntent(event: Talk): PendingIntent {
+    private fun getAlarmIntent(event: Session): PendingIntent {
         val eventsRepository = EventsRepository.getInstance(context)
 
         val id = eventsRepository.getEventId(event)

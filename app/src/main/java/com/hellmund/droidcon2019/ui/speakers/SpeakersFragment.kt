@@ -60,6 +60,7 @@ class SpeakersFragment : BaseFragment(), Reselectable, BackPressable {
         super.onResume()
         val activity = requireActivity() as AppCompatActivity
         activity.setSupportActionBar(toolbar)
+        adapter.filter.filter("")
     }
 
     private fun render(speakers: List<Speaker>) {
@@ -118,6 +119,11 @@ class SpeakersFragment : BaseFragment(), Reselectable, BackPressable {
         } else {
             false
         }
+    }
+
+    override fun onDestroyView() {
+        recyclerView.adapter = null
+        super.onDestroyView()
     }
 
     companion object {

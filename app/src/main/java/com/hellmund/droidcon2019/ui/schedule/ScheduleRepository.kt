@@ -4,7 +4,7 @@ import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.hellmund.droidcon2019.data.model.EventDay
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.util.EventSerializer
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
@@ -15,7 +15,7 @@ class EventsRepository(
     context: Context
 ) {
 
-    private val type = object : TypeToken<List<Talk>>() {}.type
+    private val type = object : TypeToken<List<Session>>() {}.type
     private val gson: Gson = EventSerializer.gson
 
     init {
@@ -25,16 +25,16 @@ class EventsRepository(
     private fun loadEventsFromAssets(context: Context) {
         val asset = context.assets.open("schedule_v1.json")
         val text = asset.bufferedReader().readText()
-        events += gson.fromJson<List<Talk>>(text, type)
+        events += gson.fromJson<List<Session>>(text, type)
     }
 
-    fun getAll(): List<Talk> = events
+    fun getAll(): List<Session> = events
 
-    fun getEventId(event: Talk): Int {
+    fun getEventId(event: Session): Int {
         return events.indexOf(event)
     }
 
-    fun getEventsByDay(day: EventDay): Observable<List<Talk>> {
+    fun getEventsByDay(day: EventDay): Observable<List<Session>> {
         return Observable
             .fromCallable { events.filter { it.day == day } }
             .subscribeOn(Schedulers.io())
@@ -42,7 +42,7 @@ class EventsRepository(
     }
 
     companion object {
-        private val events = mutableListOf<Talk>()
+        private val events = mutableListOf<Session>()
         private var instance: EventsRepository? = null
 
         fun getInstance(context: Context): EventsRepository {

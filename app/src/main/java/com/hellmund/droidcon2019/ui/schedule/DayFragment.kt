@@ -8,12 +8,12 @@ import androidx.core.os.bundleOf
 import androidx.lifecycle.ViewModelProviders
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.EventDay
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.util.observe
-import kotlinx.android.synthetic.main.fragment_day.eventsRecyclerView
+import kotlinx.android.synthetic.main.fragment_day.scheduleRecyclerView
 import org.jetbrains.anko.defaultSharedPreferences
 import org.threeten.bp.LocalDate
 import org.threeten.bp.LocalTime
@@ -45,17 +45,17 @@ class DayFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewModel.events.observe(viewLifecycleOwner, this::render)
-        eventsRecyclerView.adapter = adapter
+        scheduleRecyclerView.adapter = adapter
 
         val intent = requireActivity().intent
-        val eventFromNotification = intent.getParcelableExtra(KEY_EVENT) as? Talk
+        val eventFromNotification = intent.getParcelableExtra(KEY_EVENT) as? Session
         eventFromNotification?.let {
             showEventDetails(it)
             intent.removeExtra(KEY_EVENT)
         }
     }
 
-    private fun render(events: List<Talk>) {
+    private fun render(events: List<Session>) {
         adapter.update(events)
 
         if (LocalDate.now() == day.toDate()) {
@@ -68,16 +68,16 @@ class DayFragment : BaseFragment() {
                 .lastOrNull { (_, item) -> item.event.startTime.isBefore(now) }
 
             currentTime?.let { (index, _) ->
-                eventsRecyclerView.scrollToPosition(index)
+                scheduleRecyclerView.scrollToPosition(index)
             }
         }
     }
 
-    private fun onEventClick(event: Talk) {
+    private fun onEventClick(event: Session) {
         showEventDetails(event)
     }
 
-    private fun showEventDetails(event: Talk) {
+    private fun showEventDetails(event: Session) {
         onEventClick.invoke(event)
     }
 
@@ -85,7 +85,12 @@ class DayFragment : BaseFragment() {
         adapter.applyFilter(filter)
     }
 
-    private var onEventClick: (Talk) -> Unit = {}
+    override fun onDestroyView() {
+        scheduleRecyclerView.adapter = null
+        super.onDestroyView()
+    }
+
+    private var onEventClick: (Session) -> Unit = {}
 
     companion object {
 
@@ -94,7 +99,7 @@ class DayFragment : BaseFragment() {
 
         fun newInstance(
             day: EventDay,
-            onEventClick: (Talk) -> Unit
+            onEventClick: (Session) -> Unit
         ) = DayFragment().apply {
             arguments = bundleOf(KEY_EVENT_DAY to day)
             this.onEventClick = onEventClick

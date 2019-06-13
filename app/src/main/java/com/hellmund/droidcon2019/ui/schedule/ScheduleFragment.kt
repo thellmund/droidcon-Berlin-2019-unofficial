@@ -20,7 +20,7 @@ import androidx.fragment.app.transaction
 import com.google.android.material.tabs.TabLayout
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.EventDay
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.ui.schedule.details.EventDetailsFragment
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import com.hellmund.droidcon2019.ui.schedule.filter.FilterFragment
@@ -47,10 +47,6 @@ class ScheduleFragment : BaseFragment() {
         override fun onTabUnselected(tab: TabLayout.Tab) = Unit
     }
 
-    private val daysAdapter: DaysAdapter by lazy {
-        DaysAdapter(childFragmentManager)
-    }
-
     private val searchResultsAdapter: SearchResultsAdapter by lazy {
         SearchResultsAdapter(this::onEventClick)
     }
@@ -67,7 +63,7 @@ class ScheduleFragment : BaseFragment() {
     ): View? = inflater.inflate(R.layout.fragment_schedule, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewPager.adapter = daysAdapter
+        viewPager.adapter = DaysAdapter(childFragmentManager)
         searchRecyclerView.adapter = searchResultsAdapter
 
         tabLayout.addOnTabSelectedListener(onTabSelectedListener)
@@ -82,7 +78,8 @@ class ScheduleFragment : BaseFragment() {
     }
 
     private fun onFilterChanged(filter: Filter) {
-        val fragment = daysAdapter.getFragmentAt(viewPager.currentItem)
+        val adapter = viewPager.adapter as DaysAdapter
+        val fragment = adapter.getFragmentAt(viewPager.currentItem)
         fragment?.applyFilter(filter)
     }
 
@@ -100,7 +97,7 @@ class ScheduleFragment : BaseFragment() {
         viewPager.currentItem = index
     }
 
-    private fun onEventClick(event: Talk) {
+    private fun onEventClick(event: Session) {
         requireFragmentManager().transaction {
             setCustomAnimations(R.anim.slide_in_right, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out_right)
             replace(R.id.contentFrame, EventDetailsFragment.newInstance(event))
@@ -167,6 +164,7 @@ class ScheduleFragment : BaseFragment() {
 
     override fun onDestroyView() {
         tabLayout.removeOnTabSelectedListener(onTabSelectedListener)
+        searchRecyclerView.adapter = null
         super.onDestroyView()
     }
 

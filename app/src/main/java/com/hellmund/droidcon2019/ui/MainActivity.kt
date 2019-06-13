@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.fragment.app.transaction
 import com.hellmund.droidcon2019.R
-import com.hellmund.droidcon2019.data.model.Talk
+import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.ui.schedule.ScheduleFragment
 import com.hellmund.droidcon2019.ui.shared.BackPressable
 import com.hellmund.droidcon2019.ui.shared.Reselectable
@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
 
         fun newNotificationIntent(
             context: Context,
-            event: Talk
+            event: Session
         ): Intent {
             return Intent(context, MainActivity::class.java).apply {
                 putExtras(bundleOf(KEY_EVENT to event))
