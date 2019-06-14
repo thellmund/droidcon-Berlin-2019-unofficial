@@ -3,6 +3,8 @@ package com.hellmund.droidcon2019.ui.schedule
 import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.ArrayMap
 import android.view.LayoutInflater
 import android.view.Menu
@@ -10,6 +12,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.OvershootInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
@@ -83,6 +86,7 @@ class ScheduleFragment : BaseFragment() {
         tabLayout.setupWithViewPager(viewPager)
 
         setCurrentDay()
+        hideFilterCard()
 
         fab.setOnClickListener { openFilters() }
         activeFiltersContainer.setOnClickListener { openFilters() }
@@ -94,6 +98,42 @@ class ScheduleFragment : BaseFragment() {
         }
     }
 
+    private var isCardHidden = false
+
+    private fun hideFilterCard() {
+        if (isCardHidden) {
+            return
+        }
+
+        isCardHidden = true
+
+        val handler = Handler(Looper.getMainLooper())
+        handler.post {
+            activeFiltersContainer.animate()
+                .setDuration(600L)
+                .translationYBy(400f)
+                .setInterpolator(OvershootInterpolator(1f))
+                .start()
+        }
+    }
+
+    private fun showFilterCard() {
+        if (isCardHidden.not()) {
+            return
+        }
+
+        isCardHidden = false
+
+        val handler = Handler(Looper.getMainLooper())
+        handler.post {
+            activeFiltersContainer.animate()
+                .setDuration(600L)
+                .translationYBy(-400f)
+                .setInterpolator(OvershootInterpolator(1f))
+                .start()
+        }
+    }
+
     private fun openFilters() {
         val fragment = FilterFragment.newInstance(this::onFilterChanged)
         fragment.show(childFragmentManager, fragment.tag)
@@ -102,7 +142,13 @@ class ScheduleFragment : BaseFragment() {
     private fun onFilterChanged(filter: Filter) {
         val isFilterActive = filter != Filter.empty()
         fab.isVisible = isFilterActive.not()
-        activeFiltersContainer.isVisible = isFilterActive
+
+        if (isFilterActive) {
+            showFilterCard()
+        } else {
+            hideFilterCard()
+        }
+        // activeFiltersContainer.isVisible = isFilterActive
 
         if (isFilterActive) {
             activeFiltersChipGroup.removeAllViews()
