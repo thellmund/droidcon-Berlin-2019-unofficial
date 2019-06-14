@@ -16,7 +16,7 @@ class DayViewModel(
     application: Application
 ) : AndroidViewModel(application) {
 
-    private val repository = EventsRepository.getInstance(application.applicationContext)
+    private val repository = ScheduleRepository.getInstance(application.applicationContext)
 
     private val _events = MutableLiveData<List<Session>>()
     val events: LiveData<List<Session>> = _events

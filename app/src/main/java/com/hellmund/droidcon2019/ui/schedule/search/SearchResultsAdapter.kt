@@ -47,7 +47,8 @@ class SearchResultsAdapter(
             onItemClick: (Session) -> Unit
         ) = with(itemView) {
             titleTextView.text = event.title
-            presenterTextView.text = event.speaker
+            presenterTextView.isVisible = event.speakers.isNotEmpty()
+            presenterTextView.text = event.formattedSpeakers
             stageTextView.text = event.stage.name
             favoriteButton.isVisible = false
             setOnClickListener { onItemClick(event) }

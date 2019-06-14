@@ -9,7 +9,7 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import com.hellmund.droidcon2019.BuildConfig
 import com.hellmund.droidcon2019.data.model.Session
-import com.hellmund.droidcon2019.ui.schedule.EventsRepository
+import com.hellmund.droidcon2019.ui.schedule.ScheduleRepository
 import org.threeten.bp.ZoneId
 
 class NotificationScheduler(
@@ -41,7 +41,7 @@ class NotificationScheduler(
     }
 
     private fun getAlarmIntent(event: Session): PendingIntent {
-        val eventsRepository = EventsRepository.getInstance(context)
+        val eventsRepository = ScheduleRepository.getInstance(context)
 
         val id = eventsRepository.getEventId(event)
         val notification = NotificationBuilder.buildNotification(context, id, event)

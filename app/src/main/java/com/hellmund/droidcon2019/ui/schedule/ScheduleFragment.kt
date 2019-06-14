@@ -43,8 +43,16 @@ class ScheduleFragment : BaseFragment() {
         override fun onTabSelected(tab: TabLayout.Tab) {
             viewPager.setCurrentItem(tab.position, true)
         }
-        override fun onTabReselected(tab: TabLayout.Tab) = Unit
+        override fun onTabReselected(tab: TabLayout.Tab) {
+            val adapter = viewPager.adapter as DaysAdapter
+            val fragment = adapter.getFragmentAt(viewPager.currentItem)
+            fragment?.scrollToTop()
+        }
         override fun onTabUnselected(tab: TabLayout.Tab) = Unit
+    }
+
+    private val daysAdapter: DaysAdapter by lazy {
+        DaysAdapter(childFragmentManager, this::onEventClick)
     }
 
     private val searchResultsAdapter: SearchResultsAdapter by lazy {
@@ -63,7 +71,7 @@ class ScheduleFragment : BaseFragment() {
     ): View? = inflater.inflate(R.layout.fragment_schedule, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewPager.adapter = DaysAdapter(childFragmentManager)
+        viewPager.adapter = daysAdapter
         searchRecyclerView.adapter = searchResultsAdapter
 
         tabLayout.addOnTabSelectedListener(onTabSelectedListener)
@@ -79,14 +87,18 @@ class ScheduleFragment : BaseFragment() {
 
     private fun onFilterChanged(filter: Filter) {
         val adapter = viewPager.adapter as DaysAdapter
-        val fragment = adapter.getFragmentAt(viewPager.currentItem)
-        fragment?.applyFilter(filter)
+
+        for (index in 0 until adapter.count) {
+            val fragment = adapter.getFragmentAt(index)
+            fragment?.applyFilter(filter)
+        }
     }
 
     override fun onResume() {
         super.onResume()
         val activity = requireActivity() as AppCompatActivity
         activity.setSupportActionBar(toolbar)
+
     }
 
     private fun setCurrentDay() {
@@ -136,7 +148,7 @@ class ScheduleFragment : BaseFragment() {
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
-            private val events = EventsRepository.getInstance(requireContext()).getAll()
+            private val events = ScheduleRepository.getInstance(requireContext()).getAll()
 
             override fun onQueryTextSubmit(newText: String?): Boolean {
                 if (newText.isNullOrBlank()) {
@@ -164,24 +176,28 @@ class ScheduleFragment : BaseFragment() {
 
     override fun onDestroyView() {
         tabLayout.removeOnTabSelectedListener(onTabSelectedListener)
+        viewPager.adapter = null
         searchRecyclerView.adapter = null
         super.onDestroyView()
     }
 
-    inner class DaysAdapter(
-        fm: FragmentManager
+    class DaysAdapter(
+        fm: FragmentManager,
+        private val onEventClick: (Session) -> Unit
     ) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
         private val cache = ArrayMap<Int, DayFragment>()
 
         override fun getItem(position: Int): Fragment {
             val eventDay = EventDay.values()[position]
-            return DayFragment.newInstance(eventDay, ::onEventClick).also {
+            return DayFragment.newInstance(eventDay, onEventClick).also {
                 cache[position] = it
             }
         }
 
-        fun getFragmentAt(index: Int) = cache[index]
+        fun getFragmentAt(index: Int): DayFragment? {
+            return cache[index]
+        }
 
         override fun getCount(): Int {
             return EventDay.values().size

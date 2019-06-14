@@ -6,11 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.chip.Chip
 import com.hellmund.droidcon2019.R
+import com.hellmund.droidcon2019.data.model.Level
 import com.hellmund.droidcon2019.data.model.Stage
 import com.hellmund.droidcon2019.data.model.Type
 import com.hellmund.droidcon2019.ui.shared.RoundedBottomSheetDialogFragment
 import kotlinx.android.synthetic.main.fragment_filter.closeButton
 import kotlinx.android.synthetic.main.fragment_filter.favoritesChip
+import kotlinx.android.synthetic.main.fragment_filter.levelChipGroup
 import kotlinx.android.synthetic.main.fragment_filter.stagesChipGroup
 import kotlinx.android.synthetic.main.fragment_filter.typesChipGroup
 
@@ -41,11 +43,10 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         favoritesChip.setOnCloseIconClickListener {
             val chip = it as Chip
             chip.isCloseIconVisible = false
-            filterStore.toggleFavorites()
-            onFilterChanged(filterStore.get())
+            chip.isCloseIconVisible = false
         }
 
-        val stages = Stage.values().map { it.name }
+        val stages = Stage.values().toList().minus(Stage.None).map { it.name }
         val stageChips = getChips(stages)
         stageChips.forEachIndexed { index, chip ->
             chip.isChecked = filterStore.get().stages.contains(Stage.values()[index])
@@ -58,14 +59,13 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
             }
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
+                c.isChecked = false
                 c.isCloseIconVisible = false
-                filterStore.toggleStage(Stage.values()[index])
-                onFilterChanged(filterStore.get())
             }
             stagesChipGroup.addView(chip)
         }
 
-        val types = Type.values().map { it.name }
+        val types = Type.values().toList().minus(Type.None).map { it.value }
         val typeChips = getChips(types)
         typeChips.forEachIndexed { index, chip ->
             chip.isChecked = filterStore.get().types.contains(Type.values()[index])
@@ -79,10 +79,28 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
                 c.isCloseIconVisible = false
-                filterStore.toggleType(Type.values()[index])
-                onFilterChanged(filterStore.get())
+                c.isCloseIconVisible = false
             }
             typesChipGroup.addView(chip)
+        }
+
+        val levels = Level.values().toList().minus(Level.None).map { it.name }
+        val levelChips = getChips(levels)
+        levelChips.forEachIndexed { index, chip ->
+            chip.isChecked = filterStore.get().levels.contains(Level.values()[index])
+
+            chip.setOnCheckedChangeListener { compoundButton, isChecked ->
+                val c = compoundButton as Chip
+                c.isCloseIconVisible = isChecked
+                filterStore.toggleLevel(Level.values()[index])
+                onFilterChanged(filterStore.get())
+            }
+            chip.setOnCloseIconClickListener {
+                val c = it as Chip
+                c.isCloseIconVisible = false
+                c.isCloseIconVisible = false
+            }
+            levelChipGroup.addView(chip)
         }
     }
 

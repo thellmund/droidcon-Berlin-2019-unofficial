@@ -20,11 +20,12 @@ class SpeakersRepository(
         speakers += gson.fromJson<List<Speaker>>(text, type)
     }
 
-    fun getSpeaker(name: String): Speaker {
+    fun getSpeaker(name: String): Speaker? {
         if (speakers.isEmpty()) {
             loadSpeakers()
         }
-        return speakers.first { it.name == name }
+
+        return speakers.firstOrNull {it.name == name }
     }
 
     fun getSpeakers(): Observable<List<Speaker>> {

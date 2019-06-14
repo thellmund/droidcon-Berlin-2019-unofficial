@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Speaker
@@ -74,7 +75,9 @@ class SpeakersAdapter(
                 .into(imageView)
 
             nameTextView.text = speaker.name
+            roleTextView.isVisible = speaker.role.isNotEmpty()
             roleTextView.text = speaker.role
+            companyTextView.isVisible = speaker.company.isNotEmpty()
             companyTextView.text = speaker.company
 
             setOnClickListener { onItemClick(speaker) }

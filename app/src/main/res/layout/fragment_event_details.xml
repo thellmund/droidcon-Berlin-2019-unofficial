@@ -16,16 +16,16 @@
         app:title="@string/speakers"
         app:titleTextColor="@color/textColor" />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/contentBackground">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/contentBackground"
             android:orientation="vertical"
             android:paddingBottom="@dimen/default_space">
 
@@ -62,10 +62,16 @@
                 android:textAllCaps="true"
                 android:textSize="16sp" />
 
-            <include layout="@layout/view_speaker_card" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/speakersRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         </LinearLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

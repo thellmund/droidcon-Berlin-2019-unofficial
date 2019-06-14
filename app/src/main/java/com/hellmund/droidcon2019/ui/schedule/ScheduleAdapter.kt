@@ -44,7 +44,8 @@ class AdapterItem(
         timePeriodTextView.text = timePeriodFormatter.format(event.startTime)
 
         titleTextView.text = event.title
-        presenterTextView.text = event.speaker
+        presenterTextView.isVisible = event.speakers.isNotEmpty()
+        presenterTextView.text = event.formattedSpeakers
         stageTextView.text = event.stage.name
 
         updateFavoriteIcon(favoriteButton, favoritesStore)

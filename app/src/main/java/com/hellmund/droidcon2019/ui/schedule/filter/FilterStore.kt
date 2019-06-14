@@ -3,6 +3,7 @@ package com.hellmund.droidcon2019.ui.schedule.filter
 import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
+import com.hellmund.droidcon2019.data.model.Level
 import com.hellmund.droidcon2019.data.model.Stage
 import com.hellmund.droidcon2019.data.model.Type
 import org.jetbrains.anko.defaultSharedPreferences
@@ -12,7 +13,8 @@ private const val KEY_FILTER = "KEY_FILTER"
 data class Filter(
     var isFavorites: Boolean = false,
     var stages: MutableList<Stage> = mutableListOf(),
-    var types: MutableList<Type> = mutableListOf()
+    var types: MutableList<Type> = mutableListOf(),
+    var levels: MutableList<Level> = mutableListOf()
 ) {
 
     companion object {
@@ -65,6 +67,16 @@ class FilterStore(
                 types.remove(type)
             } else {
                 types.add(type)
+            }
+        }
+    }
+
+    fun toggleLevel(level: Level) {
+        transaction {
+            if (levels.contains(level)) {
+                levels.remove(level)
+            } else {
+                levels.add(level)
             }
         }
     }

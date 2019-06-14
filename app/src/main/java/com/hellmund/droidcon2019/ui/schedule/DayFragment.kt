@@ -85,6 +85,10 @@ class DayFragment : BaseFragment() {
         adapter.applyFilter(filter)
     }
 
+    fun scrollToTop() {
+        scheduleRecyclerView.smoothScrollToPosition(0)
+    }
+
     override fun onDestroyView() {
         scheduleRecyclerView.adapter = null
         super.onDestroyView()

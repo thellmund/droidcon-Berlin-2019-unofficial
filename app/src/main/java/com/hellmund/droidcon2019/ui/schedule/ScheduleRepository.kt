@@ -9,9 +9,7 @@ import com.hellmund.droidcon2019.util.EventSerializer
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 
-private const val KEY_EVENTS = "KEY_EVENTS"
-
-class EventsRepository(
+class ScheduleRepository(
     context: Context
 ) {
 
@@ -23,7 +21,7 @@ class EventsRepository(
     }
 
     private fun loadEventsFromAssets(context: Context) {
-        val asset = context.assets.open("schedule_v1.json")
+        val asset = context.assets.open("schedule_v2.json")
         val text = asset.bufferedReader().readText()
         events += gson.fromJson<List<Session>>(text, type)
     }
@@ -43,11 +41,11 @@ class EventsRepository(
 
     companion object {
         private val events = mutableListOf<Session>()
-        private var instance: EventsRepository? = null
+        private var instance: ScheduleRepository? = null
 
-        fun getInstance(context: Context): EventsRepository {
+        fun getInstance(context: Context): ScheduleRepository {
             if (instance == null) {
-                instance = EventsRepository(context)
+                instance = ScheduleRepository(context)
             }
             return instance!!
         }

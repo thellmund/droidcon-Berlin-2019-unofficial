@@ -262,7 +262,8 @@
     {
         "description": "Hannes is an enthusiastic android engineer who takes the green little robot very close to his heart. He works as Lead Android Developer at Freeletics.  If Hannes is not coding then he is recording new episodes as co-host for TheContext podcast or writing his thoughts down in his blog (hannesdorfmann.com).\n\nGabriel is originally from Berlin but now lives in Munich where he works at Freeletics. He is developing Android apps since 2011 and is particularly interested in app architecture and code generation.",
         "links": [
-            "https://twitter.com/sockeqwe"
+            "https://twitter.com/sockeqwe", 
+            "https://twitter.com/gabrielittner"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6e0b91b4f2684b4c9daf7e946225b1d3~mv2.png",
         "role": "Android Team Lead & Android Developer",
@@ -390,13 +391,13 @@
         "name": "Sebastian Porst"
     },
     {
-        "description": "Vladimir Ivanov is a Mobile Solution Architect in EPAM Systems. Basically it means he designs software systems with focus on the mobile apps. Coming from Android background Vladimir is also proficient in React-Native and cloud technologies and incredibly passionate about sharing his knowledge.​",
+        "description": "Ivanov is a Mobile Solution Architect in EPAM Systems. Basically it means he designs software systems with focus on the mobile apps. Coming from Android background Vladimir is also proficient in React-Native and cloud technologies and incredibly passionate about sharing his knowledge.​",
         "links": [
             "https://twitter.com/vvsevolodovich"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_cc5940914564428db3b64dc894cf9cc4~mv2.png",
-        "role": "EPAM Systems",
-        "company": "​",
+        "role": "Mobile Solution Architect",
+        "company": "EPAM Systems​",
         "name": "Vladimir Ivanov"
     },
     {
@@ -557,7 +558,7 @@
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f673b5dab73e45b9934ef492f04b7bff~mv2.png",
         "role": "Software Solutions Architect",
         "company": "Freelancer",
-        "name": "Kai Koenig"
+        "name": "Koenig"
     },
     {
         "description": "After several years working like a mobile consultant, Enrico moved to London working as lead developer @Smartfocus.com developing an indoor positioning system based on beacons. Since May 2017 working @ TUI.co.uk where he's creating the next generation of mobile travel app for TUI customers.​",
@@ -1005,5 +1006,84 @@
         "role": "Director,  Apps and Games Business Development",
         "company": "Google Play",
         "name": "Purnima Kochikar"
+    }, 
+    {
+        "description": "I'm Marcus, a freelance software developer from Berlin.\n\nI'm interested in free software and decentralized, open conmmunication. I have experience working with embedded Linux systems. Both in a commercial automotive context as well as the Android Open Source Project.\n\nSince 2016 I'm involved in the F-Droid project. I maintain various apps there and contribute to client, server and infrastructure.\n\nCurrently I'm working on designing and implementing a free and distributed alternative to the centralized and proprietary Google/Firebase cloud messaging system. This project is funded in the 5th round of Prototype Fund. The Prototype Fund is a funding program by the Federal Ministry of Education and Research (BMBF). A very high level project overview can currently be found here: prototypefund.de/project/open-source-push-service-fuer-android-apps/ (German).",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=c46c2eb68ce0f10447f2ae10eebd4624,200,200,True,False,b1-61e5-4a26-9ca3-c9f30e3eaa08.75d56216-f40a-4ed5-9600-21139baf1234.jpg",
+        "role": "",
+        "company": "F-Froid, free software",
+        "name": "Marcus Hoffmann"
+    }, 
+    {
+        "description": "Kevin McDonagh is the founder and CEO of Novoda, Europe’s largest and fastest growing independent Android consultancy with offices in London and Berlin.\n\nFounded in 2008, Novoda offers software development exclusively for the Android platform, helping companies embrace Android strategies while providing assured development quality for manufacturers like Sony and Motorola.\n\nNovoda works with big businesses across all sectors as well as with many venture capital funded tech start-ups such as Songkick, Podio, Meetup and WeeWorld. It also recently delivered a native suite of Android applications for Tesco’s new hudl tablet including its flagship ‘Tesco groceries’ app and ‘Tesco launcher’.\n\nNovoda remains active in Android’s community by organising the London Android user group and the London arm of Droidcon, which is the UK’s largest Android conference.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=d257fbf772243ab113cf7294a115c17c,200,200,True,False,b1-61e5-4a26-9ca3-c9f30e3eaa08.3420cd46-b213-4acd-aa19-504b159f2a78.jpg",
+        "role": "CEO",
+        "company": "Novoda",
+        "name": "Kevin McDonagh"
+    }, 
+    {
+        "description": "Part-time Android Freelancer, part-time Entrepreneur, founder of Hamburg Coding School.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=9519ad2704fdccf19c1d368a086703fd,200,200,True,False,59-b76b-4f88-a408-4fc6b4f77258.77e38e46-c61f-43da-b9a3-5ee7f0ab6664.jpg",
+        "role": "Android Freelancer and Entrepreneur",
+        "company": "",
+        "name": "Teresa Holfeld"
+    }, 
+    {
+        "description": "Carrie is the engineering manager for the Android Listener team at SoundCloud. Before moving into management, she spent 9 years working as an Android engineer.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=9716bb2cb4f2931514c5db9b77c975f4,200,200,True,False,e9-9634-415c-9a90-8ba2e343114a.d5ebe891-d4ac-404b-bacb-af321954906b.jpg",
+        "role": "Engineering Manager",
+        "company": "SoundCloud",
+        "name": "Carrie Hall"
+    }, 
+    {
+        "description": "Hasan Hoşgel is a dedicated Android developer with professional programming experience since 2003. Since 2010 doing all day long Android application development and was from 2016 to 2019 a Google Developer Expert for Android.\nContinuous improvement of the architecture, performance and also quality are his dedication.\nHe works for MHP - A Porsche Company, beforehand he worked for companies like LAB1886 - The Incubator of Daimler AG, ImmobilienScout24 & Kitchen Stories.\nAs a co-organizer of the “GDG Berlin Android” and as a speaker, he attended many conferences and several Google Developer Groups across Europe. As well being in program committees and organization of conferences.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=0d916b1895b00e300a9e07b7dc945faa,200,200,True,False,1a-6747-4b5e-aead-5941b1b048e3.9e7bd723-de8b-4097-860f-8fe23bc38cb8.jpg",
+        "role": "Lead Android Engineer",
+        "company": "MHP - A Porsche Company",
+        "name": "Hasan Hosgel"
+    }, 
+    {
+        "description": "Miriam leads the development team at mobile agency Karlmax Berlin. Her past involves software development for Android and other platforms, freelancing and attending the very first Berlin droidcon.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=1243680c2f5a241b0b0b1c37c38cef57,200,200,True,False,59-b76b-4f88-a408-4fc6b4f77258.f6905f0b-822e-4daa-a57d-c5388504b805.jpg",
+        "role": "CTO",
+        "company": "Karlmax Berlin",
+        "name": "Miriam Busch"
+    },
+    {
+        "description": "Studied in Berkeley, 10 years of in-house and agency recruiting experience mostly for tech startups. Sample projects: managed a recruiting team at GetYourGuide in Berlin, King in Stockholm, Farfetch in London. Currently helping TIER mobility to scale their teams and dominate the escooter industry in Europe.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=cb650ba571be7211d3f7373811c0277c,200,200,True,False,59-b76b-4f88-a408-4fc6b4f77258.2b0e9bed-2c34-4abe-aa88-f74aad7d5a36.jpg",
+        "role": "Founder",
+        "company": "tribe.xyz",
+        "name": "Martin Bernard"
+    }, 
+    {
+        "description": "An Android enthusiast. Developer. Design fanboy. Founder at Snapp Mobile Germany. Google Developer Expert on Android",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=ba14d2aabeb5ad92d983883107e58885,200,200,True,False,6fb29347-594b-45d0-9703-4d908eaa7afb.jpg",
+        "role": "Founder and Android Lead",
+        "company": "Snapp Mobile",
+        "name": "Juhani Lehtimäki"
+    }, 
+    {
+        "description": "Danny built mobile applications for companies like Viacom, Groupon, eBay and Alcatel. He is a Google Developer Expert for Android Kotlin. Before there was Android he was already active in the Blackberry development community.",
+        "links": [],
+        "imageUrl": "https://sessionize.com/image?f=17d9043162652153f147c6d889b5f829,200,200,True,False,b1-61e5-4a26-9ca3-c9f30e3eaa08.47115491-ddf4-4f76-bc65-4008353af5fa.jpg",
+        "role": "Google Developer Expert",
+        "company": "sporttotal.tv",
+        "name": "Danny Preussler"
+    },
+    {
+        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f673b5dab73e45b9934ef492f04b7bff~mv2.png",
+        "description": "I am a Software Solutions Architect specialised in web and mobile technologies using client-side platforms such as mobile web, Flutter and Android.   Another focus of my work is building and the integration with JVM-backend platforms such as Java, Kotlin, ColdFusion, Lucee and others like Go and Python. I spend most of my work time contributing to projects of various clients and sizes, fulfilling the role of an architect, principal developer, consultant or mentor/instructor.​",
+        "company": "Freelancer",
+        "name": "Kai Koenig",
+        "role": "Software Solutions Architect"
     }
 ]

@@ -1,0 +1,1791 @@
+[
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "08:00",
+        "title": "Check-In/Registration",
+        "endTime": "09:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "During this hour, attendees will be able to suggest talks to present during the community day. Over 20 slots are available to the community!",
+        "startTime": "09:30",
+        "title": "Welcome and Community Day Planning",
+        "endTime": "10:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "In this fast paced format, you will have a chance to network with and meet other attendees. Find people with common interests and make lasting connections!",
+        "startTime": "10:30",
+        "title": "Speed Networking",
+        "endTime": "10:50",
+        "type": "",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Marcus Hoffmann",
+            "Kai Koenig", 
+            "Vladimir Ivanov",
+            "Attendee TBA", 
+            "Kevin McDonagh"
+        ],
+        "description": "Android is open source but as recent events have shown, getting locked out of the PlayStore or as a Google Partner can have catastrophic consequences for developers and companies.\nWhile in many regions, the Google PlayStore reigns supreme and might even called a monopoly, other regions are able to thrive. With a recent spate of developer accounts being blocked with little or no recourse for developers, some are asking how they can affect positive change while protecting themselves, their companies and investments. Join us as our panelists discuss the PlayStore and the power of Google.",
+        "startTime": "11:00",
+        "title": "PlayStore and the Power of Google",
+        "endTime": "12:00",
+        "type": "Panel Discussion",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:00",
+        "title": "30 Minute Slot",
+        "endTime": "11:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:00",
+        "title": "30 Minute Slot",
+        "endTime": "11:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:00",
+        "title": "30 Minute Slot",
+        "endTime": "11:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:40",
+        "title": "20 Minute Slot",
+        "endTime": "12:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:40",
+        "title": "20 Minute Slot",
+        "endTime": "12:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:40",
+        "title": "20 Minute Slot",
+        "endTime": "12:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Carrie Hall", 
+            "Hasan Hosgel", 
+            "Anastasia López",
+            "Stefan Hoth",
+            "Miriam Busch",
+            "Martin Bernard"
+        ],
+        "description": "Whether you are looking for a job or looking for the right candidate, you face many challenges. What are the strategies the recruiters and talent scouts use to determine if you are the right fit? What should you include in a resume and leave out? How do you prepare to answer technical questions and communicate your interpersonal skills and strengths? How can candidates and recruiters work together to promote better screening, more transparent evaluations ensure fair and ethical hiring processes. Are algorithms and whiteboard coding a good or bad thing? What does the future of hiring look like when artificial intelligence and big data are shaping the recruiting landscape?",
+        "startTime": "13:00",
+        "title": "Hiring From Both Sides of the Table",
+        "endTime": "14:00",
+        "type": "Workshop",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Salih Guler"
+        ],
+        "description": "If you are part of the mobile development world, it's most likely that you heard about Flutter already. It is Google's mobile UI Framework for crafting high-quality native interfaces on iOS and Android in record time. Flutter works with existing code, is used by developers and organizations around the world, and is free and open source.\n\nIf you are curious about Flutter and want to have hands-on experience by creating a simple application, this codelab is the perfect fit for you.\n\nWe will create your first Flutter application and go through all the amazing features that Flutter offers us and learn it by implementing it.\n\np.s. You need to bring your own laptop and install the SDK to your preferred IDE. Check the links below for these steps.\n\nhttps://flutter.io/docs/get-started/install\nhttps://flutter.io/docs/get-started/editor\nhttps://flutter.io/docs/get-started/test-drive",
+        "startTime": "13:00",
+        "title": "Write your first Flutter application",
+        "endTime": "14:30",
+        "type": "Workshop",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "13:00",
+        "title": "30 Minute Session",
+        "endTime": "13:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "13:00",
+        "title": "30 Minute Session",
+        "endTime": "13:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "13:40",
+        "title": "20 Minute Session",
+        "endTime": "14:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "13:40",
+        "title": "20 Minute Session",
+        "endTime": "14:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:10",
+        "title": "20 Minute Session",
+        "endTime": "14:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:10",
+        "title": "20 Minute Session",
+        "endTime": "14:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:10",
+        "title": "20 Minute Session",
+        "endTime": "14:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:40",
+        "title": "30 Minute Session",
+        "endTime": "15:10",
+        "type": "",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:40",
+        "title": "30 Minute Session",
+        "endTime": "15:10",
+        "type": "",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:40",
+        "title": "30 Minute Session",
+        "endTime": "15:10",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:40",
+        "title": "30 Minute Session",
+        "endTime": "15:10",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "14:40",
+        "title": "30 Minute Session",
+        "endTime": "15:10",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Erik Hellman", 
+            "Juhani Lehtimäki", 
+            "Pascal Welsch", 
+            "Stacy Devino", 
+            "Danny Preussler"
+        ],
+        "description": "Developers and companies are striving to deliver consistent user experiences across multiple platforms. But they also look at the costs and often we develop the exact same app twice. There is a potential cold war brewing between PWAs and Native apps with no clear shakeout in sight. Might the web win? Already Developers are confronted with a number of multi-platform technologies and frameworks such as Flutter, Kotlin/Native, React Native (and more…). Or do we all need to just be proficient at machine learning? And what we code, will it be functional? This panel will discuss what the landscape will look like for developers in the next few years and answer questions about how to stay current, future-proof your skillset and how you can influence the future.",
+        "startTime": "15:20",
+        "title": "What Will We Be Developing in 5 Years?",
+        "endTime": "16:20",
+        "type": "Panel Discussion",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Vipul Shah"
+        ],
+        "description": "This workshop will introduced you to Kotlin/Native and build a Kotlin Multiplatform app that runs on both iOS and Android using shared Kotlin code. We will cover following topics in this workshop\n\nIntroduction to Kotlin/Native and Multiplatform\nYour First Kotlin/Native Program\nCreating a Multiplatform Project\nShared Library from Android & iOS\nNetworking & Concurrency using Ktor & Coroutines\nDesigning Android & iOS user interface\nDebugging multiplatform Project\nDrawbacks",
+        "startTime": "15:20",
+        "title": "Kotlin/Native and Multiplatform Development",
+        "endTime": "16:50",
+        "type": "Workshop",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "15:20",
+        "title": "30 Minute Session",
+        "endTime": "15:50",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Hans-Christian Woger", 
+            "Felix Hilgert"
+        ],
+        "description": "Yes, this is a legal session by lawyers who will talk about legal stuff. Yes, there will be talk on fines for data protection violations and how to avoid getting sued when offering or developing mobile games. And actually this is a pretty good thing. Not getting sued gives you more time to develop your app and expand your business. It helps you to avoid awkward calls with your lawyers. And no one wants those.\n\nThe session will be for 60 minutes and cover two different topics. First we will provide you with an analyses from a few GDPR cases that actually lead to fines by data protection authorities. We will cover what were the factual and legal reasons for those fines and what are the lessons learned from these cases. The idea is to enable you to avoid data protection violations already committed by other parties in the past. The second part of the session will comprise nearly everything that has to do with mobile gaming. We will take about mobile payments and in-app purchases – not only interesting for the game developers – as well as how to avoid legal pitfalls concerning the content and marketing of games.\n\nBoth session will have a Q&A. Stop by and learn on how not to fall into a legal trap.",
+        "startTime": "15:20",
+        "title": "How to avoid calling the lawyer – A legal session on mobile gaming and a case study of GDPR violation",
+        "endTime": "16:50",
+        "type": "Session",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "15:20",
+        "title": "GDG Organizer Meetup & Workshop (Closed Session!)",
+        "endTime": "18:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "16:00",
+        "title": "20 Min Session",
+        "endTime": "16:20",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Erik Hellman", 
+            "Pascal Welsch", 
+            "Danny Preussler", 
+            "Nicola Corti", 
+            "Ash Davies", 
+            "Florina Muntenescu", 
+            "Andrea Falcone",
+            "Anastasia López"
+        ],
+        "description": "Watch speakers talking about random topics to slides they have never seen before. It's fun! At least for the audience",
+        "startTime": "16:30",
+        "title": "Powerpoint Karaoke / improv / random slides",
+        "endTime": "17:30",
+        "type": "Session",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "16:30",
+        "title": "20 Min Session",
+        "endTime": "16:50",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:00",
+        "title": "30 Min Session",
+        "endTime": "17:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:00",
+        "title": "30 Min Session",
+        "endTime": "17:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:00",
+        "title": "30 Min Session",
+        "endTime": "17:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:50",
+        "title": "20 Min Session",
+        "endTime": "18:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:50",
+        "title": "20 Min Session",
+        "endTime": "18:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:50",
+        "title": "20 Min Session",
+        "endTime": "18:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "17:50",
+        "title": "20 Min Session",
+        "endTime": "18:00",
+        "type": "",
+        "day": "Monday",
+        "stage": "Nougat"
+    }, 
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "07:30",
+        "title": "Check-In/Registration",
+        "endTime": "09:00",
+        "type": "",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "09:00",
+        "title": "Keynote",
+        "endTime": "10:00",
+        "type": "",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "09:00",
+        "title": "Keynote Extended",
+        "endTime": "10:00",
+        "type": "",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Florina Muntenescu"
+        ],
+        "description": "The paging library offers a complete solution for efficiently displaying large lists of data but adopting such a comprehensive library can be daunting. In this talk, I’ll cover some of the lessons we learned while gradually migrating from a RecyclerView.Adapter, populated from a tightly coupled domain and presentation layers, to Paging library. You’ll learn about the main components of the Paging library, where they fit in your architecture, how decoupling the UI and the data/domain layers results in more maintainable & testable code. You’ll understand which DataSource type you need for your use case see how you can display multiple data types in the same RecyclerView and how to handle other use cases like interactions with a view item, deleting or inserting an item, selection states or showing section headers. Learn from our experience how to migrate to paging and the benefits we saw.",
+        "startTime": "10:10",
+        "title": "Migrating to Paging Library",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Panayotis Tzinis"
+        ],
+        "description": "A presentation aiming at sharing my team's experience, inspired by Google Clips, in designing apps/hardware with ML and AI embedded devices, for astronauts. We will go through explaining what to focus on and how to be more Human Centered.",
+        "startTime": "10:10",
+        "title": "Designing in the Age of Machines",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Lev Vidrak"
+        ],
+        "description": "Wix Mobile Application built with React Native, a cross-platform framework, allowing developers to compose mobile apps using JavaScript in a declarative way.\n\nAt Wix.com we are building our mobile app with React Native from the first commit almost three years ago.\nToday, we are ~70 mobile developers, from 15 different teams, writing code that is integrated into one application, with the ability to release a new version to stores every day.\n\nScaling a production-grade application without compromising on performance and dev velocity, brought us to multi-module architecture, and think more like an OS to allow each team integrates their mini app (\"Module\") into the main Wix’s React Native mobile platform (aka \"Engine\").\n\nIn this talk, we will start from the basic concept of React-Native and understand how it fits with multi-module architecture in mobile. Following that, we will demonstrate the full development process when working at scale, through testing, building and releasing the app to the stores.",
+        "startTime": "10:10",
+        "title": "Mobile @ Scale with React Native",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Garima Jain"
+        ],
+        "description": "In this talk, we will learn how to create Instagram like filters with LUTs (Lookup Tables) using Renderscript on Android.\n\nWe will briefly look into various approaches one can take for creating filters on Android. We will then learn about the basics of LUTs and how we can use them with Renderscript for creating filters. Finally, we will focus on the challenges that we faced while implementing filters on Android with the Renderscript framework.\nWe will try to use graphical representations wherever possible to explain all these concepts",
+        "startTime": "10:10",
+        "title": "A LUT (lot) of image filters for Android",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Nicola Corti"
+        ],
+        "description": "Do you exactly know what's your app doing when you deliver it to your users? Are you 100% sure? Would you bet on this? You're probably confident with the code you wrote and you know what is doing.\n\nBut what about the code that others wrote?\n\nWe pull dependencies from the online repositories every day. Our applications strongly rely on external libraries that are hosted on public Maven repositories. What if one of those library contains some malicious code? Imagine a library that starts harvesting your user data without you knowing it.\n\nIn this talk we will see how to monitor and protect your application from malicious dependency on the web that might end up in your final compiled App.",
+        "startTime": "10:10",
+        "title": "I have no idea what my app is doing ¯\\_(ツ)_/¯",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Ragunath Jawahar"
+        ],
+        "description": "Reactive applications are the norm on the web. Android applications have begun increasingly reactive using architectures like MVVM, MVI, Redux, etc., The reactive nature of these applications are due to the underlying architecture rather than the UI framework itself. This has resulted in some big wins like testability and strong separation of concerns while trading-off attributes like time-to-market and quickly on-boarding new developers to an existing project.\n\nThe API surface of the Android UI framework has been the same for the past decade. This was largely because of the limitations imposed by old tooling and the programming language. With Kotlin bringing in DSLs, functional programming and compiler plugin capabilities - the members of the Android UI Toolkit team have rolled up their sleeves and are taking a new direction. The new UI toolkit is backed by principles and techniques like - one-way data flow, function composition, declarative programming, optimistic concurrency control, isolation of side-effects, etc.,\n\nThis shift in API design also demands a shift in thinking about the app architecture and building UIs. In this talk, we’ll see how Jetpack Compose is radically different from the existing Android UI framework and how it adopts several ideas and programming patterns from web frameworks like React, MobX, and Vue.js. We will also see examples of these patterns and use them to build Android apps.",
+        "startTime": "11:00",
+        "title": "Jetpack Compose — Next Gen Kotlin UI Toolkit for Android",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "RJ Marsan"
+        ],
+        "description": "How Lyft adds new options without missing a ride: a lesson in engineering principles for quickly and safely adding major features to a mobile codebase",
+        "startTime": "11:00",
+        "title": "From Four Wheels to Two",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Filip Hráček"
+        ],
+        "description": "Interested in Flutter but not quite ready to rewrite your 1 MLOC app from scratch just yet? In this session, you'll learn how to add a single Flutter activity to your app and keep the rest. This is how companies like Alibaba are gradually rewriting their Android and iOS apps to Flutter, page by page.\n\nWe will also show how Flutter can be a great prototyping tool, producing functioning apps in record times. These apps can be tested, evaluated, and then either discarded or productionized (in whatever SDK you like).",
+        "startTime": "11:00",
+        "title": "Android with a side of Flutter, please",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Giovanni Laquidara"
+        ],
+        "description": "We are reading about AR as the future platform even though we are currently experiencing only gaming/entertainment use cases about it.\nLet's look an effective non-gaming sample: Many travel and transport companies are using AR to help you to understand if your luggage fit their limits. We will analyze their apps and learn how to develop an Android native app doing the same using ARCore, Sceneform and a bit of AI with Firebase ML Kit. At the end you will be able to apply this new skills to new exciting use cases.",
+        "startTime": "11:00",
+        "title": "A Real use case of practical AR-AI couple - Size my luggage",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Sebastian Porst"
+        ],
+        "description": "In this presentation I will be giving an overview of how to plan and execute on a bug bounty program for your Android app. The information in this talk is based on my work on Google Play’s Security Rewards Program, a collaboration with HackerOne, in which we reward security researchers for security vulnerabilities they find in top applications on Google Play.",
+        "startTime": "11:00",
+        "title": "Setting up a bug bounty program for your app",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Ash Davies"
+        ],
+        "description": "Fragments have often been the controversial, and to some, the stuff of nightmares, with the inconsistency of lifecycle events, complex UI interaction, and unexpected behaviours making many Android developers suspicious of their usage.\n\nBut with the development and recent stable publication of the navigation library, it may be the right time to give them a chance. Giving Fragments a second chance is not something I’d ever thought I’d be saying, but it’s a fantastic opportunity to find a solution to sharing data across a single screen.\n\nExplore with me as I walk you through my experience implementing the navigation library and safeargs, and how I used them to implement type safe argument bindings, and how you can utilise the once troubled framework type to your advantage.",
+        "startTime": "11:50",
+        "title": "Navigation and the Single Activity: Learnings from a Skeptic",
+        "endTime": "12:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Erik Hellman"
+        ],
+        "description": "While the native widgets for Android are extremely powerful and cover most of the use cases we can imagine, there are still some areas where web content is our only option. That means we need to embed a WebView in our application and create a bridge between the native code and the JavaScript running on the web page we load.\n\nIn this session you will learn everything there is about how to deal with the WebView on Android. Learn how to properly load content, inject your own CSS or JavaScript, how to effectively communicate between JavaScript and Android, and how to make loading web content secure in Android applications. We will also look at how to implement some common use cases, like displaying ePub and other HTML-based e-books.",
+        "startTime": "11:50",
+        "title": "Android and the WebView",
+        "endTime": "12:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Louis Tsai"
+        ],
+        "description": "\"It's not view, it's not Fragment, it's something smaller\", so what exactly is Jetpack Compose? What is happening internally? In this talk I will take a quick look into how it works internally, it's implications, even though it's still way too early to invest in it and things might change the next day. But hey, it's fun, so why not?",
+        "startTime": "11:50",
+        "title": "Jumping into Jetpack Compose way too early to see what's inside",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Vladimir Ivanov"
+        ],
+        "description": "I believe most of us are just doing their day-to-day job and it's fine. But have you thought are we doing alright as an industry? Do we do things in a right way? Do we do the right things? Are there any flaws in what we are doing? Actually, there are! The security is not great generally speaking, the performance of our apps can be much better, the quality is below optimal and the emotional atmosphere is definitely not ideal. In this topic I want to uncover those issues to give the current state of the industry and provide some tips on how we can improve it together.",
+        "startTime": "11:50",
+        "title": "Wake Up, Neo - Industry is Not Doing Well",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Matthew Dolan"
+        ],
+        "description": "Failing to protect your users data can not only result in fines but of course loss of your users trust.\n\nWe can protect our apps against man-in-the-middle attacks using techniques such as certificate pinning. However, as we will see, implementing certificate pinning requires us to answer questions such as which certificate to pin against that doesn’t have a straight forward answer.\n\nWe will introduce certificate transparency which has already replaced certificate pinning in Google Chrome and show how to use it on Android with a new open source certificate transparency library from Babylon Health.",
+        "startTime": "11:50",
+        "title": "Move over certificate pinning. Certificate transparency is here!",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Vignesh Ramachandra", 
+            "Jyoti Dubey"
+        ],
+        "description": "Cross platform development is a riddle that isn’t solved nor looks like it will be. There isn’t one concrete solution to which you could say, “Do it this way”. React Native, Flutter, Xamarin and others have their own backed approach to solve this. Let us introduce one more dish to the table - GoMobile. You can write code in what could be your favourite language(Golang) and port it to Android and iOS platforms. Come hear how it works and have a taste. Then decide if this is going to be your daily meal or occasional food :)",
+        "startTime": "12:20",
+        "title": "\"Go(lang) for mobile\"",
+        "endTime": "12:40",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Carsten Isert"
+        ],
+        "description": "Want your apps to reach more drivers? With new Android-based infotainment systems that are built directly into cars, you'll have the ability to reach more users. This talk will focus primarily on how to build new apps or adapt existing Android Auto apps to the new Android-based infotainment systems. Developers interested in building experiences powered by Android can learn about new design changes and how to optimize their apps.",
+        "startTime": "12:20",
+        "title": "How to Build Android Apps for Cars",
+        "endTime": "12:40",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Advanced",
+        "speakers": [
+            "Vivien Dollinger"
+        ],
+        "description": "* Usefulness of Edge Computing\n* Limitations of Edge Computing\n* Bridging Edge Computing to the cloud with synchronization\n* Tech: Sync Challenges\n* Tech: Sync Solutions DIY (REST/GraphQL), Firestore, Realm, ObjectBox (adv. / disadv.)\n* Conclusion",
+        "startTime": "12:20",
+        "title": "Leading edge: Sync solutions for connecting offline-apps",
+        "endTime": "12:40",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Chris Banes"
+        ],
+        "description": "To aid developers to create immersive experiences, Android Q adds new system navigation models to allow apps to take over more of the user's screen.\n\nThis talk will look at how apps should work with the new gesture navigation, and ways to mitigate gesture conflicts. We’ll look at how to update apps to go edge-to-edge, drawing behind the system bars to create a immersive experience for users. Finally we’ll go through ways to make the WindowInsets APIs easier to use.",
+        "startTime": "14:00",
+        "title": "Going edge-to-edge with Gesture Navigation",
+        "endTime": "14:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Fred Porciúncula"
+        ],
+        "description": "Code reviews are a fundamental part of our job as software developers. Every piece of code we write is (hopefully) carefully reviewed by our teammates before becoming part of our systems. It's an important part of the development process, and it requires significant time and effort.\n\nWhile a great review experience will promote interesting discussions, ensure consistency in the codebase, and potentially catch bugs and implementation oversights, a poor review might lead to nasty bugs and unhappy developers. Still, sometimes it's hard to find the motivation to thoroughly review a pull request, and eventually it just doesn't seem to be worth it given the time you'll need to spend and how hard it usually is to properly review those huge PRs that pop up every now and then.\n\nIn this talk you'll learn strategies and guidelines that will help improve the efficiency of your team's code reviews. We'll talk about work in progress PRs, commit by commit reviews, emoji driven comments and more. You'll listen to great (and scary) tales of code reviews experiences, and lots of tips and tricks when it comes to preparing the perfect pull request for your peers.",
+        "startTime": "14:00",
+        "title": "The Art of Code Reviews",
+        "endTime": "14:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Andrea Falcone"
+        ],
+        "description": "In the web world, developers can ship and iterate on features very quickly. How can mobile developers use this same process when there is overhead to doing a full release?\n\nLearn how our team does iterative product development, from technical automation solutions to a team process that facilitates it. You'll learn how developers can gain control and bring features to your more customers quickly!",
+        "startTime": "14:00",
+        "title": "Iterative Mobile Development",
+        "endTime": "14:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Filip Babić"
+        ],
+        "description": "Have you been learning Kotlin Coroutines by trial and error? Do you need a change of pace and environment or just a guide which doesn't baffle you with the sheer amounts of computer science terms, which coroutines are built upon?\n\nLook no more! In this session, we'll go over the majority of the Kotlin Coroutines API, with the emphasis on explaining how each component works, which principles and elements are used behind the scenes, and how you can utilize Coroutines in your code, without burning out due to all the theory that is the foundation of computing and multi-threading.",
+        "startTime": "14:00",
+        "title": "Deep diving into the Kotlin Coroutines API",
+        "endTime": "14:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Jon Markoff"
+        ],
+        "description": "Go through strategies for data encryption on Android and do a deep dive into the Jetpack Security library.\n\n1. Outline the currently problem with encryption on Android including rampant bad information online.\n2. Best practices for using Jetpack Security.\n3. Deep dive into why / how the JetSec was built, talk about design decisions and challenges building the library.\n4. Dive into Tink, an open source library powering JetSec.\n5. Overall takeaway, learn how to properly leverage the AndroidKeyStore and encrypt data properly.",
+        "startTime": "14:00",
+        "title": "Data Encryption on Android",
+        "endTime": "14:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Jean-Baptiste Vincey"
+        ],
+        "description": "As Deezer team expanded over the last years, making changes and maintaining design in the mobile app became a major concern:\n\n- How to keep the different screens of the app(s) consistent and let the design evolve?\n- How to ensure consistency across platforms / applications?\n- How to fill knowledge gaps between designers and developers?\n\n#ATOMIC DESIGN\n\nTo tackle these issues, we decided to build a strong Design System, based on Brad Frost methodology: Atomic Design. We established with designers a UIKit, a pattern library, implemented as an Android library and inspired from Atomic Design, defining every UI component of the app.\n\nDuring the presentation, we will dive in the UIKit to see how components are defined and organized, integrated in the app with global architecture, and the implications on the design and development process in our team.",
+        "startTime": "14:50",
+        "title": "Let your design evolve, adopt a Design System!",
+        "endTime": "15:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Sean McQuillan"
+        ],
+        "description": "Let the testing resume! Testing is a mix of engineering and art–nowhere is that more true than coroutines\n\nIn this talk you'll learn about the design and inspiration for the new kotlinx-coroutines-test library. After this talk you'll know how to effectively write tests with coroutines that never flake.\n\nIf you're just launching into coroutines on Android, or you've been an actor since before the 1.0 release - this talk is for you.",
+        "startTime": "14:50",
+        "title": "Coroutines + Testing = ❤️",
+        "endTime": "15:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Al Sutton"
+        ],
+        "description": "We all know that users buy new devices, but how many developers have considered the user experience of moving users from their old device to their new one?\n\nIn this session I'll be talking about how to can make the transition to a new device easier for users, how Android features like Auto Backup can help your user get up and running quickly, and offering some advice on making your users transition between devices as smooth as possible.",
+        "startTime": "14:50",
+        "title": "Smoothing your users path to new devices",
+        "endTime": "15:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Elin Nilsson"
+        ],
+        "description": "The term “silver bullet” is used to describe a simple and seemingly magical solution to a complicated problem, which is how we tend to hear about frameworks. It’s how we introduced the Hub Framework at Spotify: our component-driven UI framework that was gonna make it so much faster and easier to create new and exciting features.\n\nWhat we don’t hear about as often is what happens next: how frameworks are adopted, and how they evolve over time. This talk is about how Hubs didn’t solve all of our problems. It’s about framework development, adoption, deprecation and rewrites: the complexity of building things for other developers.",
+        "startTime": "14:50",
+        "title": "The Silver Bullet That Wasn’t - the story of Hubs",
+        "endTime": "15:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Liz Louis"
+        ],
+        "description": "To improve user privacy, Android Q adds additional privacy features. This talk will cover recommended best practices for permissions, device identifiers, app launching, notifications, and foreground services.",
+        "startTime": "14:50",
+        "title": "Adapting Your Apps for Android Q Privacy Requirements",
+        "endTime": "15:10",
+        "type": "Lightning talk",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Akshay Chordiya"
+        ],
+        "description": "State management is one of the challenging task while developing softwares and recently MVI is one of the architecture pattern which promises to help us with it.\nThere have been multiple talks about \"why\" and \"what\" MVI is and there are several libraries and framework providing their own MVI implementation for Android.\n\nIn this talk, we will combine the power of MVI with MVVM [ViewModel and LiveData] to have peace with the platform rather than fight it.\n\nAgenda\n- What is MVI?\n- Leverage the power of ViewModel and LiveData\n- How Roxie to can help you do it?\n- Testing with Roxie [MVI]\n- Efficient workflow with MVI\n\nYou’ll walk away with solid idea of how to do “build MVI for Android” combined with power of Kotlin and MVVM [ViewModel and LiveData]",
+        "startTime": "15:20",
+        "title": "MVI made for Android",
+        "endTime": "16:00",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Jitesh Gosai"
+        ],
+        "description": "This is a case study of the Standard Media Playback team that builds the media playback capability for one of the UKs biggest VOD and AOD apps: iPlayer and BBC Sounds and how their test automation has evolved over the last 5 years. From rounds of manual regression testing then onto automated UI testing now to isolated code level tests and what’s next for the team.\n\nThen: How we started with UI automation to help us release quicker and what it actually gave us: fast checks of key user journeys but not an automated regression test suite that could help us release faster.\n\nNow: How we looked to push more of our testing down the stack into unit testing, but starting with building a team understanding of what unit tests actually are. How we broke down our system into interdependent components that could be tested in isolation and the architecture we used to push this further. All explained through a real life example of how we moved to the new ExoPlayer from google.\nNext: What new problems this approach has given us, how we plan tackle them and how we will bring this approach this to other teams across the BBC.\n\nKey takeaways\n- Testing: What has and hasn’t worked with our testing from manual to automated testing and everything in between\n- Pairing: How we collaboratively pair tester and developers to write code level tests\n- Team structure: How our teams are organised and why\n- Risk Vs Value: How we balance the risk of not testing Vs value of testing it ",
+        "startTime": "15:20",
+        "title": "Mobile Test Automation at the BBC: Then, Now and Next",
+        "endTime": "16:00",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Jitin Sharma"
+        ],
+        "description": "Dependency Injection is a concept which has become quite popular among Android developers as our applications break barriers on features and at the same time project complexity increases. It is also a heavily researched topic by developers with 20k questions on stack overflow(2k+ for dagger).\nWhile most projects use dagger as a de-facto framework for Android, this talk would be more focussed on understanding concepts of DI and applying the same without a framework. We’ll go through concepts of supplying dependencies, various types of injection and understanding inversion of control. All of this without using a framework, with raw code in Kotlin and an actual android app with real life problems around networking, storage and threading.\nWe’ll then dig deep in how libraries like Dagger, Koin etc operate to provide the same with code generation or reflection.",
+        "startTime": "15:20",
+        "title": "@Inject Basics",
+        "endTime": "16:00",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Enrique Lopez Mañas"
+        ],
+        "description": "The success of any technology is depending on its ecosystem. We want to see meaningful APIs and effective SDKs, but we also rely on the community ecosystem and its support.\n\nWhereas K/N is relying on Kotlin as a language, K/N will need the support of libraries that provide with extra functionality. JetBrains is doing a great job in this direction, but this needs to rely as well on the community.\n\nLearn on this talk what are the current State of the Art libraries for K/N, how to get started with them and apply them in your projects. We will showcase libraries from some of the main actors in the K/N realm (JetBrains, Touchlab), as well as some of the independent agents arising.",
+        "startTime": "15:20",
+        "title": "Libraries for K/N citizens",
+        "endTime": "16:00",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Sebastian Porst"
+        ],
+        "description": "In this presentation I will be giving an overview of common vulnerabilities that security researchers find in top apps on Google Play. I will give information about these vulnerabilities, how to find them, and how to fix them.\n\nThe information in this talk is based on my work on Google Play’s Security Rewards Program, a collaboration with HackerOne, in which we reward security researchers for security vulnerabilities they find in top applications on Google Play.",
+        "startTime": "15:20",
+        "title": "Overview of common Android app vulnerabilities",
+        "endTime": "16:00",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Alin Turcu"
+        ],
+        "description": "Back in the days, your application was a charm, clean, designed, the code was clear, and at any point in time, you could tell in which state it was. But over time, new features came into play, network calls, asynchronous processing, your little baby turned out to be a monster and you loose yourself in the code, it’s not possible to tell in which state your app is between network calls, errors, user interactions, etc.. You’re lost !\n\nGrox is an open source library (https://github.com/groupon/grox) that helps to manage the state of Kotlin / Java / Android applications. Inspired by Flux and Redux, Grox lets you express state changes in a testable and homogenous way. Grox offers a flexible, scalable way to manage the state of your application. With Grox you know in which exact state you are at any point in time, and you state will be represented clearly. Grox also offers time travel debugging, and a nice Rx API that plays very well with RxBinding and asynchronous code.\n\nIn this session, we will explain why Grox is nice, give a few examples to use it, test your code and enjoy it’s scalability. You will see that Grox is a breeze to manage from the simplest app to the most complex ones.",
+        "startTime": "16:10",
+        "title": "Grox: a library to manage the state of Java / Android apps",
+        "endTime": "16:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Enrico Bruno Del Zotto"
+        ],
+        "description": "Unit, integration, UI tests are part of the famous test pyramid, different tools were used in order to full fill it, but still today there are lot of issues about how to execute it in a proper manner and how to sync all environments (local, ci, etc) in order to satisfy all the testing criteria, and having a good reports.\n\nFrom IO 2018 with the announcement of project Nitrogen, Google'd like to \"nitrogenize\" our tests creating a single entry point and solve all issues we had in the past. With October release of Robolectric 4.0 and androidx.test 1.0.0, both testing environments are converging on a set of common test APIs. Robolectric now supports the AndroidJUnit4 test runner, ActivityTestRule, and Espresso for interacting with UI components.\n\nLet's see togheter how to organise different levels of our 'test pyramid', with a focus to the last news/releases in order to be ready for the Nitrogen release.",
+        "startTime": "16:10",
+        "title": "Nitrogen in your (test) pyramid.",
+        "endTime": "16:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Advanced",
+        "speakers": [
+            "Nelson Osacky"
+        ],
+        "description": "Back in the day Java dependency injection frameworks were purely runtime based like Spring and Guava. Dagger 1 introduced a compile time component as well as compile time safety and Dagger 2 took the concept even further. Now we're going back to runtime with Dagger Reflect in an effort to improve local developer build speeds.\n\nThis talk will cover the reasons for building dagger reflect, how it works under the hood, how to use it in your project as well as how it is developed.",
+        "startTime": "16:10",
+        "title": "Dagger Reflect - The circle from runtime to compile time and back to runtime",
+        "endTime": "16:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Ishan Khanna"
+        ],
+        "description": "This talk will teach developers how to efficiently write & setup experiments (A/B Tests) and hence showcase a way to create apps that keep the customers at the centre of everything.\n\nIf you attend this talk you will learn how to frame the hypothesis, calculate runtime of an experiment, set up metrics to measure success so that you can act as a product manager yourself in future!\n\nHaving run over a 100 experiments alone in the last 2 years at Booking.com (One of the world’s biggest platform running massive number of A/B Tests) with 10% success rate, I’ll present some hard to believe facts related to user experience and design that developers often overlook while shipping features.\n\nThink of this talk as a crash course for Mobile Developers to become Product Owners.",
+        "startTime": "16:10",
+        "title": "Customer Driven Development : What, Why & How?",
+        "endTime": "16:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Sean Smith"
+        ],
+        "description": "What does it mean to build a secure product? How do you ensure your product is designed securely before writing the first line of code or picking the first component? And how do you prove it to leadership and external entities such as auditors or regulators?\n\nThis session answers these questions and shows how Android is continually evolving its security assurance program. We will discuss how to produce secure products, get executive buy in, generate artifacts for compliance and more.",
+        "startTime": "16:10",
+        "title": "Building an Assurance and Secure Development Program",
+        "endTime": "16:50",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Hannes Dorfmann & Gabriel Ittner"
+        ],
+        "description": "The Kotlin team introduced a new type called Flow which looks similar to RxJava’s Observable or Flowable. Have you ever wondered what’s the difference between Flow and RxJava? How does Flow work under the hood? How is it connected to Coroutines? How do you write your own operator? What about Kotlin Coroutine Channels? Backpressure? Coroutine Scopes?\n\nJoin this session to get an introduction into Flow followed by a deep dive into the some core aspects of Flow to ultimately feel confident using Flow inside your android app.",
+        "startTime": "17:00",
+        "title": "Flowing in the Deep",
+        "endTime": "17:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Jeroen Mols"
+        ],
+        "description": "While there are plenty of resources about writing awesome code, the same doesn't quite exist for tests. So how do you write great unit tests? And how do you ensure failures are easy to fix? What are the best practices? And most importantly what are the pitfalls to look out for?\n\nIf you're already comfortable writing tests, come level up your testing skills with deep insights into the \"Why\" and \"How\" of fundamental testing principles. You will learn:\n\n- What three criteria make tests awesome\n- What to test and what not to test\n- Why you should optimise tests for failure\n- How many tests you should write per method\n- How to test literally everything\n- What is code coverage and why it can be deceiving\n- How to use AssertJ to make test super readable\n- What TDD is and what its benefit is",
+        "startTime": "17:00",
+        "title": "Write awesome tests",
+        "endTime": "17:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Joe Birch"
+        ],
+        "description": "In this modern day we often take things for granted. From the apps we use, the things we buy to the clothes we wear - it's easy to get wrapped up in our consumption and forget how easy it is for us to interact with these things. Now imagine if there was a change of circumstance - would you still be able to interact with the device that you're reading this on? How would your experience have been getting to the location that you're currently at, or brew that coffee you made this morning?\n\nWithout being in these positions ourselves, it can be too easy to make things that might work well for us, but not necessairly be usable by those who are not in the same position. In this talk I want to explore this mindset so that we can think outside of our comfort zone, in the hope that more people can be enabled to explore the things that we experience.",
+        "startTime": "17:00",
+        "title": "Inclusive Craft",
+        "endTime": "17:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Francesco Romano"
+        ],
+        "description": "Today, most artificial intelligence services have to send your data to the Cloud in order to perform the analysis. With specific chipset capabilities, calculations can be done directly on the phone and this guarantees the privacy protection that a lot of different use cases need.\nFurthermore, AI apps tend to be real-time and mission-critical, any AI-use cases that enhance an experience can’t afford latency. With on-device computation you can improve the performance of your app and resolve privacy and cost related issues.\nIn this session, I will show you how to use HiAI: a mobile computing platforms that make the developers able to run artificial intelligence algorithms on device.",
+        "startTime": "17:00",
+        "title": "Make your app smarter",
+        "endTime": "17:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Jon Markoff"
+        ],
+        "description": "Learn how to use the Android Management API to create your own EMM.\nBest practices for Enterprise apps\nPitfalls when running in a work profile\nKey takeaways\n-Learn how to write your own EMM\n-Learn how to handle the work profile and limited privileged containers on Android",
+        "startTime": "17:00",
+        "title": "Write your own EMM and Enterprise app best practices",
+        "endTime": "17:40",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Advanced",
+        "speakers": [
+            "Aziz Murtazaev"
+        ],
+        "description": "Rendering UI takes a significant amount of CPU time, therefore it's important to keep this part of the computation as lean as possible. Whenever UI rendering regresses key metrics such as app startup, time-to-interaction, scroll performance are all affected which eventually affects product engagement negatively.\n\nIn this talk we'll be talking about how at Facebook we use benchmarks to make sure that UI rendering regressions do not slip through to production. Also we will discuss ways of iterating on UI rendering code to proactively improve UI performance.",
+        "startTime": "17:50",
+        "title": "Proactive and Reactive approaches to improving UI performance using benchmarks",
+        "endTime": "18:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "sourabh gupta"
+        ],
+        "description": "Session will be about what are the Key Metrics that Define the App as Best app and what are the best practices to solve it that includes Best Practices for user Facing problems like App Size Reduction with Right Library Integration , Faster Native app adoption without react Native , Improvement in App Launch time to reduce the bounce Rate , Why Vitals are important and how we can fix it, Why fps matters , App Rating why it matters and how to improve it. \n\nSome best Practices will be for Developer as well to save Developer time by optimizing the Build time , Integration of fastlane/jenkiins with slack to automate the build process and uploads , what all can be automated with the commits to keep check on all user critical app metrics.",
+        "startTime": "17:50",
+        "title": "Build apps for Billions",
+        "endTime": "18:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Aygul Zagidullina"
+        ],
+        "description": "A bioorganic chemistry turned quantum chemist turned community manager & digital marketer at Google turned women in tech advocate & UK STEM Ambassador (focused on teaching kids how to code) turned international speaker & Google Assistant developer. As a conference-speaking code-writing world-traveling breastfeeding mom, I’ll trace my career path as a woman in tech all the way from the first steps into STEM on up to being named as one of the NEXT 100 Top Influencers of the European Digital Industry and beyond and share 10 things I learned along the way to help you overcome your fears and make it happen. So if you’re still wondering, ‘Is it too late to change careers?’, the answer is no.",
+        "startTime": "17:50",
+        "title": "Designing Your Career: Explore a Career Change and Do What You Love",
+        "endTime": "18:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Frank Tamre"
+        ],
+        "description": "Approximately half of the world's s population is not connected to the internet.\nOf this number, it's projected that most of them will use low end devices to come online for the first time.\nI have spent a large portion of the last 6years enabling low end users get online and app developers and companies.\nIn this talk we delve into:\n1. considerations in developing your Android applications for low end users.\n2. How to deal with slow or poor internet.\n3. Performance issues in low end devices and solve for them.\n4. Coding for low end devices - a general overview.\n\nAt the end of this talk, attendees will leave with the knowledge of how to build for low end devices for the next billion users.",
+        "startTime": "17:50",
+        "title": "Think of the next billion users: Building for Low End devices",
+        "endTime": "18:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Olivier Tuchon"
+        ],
+        "description": "This talk will show you how we handle mobile applications in Android Security from a malware analyst point of view.",
+        "startTime": "17:50",
+        "title": "A day in the life of a mobile reverse engineer",
+        "endTime": "18:30",
+        "type": "Session",
+        "day": "Tuesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "18:30",
+        "title": "General Party",
+        "endTime": "20:30",
+        "type": "",
+        "day": "Tuesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "08:00",
+        "title": "Check-In/Registration",
+        "endTime": "09:20",
+        "type": "",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Kenneth Ford"
+        ],
+        "description": "With the announcement from Samsung on the new reality of foldable phones, and the growing popularity of desktop platforms such as Chrome OS and the new desktop modes being released on phones by multiple OEM’s, your app will be running in a world of new environments. It’s crucial that your developer workflow accounts for resizability, new display sizes and aspect ratios, and app-continuity for your app to be prepared to expand its reach. The days of taking the easy road with screenOrientation=\"portrait\" are quickly ending. In this talk we’ll go over the challenges faced when looking to support Android on various platforms, and how to make sure that you’re providing a great experience on all of these form-factors. You will leave this talk with an actionable checklist that helps stabilize your app and user experience on any device.",
+        "startTime": "09:20",
+        "title": "Tablets, Desktops, Foldables Oh My!",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "David Branton"
+        ],
+        "description": "When we talk Android we often conflate the Operating System with the primary developer - Google. However, Google-Android is just one part of the Android story with notable forks by way of Amazon's FireOS and OnePlus' OxygenOS.\n\nIn this talk, you will learn about;\n\n1) the patterns that permit supporting Google-Android and non-Google Android from a single codebase,\n2) the business trade-offs to be made in deciding to support an Android fork,\n3) the code and development workflow benefits to not explicitly relying on things like Google Play Services/Firebase Products,\n3) what happens to your Google Play Services code when running on devices not part of the Open Handset Alliance (OHA),\n5) the Amazon equivalents to the Google Developer Console, Publishing APIs, automated testing and alternative app stores.\n\nCome and explore how to Android without \"The Big G\" and get your app onto as many Android devices as is physically possible!",
+        "startTime": "09:20",
+        "title": "Android... without Google",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Rohan Taneja"
+        ],
+        "description": "One of Flutter's ideal use-cases is delivering high-quality apps for Android, iOS and beyond in a short span of time. In this talk, we share our experience about how we built the DroidCon Berlin App using Flutter for multiple platforms in less than 30 days and the lessons learned along the process.",
+        "startTime": "10:10",
+        "title": "Building a cross-platform DroidCon app using Flutter",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Marcos Holgado"
+        ],
+        "description": "Modularization is the new trend, almost everybody in the Android ecosystem is refactoring their apps to use a modularized approach. We at Sky are no different, we had a big monolithic codebase supporting 4 apps in different countries that we started modularizing in September 2017. But we failed, big time.\n\nThis talk is an honest retrospective of everything that went wrong, the bad decisions that we made, the approach we initially took and how we, against all odds, eventually started re-building a maintainable, sustainable and extensible modularized codebase. In this talk you will learn from our mistakes and struggles, like defining what is a module and its responsibilities, how to integrate Dagger in a multi-module environment, set some rules and best practices and much more but, more importantly, you will learn what not to do when modularizing your codebase.",
+        "startTime": "09:20",
+        "title": "Why we failed at modularizing our app. An honest retrospective.",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Lara Martín"
+        ],
+        "description": "Bringing Junior developers into your team can be a challenge, but it can also be rewarding. Mentoring can benefit both sides: It can help juniors with the most difficult moment in their career, and it can help seniors become better professionals. Come and learn how juniors and seniors can support each other and grow together.\n\nYou can benefit from this talk no matter what’s your level of expertise. As a junior, you will learn that you are not alone, that you can stop the impostors syndrome, and to be a better apprentice. As a senior, you will learn the benefits of being a good mentor, and how to become one. I will share my experience as a developer who is working on growing up in the career ladder.",
+        "startTime": "09:20",
+        "title": "Supporting Each Other: Growth for Juniors and Seniors",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Murat Yener", 
+            "Manuel Vivo"
+        ],
+        "description": "New UI Features are the most visible changes for you app users. As the OS and the other apps move forward, your app can easily left out with a broken experience.\n\nCome to this talk to learn more about new UI features that can make your application stand out. In this talk, you’ll learn how to implement the new Android Q UI features that will bring your app’s User Experience to a new level:\n\n- Foldables\n- Gestural Navigation and Edge to Edge display\n- Direct Share improvements\n- Bubbles\n- Settings Panels\nand more!",
+        "startTime": "10:10",
+        "title": "What is new with UI in Android Q. New Features and APIs.",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Adnan A M"
+        ],
+        "description": "Functional Programming(FP) has become the all the rage at the moment. Maybe you have been wanting to have a look at it but haven't or you already have given it a go but got scared away with all the FP jargon (We are looking at you Monads). In this talk, we will look at how to get started with FP using Kotlin with the existing knowledge you have and look at how we can start moving towards FP by making a few changes(trust me, no talking about the jargon or 3rd party libraries) in your day to day activities. \n\nI will also talk about my journey about going from OOP to FP. We will look at some of the mistakes I did and some of the approaches I took while learning FP. We will also create a simple structured approach to start learning/implementing FP in your existing code so that you can learn by doing. We will see real life practical examples of implementing FP in your Android project by converting a few samples from OOP to FP. \n\nAt the end of the talk we will look at why a library like Arrow-KT can be useful once you have mastered the basics of FP and also how to approach Arrow-KT for your FP needs. ",
+        "startTime": "10:10",
+        "title": "From OOP To FP",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Arnav Gupta"
+        ],
+        "description": "This will go through the journey of building a blogging app (Medium clone) using Kotlin, Nativescript and Flutter and discuss the differences in developer and user experience for the apps built using all these platforms.\n\n\n\nSo I took the famous realworld.io project (which is a clone of Medium) and implemented it in Kotlin for native Android, and then using Nativescript-Vue and finally in Flutter. Although separate platforms, the end result looks identical to the end user.\n\nWe will compare a bunch of things across these three platforms -\n\nDeveloper Experience\nPerformance (out of the box)\nPerformance optimisation learning curve\nMemory/CPU/App size differences\nLines of Code\nPerceptible jank, smoothness\nConstraints and limitations of each framework",
+        "startTime": "09:20",
+        "title": "What I learnt by building the exact same app in Kotlin (Native Android), Nativescript and Flutter",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Nick Rout"
+        ],
+        "description": "Material Theming is a means of systematically customizing Material Design to better reflect your product’s brand. It allows for easy customization of core widgets in terms of three main subsystems - color, typography and shape - when using the Material Theme Editor and Material Design Components for Android. However, how would these subsystems be incorporated into custom components?\n\nCustom Views can (and should) feel at home amongst the core components of Material Design. In this presentation, Nick will be covering approaches to making Views responsive to Material Theming. With the aid of a practical example, this will include an intro to Material Theming and MDC-Android, basic theme/style attribute support in Custom Views and a deep dive into key MDC-Android classes such as MaterialShapeDrawable, RippleUtils, ElevationOverlayProvider and more.",
+        "startTime": "10:10",
+        "title": "Incorporating Material Theming into Custom Views",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Sebastiano Gottardo"
+        ],
+        "description": "As engineers, we easily default to the idea that becoming experts in our field is the only reasonable way of progressing with our careers. But who will oversee that our career is developing in the right direction? Who makes sure that, may a tension arise within the team, it is resolved in the quickest and most effective way possible? Could that person... could that be you?\n\nJoin me as I walk you through my decision to try the Engineering Management career path, and the fresh feedback of my first 6 months in. We will explore the myth (or reality?) of \"the manager who codes\", how different (or similar?) the role is to a \"regular\" Software Engineer, and see what skills from your previous role you will need to have, and which new ones you'll need to build up.\n\nCome find out if the cliches about playing golf and spending all day on emails and spreadsheets are true or not! 👩‍💻👨‍💻",
+        "startTime": "10:10",
+        "title": "From managing code dependencies to managing people",
+        "endTime": "10:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Aleksander Piotrowski"
+        ],
+        "description": "AndroidX package is well-know for its smashing hits such as Navigation components, the Room persistence library or LiveData. In my presentation we will not talk about any of them but rather focus on less known packages such as: SavedState, Activity, VersionedParcelable, AsyncLayoutInflater, Emoji, ViewPager2, and about.... LocalBroadcastManager too ;-)",
+        "startTime": "11:00",
+        "title": "What ~new~ strange things one can find in AndroidX package.",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Volker Leck"
+        ],
+        "description": "We all know a fast build makes for a happy developer. \n\nGradle has introduced new capabilities that can decrease build times considerably, but too often teams do not leverage their full potential.\n\nThis talk will walk you through a structured approach of improving your build. \nWe’ll discuss \n- the tools and techniques to measure build performance and identify bottlenecks\n- the different lifecycle stages of the build and common pitfalls for each of them\n- how to avoid unnecessary work at all stages of the build\n- tweaks and tips for the most popular libraries\n-recent improvements in Gradle as well as in the Android plugin and in the Kotlin plugin\n\nYou’ll walk away with a solid foundation to speed up your build.",
+        "startTime": "11:00",
+        "title": "Improving Android Build Performance",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Ankush Gupta"
+        ],
+        "description": "Hear the story of how we shipped Kotlin Multiplatform across Android, iOS, and the Web to power Quizlet’s learning experience for over 50 million users per month. By pinpointing the best areas of our already mature codebase to share (and intentionally skipping over many others), Quizlet was able to use Kotlin Multiplatform to share the “secret sauce” of our product without shackling our Android, iOS, and Web clients to a predetermined architecture.\n\nWe drastically reduced the size of our Android app, achieved performance and stability wins across both iOS and Android, simplified our Web build process, and unlocked the ability for mobile and backend engineers to work confidently on this shared code -- but we also faced several speed bumps along the way. Learn how we overcame challenges such as platform-specific quirks of the Kotlin standard library, constantly evolving tooling, and many more to make the magic happen!",
+        "startTime": "11:00",
+        "title": "A Journey in Shared Code with Kotlin Multiplatform",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Fábio Carballo"
+        ],
+        "description": "In just under a year, our Android team exploded from 4 people to 21! As the team and project grew, we found what worked before needed to change to feed our team’s ever-growing needs. We needed to scale both project and processes in a sustainable way. In this talk, I will share reflections from my time at N26, where we’re building the bank the world loves to use. \n\nWe’ll look at questions like: What were our biggest technical challenges? How did we prevent bottlenecks? How did we maintain consistency and not block creativity? What were our biggest mistakes and how did we solve them? We’ll also explore the importance of documentation during this process. \n\nBy the end of this talk you will have a better understanding of the problems scaling an Android team, how to tackle them and how to create a safe and productive environment.",
+        "startTime": "11:00",
+        "title": "Tackling Android Development at Scale",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Richard Süselbeck"
+        ],
+        "description": "Finding out exactly where we are is one of the more awesome powers of our mobile devices. It also poses some of the toughest challenges to developers, who must prevent excessive battery drain and deal with insufficient accuracy. In this talk we will learn how to face these challenges by answering questions such as: How does GPS even work? Are there alternatives to GPS? What are the causes of inaccurate positioning? How can I improve my accuracy? Where the heck did my battery charge go? And what strategies can I use to better balance battery and accuracy?",
+        "startTime": "11:00",
+        "title": "Where the Heck Am I? Understanding and Managing Location in Your Application",
+        "endTime": "11:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "JB Lorenzo"
+        ],
+        "description": "Benchmark is one of the new interesting libraries recently released by the Jetpack team at Google. This library allows you to measure the speed of certain parts of your application. This is helpful to validate certain parts of your app that are repeatedly accessed such as going into details of items, or scrolling through an infinite list. \nThe measurements help you monitor if your app performance is slowing down. Because of this, you can integrate it to your CI. We'll show a real life scenario of benchmarks on the OLX app and show you how you can integrate it in your CI tool.",
+        "startTime": "11:50",
+        "title": "Measure What Matters with Jetpack Benchmark (Lightning)",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Pascal Welsch"
+        ],
+        "description": "GitHub, Slack, Jira, SourceTree, Jenkins, Sketch.. RING!, RING! 2015 Called! It want its software stack back.\nRemember when you switched from Eclipse to Android Studio? It wasn't easy but totally worth it. To be productive you can't test every new tool out there. At some point you have to stick to what you got and over time you forget about the workarounds you're doing every day.\nI did test tons of programs and present you 10 new tools for developers you don't want to miss for a productivity boost. It's time to bump up your software stack!",
+        "startTime": "11:50",
+        "title": "Step Up your tooling",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Liam Sorta"
+        ],
+        "description": "AR you interested in working with Augmented Reality? This session will cover the wonders of ARFoundation, our free package that allows you to develop cross platform AR applications with ease.",
+        "startTime": "11:50",
+        "title": "Cross Platform AR with Unity",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Damian Burke"
+        ],
+        "description": "Android engineering has come a long way. Nowadays most applications are modularized to a certain degree - to combat high compile times, enforce separation of concerns or to group code based on certain scopes.\n\nIn this talk we will take a look at navigation in modularized apps. Navigation in Android can be done explicitly by passing the class variable or implicit by sending an Intent with a certain configuration. Since modularization is supposed to simplify our dependency graph, we will take a closer look at deep linking as a navigation pattern and compare different approaches like Intent filter, a custom deeplink processor or the Android Jetpack Navigation component. \n\nAfter this talk, you will be able to modularize your application with a clean, structured and scalable navigation.",
+        "startTime": "11:50",
+        "title": "Navigation in Modular Applications with Deep Linking",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Nicole Borrelli"
+        ],
+        "description": "Have a media app and want to support Android Automotive, or the Google Assistant's driving mode, but worry about how much work it will be? Wonder no longer. In this talk you'll hear we built support for the Google Assistant into UAMP, and what changes were needed to support Android Automotive. We'll dig into the MediaSession extension for ExoPlayer and see how it can make supporting these, and my other surfaces, work with ease. After the talk you'll understand how to make sure millions of drivers are able to use your app to listen to great music.",
+        "startTime": "11:30",
+        "title": "Android on the Road: Playing Music with UAMP in Cars",
+        "endTime": "12:10",
+        "type": "Lightning talk",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Pietro Maggi"
+        ],
+        "description": "After all of 2018 spent as alpha and beta, WorkManager graduated in 2019 to its first stable release and it is now the recommended solution for scheduling and executing deferrable background tasks in Android. \nIn this talk we’ll quickly look into which use cases are a good fit for WorkManager, and which are better handled by different tools/APIs. Then we will jump into the API itself covering the different options available, from the simple Worker class to the newer CoroutineWorker.\nAll this with an eye on how you can (and should) test your Workers and how you can implement some of the few missing features that are not yet covered by WorkManager out of the box.\nWith this talk you’ll learn:\n* When to use (and when not) WorkManager\n* Which Worker class to use for your particular use case\n* How to test your Worker classes\n* How to customize WorkManager configuration\n* How to use Dagger2 with WorkManager",
+        "startTime": "13:30",
+        "title": "Embrace the WorkManager",
+        "endTime": "14:10",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Niklas Baudy"
+        ],
+        "description": "Every Android Engineer is using Gradle Plugins. Most notoriously, the Android Gradle Plugin. There are a lot of plugins out in the wild — all doing different things.\nLet's dive into the Gradle API and see what a Plugin is composed of.\nWe will start writing our first Gradle Plugin together and enhance it along the way with excellent features like incremental build support, task configuration avoidance and build caching to optimize and reduce build time.\nAt the end of the talk you will have a clear understanding how Gradle Plugins work and how you can start writing your own Plugin.",
+        "startTime": "13:30",
+        "title": "Understanding Gradle and writing your own Gradle Plugin",
+        "endTime": "14:10",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Niamh Power"
+        ],
+        "description": "Across the mobile industry, there is often this great divide between the two platforms, iOS, and Android. The consumer arguments of which side is better, and what phones are better regularly leak into our work and quite frankly taint our ability to make great applications for our users. As developers, we are sometimes subject to the whims and biases of designers and product managers. However, we have to take responsibility for ensuring that our mobile products as a whole are enjoyable and consistent for our users. \n\nAt Monzo, there is a culture of collaboration, which has resulted in the mobile apps becoming closer and closer in feature parity. However, there are still issues, and definitely lessons from the past, which I will detail in this talk. I will also delve into the issues with the more black and white thought processes that plague the industry, what damage they can cause and how much of a detriment to your product they can be. She will then go on to explain how, by working together and appreciating the benefits of both sides, you can ultimately design and build apps that everybody will love, and also be happier in our work.",
+        "startTime": "13:30",
+        "title": "Better Together",
+        "endTime": "14:10",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Ivan Morgillo"
+        ],
+        "description": "A walkthrough from a first naive implementation to a rich, failproof, self-documenting implementation of an API.\nWe will explore a few Arrow data types and how we can use them with Domain Driven Design to build clear, resilient and maintainable APIs.",
+        "startTime": "13:30",
+        "title": "Design for errors - An introduction to Domain Modeling with a bit of Arrow",
+        "endTime": "14:10",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Stacy Devino"
+        ],
+        "description": "You make your own fate and you make your own career. \n\nSuccess is relative , but there are things that the top developers, innovators, managers and leaders do that make them successful. It's not what you think it is, like \"Oh, they just work really hard all the time.\" or \"Oh, they are just so much smarter.\" or \"Oh, they are just charismatic\" or \"Oh, they are just really good negotiators\". It isn't even all about the title(s).\n\nIn this talk, we are going to go through self analysis and prep, then how to establish your personal brand based off of that analysis and finally how best to capitalize on that personal brand with the help of appropriate professionals. \n\nThis is the hidden stairway and the steps you climb to personal success.",
+        "startTime": "16:50",
+        "title": "Fate is Bull$h!t : Get Happy, Get Known, Get Paid",
+        "endTime": "17:30",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Nick Butcher", 
+            "Chris Banes"
+        ],
+        "description": "The Android Theming system is powerful but easy to misuse. Proper use of it can make themes and styles easier to maintain, make branding updates less scary and make it straightforward to support dark modes.\n\nThis talk will start with a crash course in themes and styles. We’ll cover the platform, AppCompat and MaterialComponents functionality that you should know about and build upon. We’ll look at how to support both light and dark modes without going crazy. We’ll show how and when to create your own theme attributes, how to tint drawables, how to theme sub-sections of your screen and how to isolate your theme dependant resources to make them maintainable.",
+        "startTime": "14:20",
+        "title": "Developing Themes with Style",
+        "endTime": "15:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Krzysztof Sroka"
+        ],
+        "description": "In our Android application, we have a lot of code and tests (unit and UI). The problem is that we want to check all developers' changes as often as possible.\n\nWe spend a lot of time optimizing our build time using different ways. But in my talk, I want to tell you about an unusual way to reach it. We're using an impact analysis technique.\n\nThis talk focuses on how we look into developers' changes to avoid running redundant checks on our CI.\nI will tell you how we use developers' changes to understand what Gradle modules need to be checked, and what checks can be omitted.\nAlso, I will show you how sources and bytecode of our application (and test application) can help us to decide which UI tests were affected and must be executed.",
+        "startTime": "14:20",
+        "title": "Android CI: Impact Analysis",
+        "endTime": "15:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Krzysztof Sroka"
+        ],
+        "description": "Flutter lets you write incredibly smooth animations with its promise of rendering at the speed of 60 frames per second. But to achieve that you need to make sure that you don't slow down the app yourself. In the talk I'll describe how Flutter renders widgets, what does it mean for you, present some common pitfalls you should avoid, and finally show what you can do using the provided debugging tools.",
+        "startTime": "14:20",
+        "title": "Fluttering at 60 FPS (or bust)",
+        "endTime": "15:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Oleksii Fedorov"
+        ],
+        "description": "Do you know how some software development teams are afraid to deploy their code to production, and they have to “pray” after each release that it has not so many and not so critical bugs? Do you know how some business owners are embarrassed to enter the new market because the software their teams produce is so unstable that it’s frantically just a joke?\n\nIn this talk, you’ll learn how to properly apply practices such as TDD, continuous refactoring, integration, and delivery, get and give feedback on the code, and how you can deploy on Friday evening without fear of being called by your angry CTO to fix broken software over the weekend.",
+        "startTime": "14:20",
+        "title": "Fearless Deploys on Friday Evening. Wait; what?!",
+        "endTime": "15:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Miguel Beltran"
+        ],
+        "description": "Simple living, often called Minimalism, is a lifestyle that encompasses practices to have a more meaningful life with less. Minimalism in computing is not a novel idea, it existed back in the 80s when the resources were very expensive and limited.\n\nNowadays, our software development processes seem to have forgot about it. We deploy entire frameworks, or even entire operating systems, to perform a single task. We include libraries in our projects even when we just need a single method. We create bloated products that cram as much features as we can, rather than focusing on doing one thing right. As well, we have problems focusing at work, we struggle to get things done, and all together our mental health is not improving.\n\nI believe that is all related, that we should take a step back, simplify, start small, and declutter.\n\nCome and learn about the principles of minimalism, and how to apply them to your personal and professional life. You will learn about the importance of keeping things simple, learning to focus on the things that matter to make a positive impact in yours, your team’s and your users' lives.",
+        "startTime": "14:20",
+        "title": "Minimalism Driven Development",
+        "endTime": "15:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Ben Weiss"
+        ],
+        "description": "This session will show best practices around modularization in an App Bundle world. Developers will learn what it takes to get their existing code base ready and how to make use of dynamic delivery right away.\n\nWith new features being developed in apps continuously it can be daunting to find the right angle to get started. I aim to provide guidance from lessons learned and best practices so you don't have to go through the learning curve all on your own.\n\nI have been working with App Bundles, dynamic delivery and modularization and sharing knowledge around the topic for the past years.",
+        "startTime": "15:10",
+        "title": "Modularization for dynamic delivery",
+        "endTime": "15:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Advanced",
+        "speakers": [
+            "Martin Jeret"
+        ],
+        "description": "Third party dependencies can have significant impact on the build performance of the app, even more so in a CI environment, where build times are often a lot longer when compared to those that developers are used to on their workstations. This talk will explain what are the causes and possible ways to speed up your builds.\n\nAt Nevercode, our main focus is to build apps fast and we have done extensive research into what is needed to convert your application's source code to a binary that can be delivered to the customers. \n\nSo what are the differences in building the Android and iOS apps and how can developers speed up their builds? Come and find out!",
+        "startTime": "15:10",
+        "title": "CI experts on Android and iOS dependency management",
+        "endTime": "15:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Maoz Tamir"
+        ],
+        "description": "Creating Smart application that can predict, translate and advice is easier than ever, and today every developer can fill in the gap. \n\nThe aim of the talk is to give developers a kick start in adding ML to their applications.\nI will cover the different methods programmers have today for adding ML solution to their application, from using an external ML kit to implementing TensorFlow lite custom modules.\n\n1. An overview of what capabilities we can add to our applications with ML.\n2. The main frameworks that are available today. \n3. Focus on the 'on device' solutions.\n4. Code examples for each of the frameworks.\n\nMy goal is that every participant will take from this lecture the understanding that adding ML to his application to solve a specific solution is an easy practice for every programmer that is willing to spend the time and learn. ",
+        "startTime": "15:10",
+        "title": "Educating your app – Easily adding the ML edge to your applications",
+        "endTime": "15:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Márton Braun"
+        ],
+        "description": "Kotlin has many features that are leaps and bounds ahead of Java. However, its primary target platform being the JVM, all of these features still need to compile to the same bytecode as Java does.\n\nThis is a look at how a variety of interesting Kotlin features are compiled to bytecode, and what their Java equivalents would be. Even though Kotlin abstracts away much of the virtual machine and the original feature set of Java with its own features, it’s still important to know what your Kotlin code compiles to. Not only can this knowledge give you the power to optimize your code, but it will also help you avoid subtle bugs that would otherwise be near impossible to track down.",
+        "startTime": "15:10",
+        "title": "Dekompiling",
+        "endTime": "15:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Kai Koenig"
+        ],
+        "description": "So, you’ve built an app. It'd be nice to make some money with it and instead of only charging a one-off purchase price you’re maybe considering a free app with extra features. Or you might think about a subscription model to create an ongoing cash-flow by selling a service.\n\nDepending on your actual occupation in the Android-ecosystem you might never had the need to look into monetisation of an app. In a nutshell, it’s a Google Play service - implementation should be smooth and easy and super-straight-forward, right? RIGHT? How hard could it be?\n\nTopics:\n\n* Google's various in-app billing offerings and their differences\n* Play Billing and how to implement a working billing flow\n* Dealing with subscriptions in your app and the back end\n* Testing and 3rd party support libraries like Register and BillingX\n* Managing your products in Google Play and Firebase Analytics",
+        "startTime": "15:10",
+        "title": "Taking your users’ money: In-app billing from start to best practices",
+        "endTime": "15:50",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Oscar Wahltinez", 
+            "Caren Chang"
+        ],
+        "description": "Developing camera based applications on Android is often times frustrating due to the fragmentation of Android devices supported around the world. With the new Jetpack support library CameraX, developers’ lives are about to get much simpler!\n\nIn this talk we’ll take a look at the basic capabilities of CameraX, extension features that provide device-specific capabilities, and how to properly use it with lifecycle components.",
+        "startTime": "16:00",
+        "title": "Getting Started with CameraX",
+        "endTime": "16:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Kristzián Gödrei", 
+            "Tamás Papik"
+        ],
+        "description": "You choose cloud CI because it's easier, but sometimes the GUI doesn't quite cut it. During this talk, we'll show how using the CLI allows you to supercharge the build process through some neat tips and tricks, that'll be directly usable for most developers.",
+        "startTime": "16:00",
+        "title": "Building Android apps from your local terminal with the CLI",
+        "endTime": "16:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Darryn Campbell"
+        ],
+        "description": "Exactly what data is your Android device collecting about you? What does Google know about you? These are some of the most clickbaity headlines around, so it can be very difficult to find the truth between the sensational headlines and the ameliorating responses from Google.\n\nThere have been some academic studies on what Google collects, how often and how much – In this talk I will go through those results as well as present findings from my own original research. I will describe how you can go about performing your own tests on what data your phone is sending and finally discuss some of the network and on-device solutions to control what data gets sent to Google beyond just adjusting the device settings.",
+        "startTime": "16:00",
+        "title": "Google Data Collection on Android",
+        "endTime": "16:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Remco Mokveld"
+        ],
+        "description": "Video Playback on Android is hard. That means adding support for offline video is hard as well. \nWhen we, at Disney Streaming Services, started ESPN+ working on the offline features that was the assumption we made. When we started digging into it more thoroughly , it turned out that Exoplayer actually has (very scarcely documented) support for downloading different types of video and playing it back very easily.\n\nThis presentation will first give a crash course on the HLS format, and then showcase the ease with which HLS streams can be downloaded and played back offline using Exoplayer.",
+        "startTime": "16:00",
+        "title": "Offline Video with Exoplayer",
+        "endTime": "16:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Ataul Munim"
+        ],
+        "description": "So you know how to make your app accessible. You've been to the talks, read the articles, brushed up on the docs and learned all the APIs so now you're finally ready. What's next?\n\nI've shared a lot over the last few years about designing for inclusivity and how, as mobile developers, we can add better support for specific groups of users in our apps. One of the questions that I invariably get asked is \"how do I get the rest of my team and company onboard?\"\n\nLast year, I started working at a fast-paced, rapidly growing startup in the UK. I was really overwhelmed, and I had a hard-enough time getting through my day-to-day work that I felt guilty that I couldn't give the requisite time to make sure my output was accessible. Something had to change and it did.\n\nThis is a story about what we did to drive inclusive design at our company, and how you can do the same.",
+        "startTime": "16:00",
+        "title": "What's Next? Driving inclusive design at your company",
+        "endTime": "16:40",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Luiz Santana"
+        ],
+        "description": "One big struggle for many Android developers is to be dealing with animations. The whole Android framework doesn't give really good support for it and ofter it does not look as smooth as planned.\n\nLuckily, Google has been working in improving the support for it. Besides the already existing tools, such as Property Animation framework, Layout transitions or Animated Vector Drawables, Google also brought in the ConstraintLayout 2.0, the new MotionLayout.\n\nWith this layout, animations are made easy and intuitive. In this talk, we will be able to take a brief look at: \n1. Basic animation transitions based on Constraints\n2. Image transitions\n3. How to use keyframes\nand\n4. How to take advantage of MotionLayout inside the existing layouts",
+        "startTime": "16:50",
+        "title": "MotionLayout: Animation made easy",
+        "endTime": "17:30",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Sebastian Paulus", 
+            "Yusuf Figanioglu"
+        ],
+        "description": "We will present a powerful solution to remotely configure an Android app. If you want to configure features, URLs or other aspects (e.g. A/B testing) our tool will enable you to do that based on virtually everything such as app state, user accounts, actions and so on. CoCoS consists of a service, a client library and a command line tool to deliver, read and set up configurations. Configurations are based on a freely defined context sent from the app to the service. This service is comparable to Firebase Remote config but has infinite flexibility and will be open source. \n\nThis talk gives you an overview of the capabilities of CoCoS and how we use it to make our app remotely configurable in a powerful and easy way.",
+        "startTime": "16:50",
+        "title": "CoCoS - Remote configuration with super powers",
+        "endTime": "17:30",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Kirill Bubochkin"
+        ],
+        "description": "We're building a kiosk application for hotels, that can offer guests self check-in and other services. I'd like to share some problems that we've encountered while developing the app and describe the way how we solve them. We will also discuss what are the advantages and drawbacks of building kiosk application, and our way to build CI/CD for kiosks.",
+        "startTime": "16:50",
+        "title": "Building kiosk app: tips and tricks",
+        "endTime": "17:30",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Hiroyuki Mori", 
+            "Keisuke Kiuchi"
+        ],
+        "description": "As the mobile app market grows, the quality standards people request us for apps gets higher, our product gets more complex and our team gets bigger.\nIn that process, our legacy codebase became also larger than ever.\nWe had 700,000 lines of code, mainly written in Java, and some Activities were left very fat, unstable, and hard to understand.\nSo we decided to refactor our app with Kotlin and use extreme programming for our project.\nFirst we separated our app into many modules so that we can run tests repeatedly and rapidly, and adopted the Clean Architecture to facilitate future refactoring.\nThis talk will show how we refactor our app which has full of legacy code, and how important part multi-modularizing and the clean architecture played for our refactoring.\nWe will cover topics like architecture, refactoring, testing, and dependency breaking techniques using examples from our experiences.",
+        "startTime": "16:50",
+        "title": "Modularizing and Refactoring Android App with Clean Architecture",
+        "endTime": "17:30",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Anastasia López", 
+            "Vivien Barousse"
+        ],
+        "description": "This talk will give you the tools to prepare for interviews, whether it’s making your hiring process better, or simply preparing for an interview as a candidate. \n\nAs a candidate, interviewing for a new job can be quite stressful and time consuming. It feels like you are being put through an exam. Often, we forget we are also evaluating the company we are interviewing with, especially when we start interviewing for the first time, and it is hard to know what to look for.\n\nOn the other hand, interviewing candidates for a position can be stressful too. You want to find the perfect person to join your team, but there are many factors that feel out of our hands (e.g. rain can affect the mood of the candidate and the person interviewing and impact the result). We need to effectively control the factors that we can.\n\nWith this talk we want to focus on the whole process of finding the right people to work with, from the job advert to the offer. And we want to do it from both points of view, as the company and as the candidate.\n\nWe want to show candidates behind the scenes of the interviewing process, to make it feel less intimidating. We want to teach them how to choose a job and a company that fits with them. We want to give some tips on how to prepare for interviews, and the sort of exercises they might encounter.\n\nWe also want to help companies improve their hiring process. There is no solution that works for everyone, but there are patterns everyone can follow to do better. We want to show them how to reach candidates, make sure qualified candidates apply, show them how to deal with the unavoidable biases they will face, help them understand the pros and cons of different types of exercises, and finally, help them find the perfect new hire for their team.\n\nHiring and interviewing is not easy, and there is no easy solution to it. But we hope that with this talk we would make it a little bit better for everyone involved.",
+        "startTime": "13:30",
+        "title": "Hire Better Faster Stronger",
+        "endTime": "14:10",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Saiki Iijima", 
+            "Yugo Matsuda"
+        ],
+        "description": "~ Throw away your mouse, only after that can everything else begin. ~\n\nDon't you want to be a super engineer who writes codes at ultra high speed?\nWhy in the hell do we have to move our right hand back and forth between keyboard and mouse.\nIts nothing but pain unless you are training on your right hand. \n\nYou can write code much faster by putting your hands on home position!!\n\nIn this talk, a man struggling everyday with huge code (cool codebase over 700,000!) introduces that with live coding the ways for freely to move across entire your project without your mouse, and super convenient shortcuts.\n\nThis talk make you ultra high speed engineer and make your development to full of fun.\nYou can get relief from suffering by mouse code or sudden death of battery.\n\nNow, throw away your mouse!\n\n## Targets\n* From beginners to experts\n* Those who want to become super high speed engineer\n* Those whom mouses were broken",
+        "startTime": "17:40",
+        "title": "Android Studio Super Shortcuts",
+        "endTime": "18:20",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Pie"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Marcin Moskała"
+        ],
+        "description": "Kotlin gives us a lot of possibilities, but with every power comes responsibility. What should we avoid doing in Kotlin? What are Kotlin internal contracts in terms of different features and functions? What is dangerous and should be avoided? How to code responsively?",
+        "startTime": "17:40",
+        "title": "Kotlin Not-to-Do List - What we should avoid doing in Kotlin",
+        "endTime": "18:20",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Elaine Dias Batista"
+        ],
+        "description": "The fact that \"apps\" for the Google Assistant and for Android are both available on Android smartphones can be the cause of some confusion. Do I have to go to the Play Store to download and install an \"app\" for the Google Assistant? Can I launch a Google Assistant experience from an Android app? How to integrate advanced voice recognition (NLP or other) on existing apps? What experience should I offer on my app? In this talk I will answer these questions, do a comparison of the ecosystems and how they can work together.",
+        "startTime": "17:40",
+        "title": "Google Assistant for Android Developers",
+        "endTime": "18:20",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Parth Padgaonkar"
+        ],
+        "description": "As developers, many of us are fortunate to be passionate about our work. However, “passion” often ends up being coded language for “working extra hours”! Things like personal projects, maintaining a portfolio website, or even keeping up-to-date on new libraries and best practices takes time and effort that we might prefer to spend in other areas.\nIn the end, we all only have 24 hours in a day, 168 hours in a week. Between our family, career, health, and happiness, what should we prioritize?\n\nWe’ll discuss tips for setting boundaries while maintaining career progression, all the while emphasizing making intentional, empowered decisions about your happiness.\n\nWork+life balance? Why not both!",
+        "startTime": "17:40",
+        "title": "Your Strengths Include: Work/Life Balance",
+        "endTime": "18:20",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Lollipop"
+    }
+]

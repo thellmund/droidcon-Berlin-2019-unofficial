@@ -1,6 +1,7 @@
 package com.hellmund.droidcon2019.data.model
 
 import android.os.Parcelable
+import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
 import kotlinx.android.parcel.Parcelize
@@ -15,14 +16,24 @@ interface Filterable {
 data class Session(
     val title: String,
     val stage: Stage,
-    val speaker: String? = null,
+    val speakers: List<String>,
     val day: EventDay,
     val description: String,
     val startTime: LocalTime,
     val endTime: LocalTime,
-    val type: Type? = null,
-    val level: Level? = null
+    val type: Type,
+    val level: Level
 ) : Parcelable, Filterable {
+
+    val formattedSpeakers: String
+        get() {
+            return if (speakers.size > 2) {
+                val first = speakers.first()
+                "$first & ${speakers.size - 1} more"
+            } else {
+                speakers.joinToString(", ")
+            }
+        }
 
     override fun isInFilter(
         filter: Filter,
@@ -51,8 +62,9 @@ data class Session(
 
         result = result || title.toLowerCase(Locale.getDefault()).contains(text)
 
-        if (speaker != null) {
-            result = result || speaker.toLowerCase(Locale.getDefault()).contains(text)
+        if (speakers.isNotEmpty()) {
+            val candidates = speakers.map { it.toLowerCase(Locale.getDefault()) }
+            result = result || candidates.any { it.contains(text) }
         }
 
         result = result || description.toLowerCase(Locale.getDefault()).contains(text)
@@ -62,10 +74,21 @@ data class Session(
 
 }
 
-enum class Type {
-    Talk, LightningTalk, Workshop
+enum class Stage {
+    Pie, Oreo, Marshmallow, Nougat, Lollipop, None
 }
 
-enum class Level {
-    Introductory, Intermediate, Advanced
+enum class Type(val value: String, val resId: Int) {
+    Session("Session", R.drawable.ic_outline_video_label),
+    LightningTalk("Lightning talk", R.drawable.ic_outline_flash_on),
+    Workshop("Workshop", R.drawable.ic_outline_build),
+    PanelDiscussion ("Panel discussion", R.drawable.ic_outline_question_answer),
+    None("None", 0)
+}
+
+enum class Level(val resId: Int) {
+    Introductory(R.drawable.ic_outline_signal_cellular_one),
+    Intermediate(R.drawable.ic_outline_signal_cellular_two),
+    Advanced(R.drawable.ic_outline_signal_cellular_three),
+    None(0)
 }
