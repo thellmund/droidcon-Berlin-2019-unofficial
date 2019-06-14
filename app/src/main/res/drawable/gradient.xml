@@ -4,5 +4,5 @@
         android:type="linear"
         android:angle="0"
         android:startColor="@android:color/transparent"
-        android:endColor="@color/contentBackground" />
+        android:endColor="@color/active_filters_card" />
 </shape>
