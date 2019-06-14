@@ -11,8 +11,10 @@
     <color name="toolbar">@android:color/white</color>
     <color name="bottom_nav">#EEEEEE</color>
     <color name="navbar">#EEEEEE</color>
+    <color name="active_filters_card">#E0E0E0</color>
 
     <color name="contentBackground">@android:color/white</color>
+    <color name="transparentContentBackground">#80FFFFFF</color>
     <color name="textColor">#D9000000</color>
     <color name="secondaryTextColor">#A6000000</color>
 

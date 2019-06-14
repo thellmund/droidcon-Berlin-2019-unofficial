@@ -18,9 +18,7 @@ import kotlinx.android.synthetic.main.fragment_filter.typesChipGroup
 
 class FilterFragment : RoundedBottomSheetDialogFragment() {
 
-    private val filterStore: FilterStore by lazy {
-        FilterStore(requireContext())
-    }
+    private val filterStore = FilterStore.getInstance()
 
     private var onFilterChanged: (Filter) -> Unit = {}
 
@@ -33,12 +31,12 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         closeButton.setOnClickListener { dismiss() }
 
-        favoritesChip.isChecked = filterStore.get().isFavorites
+        favoritesChip.isChecked = filterStore.filter.isFavorites
         favoritesChip.setOnCheckedChangeListener { compoundButton, isChecked ->
             val chip = compoundButton as Chip
             chip.isCloseIconVisible = isChecked
             filterStore.toggleFavorites()
-            onFilterChanged(filterStore.get())
+            onFilterChanged(filterStore.filter)
         }
         favoritesChip.setOnCloseIconClickListener {
             val chip = it as Chip
@@ -49,13 +47,13 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         val stages = Stage.values().toList().minus(Stage.None).map { it.name }
         val stageChips = getChips(stages)
         stageChips.forEachIndexed { index, chip ->
-            chip.isChecked = filterStore.get().stages.contains(Stage.values()[index])
+            chip.isChecked = filterStore.filter.stages.contains(Stage.values()[index])
 
             chip.setOnCheckedChangeListener { compoundButton, isChecked ->
                 val c = compoundButton as Chip
                 c.isCloseIconVisible = isChecked
                 filterStore.toggleStage(Stage.values()[index])
-                onFilterChanged(filterStore.get())
+                onFilterChanged(filterStore.filter)
             }
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
@@ -68,13 +66,13 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         val types = Type.values().toList().minus(Type.None).map { it.value }
         val typeChips = getChips(types)
         typeChips.forEachIndexed { index, chip ->
-            chip.isChecked = filterStore.get().types.contains(Type.values()[index])
+            chip.isChecked = filterStore.filter.types.contains(Type.values()[index])
 
             chip.setOnCheckedChangeListener { compoundButton, isChecked ->
                 val c = compoundButton as Chip
                 c.isCloseIconVisible = isChecked
                 filterStore.toggleType(Type.values()[index])
-                onFilterChanged(filterStore.get())
+                onFilterChanged(filterStore.filter)
             }
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
@@ -87,13 +85,13 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         val levels = Level.values().toList().minus(Level.None).map { it.name }
         val levelChips = getChips(levels)
         levelChips.forEachIndexed { index, chip ->
-            chip.isChecked = filterStore.get().levels.contains(Level.values()[index])
+            chip.isChecked = filterStore.filter.levels.contains(Level.values()[index])
 
             chip.setOnCheckedChangeListener { compoundButton, isChecked ->
                 val c = compoundButton as Chip
                 c.isCloseIconVisible = isChecked
                 filterStore.toggleLevel(Level.values()[index])
-                onFilterChanged(filterStore.get())
+                onFilterChanged(filterStore.filter)
             }
             chip.setOnCloseIconClickListener {
                 val c = it as Chip

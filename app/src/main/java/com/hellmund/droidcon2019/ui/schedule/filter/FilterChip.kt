@@ -20,4 +20,10 @@ class FilterChip @JvmOverloads constructor(
         setTextColor(Color.WHITE)
         setChipBackgroundColorResource(R.color.selector_chip_background)
     }
+
+    fun disable() {
+        isCheckable = false
+        isClickable = false
+    }
+
 }

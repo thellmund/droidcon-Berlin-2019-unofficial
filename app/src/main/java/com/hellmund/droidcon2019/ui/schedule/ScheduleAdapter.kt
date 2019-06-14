@@ -135,7 +135,7 @@ class EventsAdapter(
     }
 
     fun applyFilter(filter: Filter) {
-        if (filter == Filter.EMPTY) {
+        if (filter == Filter.empty()) {
             filteredItems = null
         } else {
             filterItems(rawItems, filter)

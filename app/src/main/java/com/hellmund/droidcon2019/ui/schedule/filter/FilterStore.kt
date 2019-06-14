@@ -1,14 +1,10 @@
 package com.hellmund.droidcon2019.ui.schedule.filter
 
 import android.content.Context
-import android.content.SharedPreferences
-import com.google.gson.Gson
+import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Level
 import com.hellmund.droidcon2019.data.model.Stage
 import com.hellmund.droidcon2019.data.model.Type
-import org.jetbrains.anko.defaultSharedPreferences
-
-private const val KEY_FILTER = "KEY_FILTER"
 
 data class Filter(
     var isFavorites: Boolean = false,
@@ -17,78 +13,73 @@ data class Filter(
     var levels: MutableList<Level> = mutableListOf()
 ) {
 
+    fun getActiveFilters(context: Context): List<String> {
+        val results = mutableListOf<String>()
+
+        if (isFavorites) {
+            results += context.getString(R.string.my_favorites)
+        }
+
+        results += stages.map { it.name }
+        results += types.map { it.value }
+        results += levels.map { it.name }
+
+        return results
+    }
+
     companion object {
-        val EMPTY = Filter()
+        fun empty() = Filter()
     }
 
 }
 
-class FilterStore(
-    context: Context
-) {
+class FilterStore {
 
-    private val sharedPrefs = context.defaultSharedPreferences
-    private val gson = Gson()
-
-    fun get(): Filter {
-        val value = sharedPrefs.getString(KEY_FILTER)
-        if (value == null) {
-            val filter = Filter()
-            put(filter)
-            return filter
-        }
-        return gson.fromJson(value, Filter::class.java)
-    }
-
-    private fun put(filter: Filter) {
-        val value = gson.toJson(filter)
-        sharedPrefs.edit().putString(KEY_FILTER, value).apply()
-    }
+    var filter = Filter.empty()
 
     fun toggleFavorites() {
-        transaction {
-            isFavorites = isFavorites.not()
-        }
+        filter.isFavorites = filter.isFavorites.not()
     }
 
     fun toggleStage(stage: Stage) {
-        transaction {
-            if (stages.contains(stage)) {
-                stages.remove(stage)
-            } else {
-                stages.add(stage)
-            }
+        if (filter.stages.contains(stage)) {
+            filter.stages.remove(stage)
+        } else {
+            filter.stages.add(stage)
         }
     }
 
     fun toggleType(type: Type) {
-        transaction {
-            if (types.contains(type)) {
-                types.remove(type)
-            } else {
-                types.add(type)
-            }
+        if (filter.types.contains(type)) {
+            filter.types.remove(type)
+        } else {
+            filter.types.add(type)
         }
     }
 
     fun toggleLevel(level: Level) {
-        transaction {
-            if (levels.contains(level)) {
-                levels.remove(level)
-            } else {
-                levels.add(level)
-            }
+        if (filter.levels.contains(level)) {
+            filter.levels.remove(level)
+        } else {
+            filter.levels.add(level)
         }
     }
 
-    private fun transaction(block: Filter.() -> Unit) {
-        val filter = get()
-        filter.block()
-        put(filter)
+    fun clear() {
+        filter = Filter.empty()
     }
 
-    private fun SharedPreferences.getString(key: String): String? {
-        return if (contains(key)) getString(key, "") else null
+    companion object {
+
+        private var instance: FilterStore? = null
+
+        fun getInstance(): FilterStore {
+            if (instance == null) {
+                instance = FilterStore()
+            }
+            return instance!!
+        }
+
     }
 
 }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activeFiltersContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_margin="@dimen/small_space"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    app:cardBackgroundColor="@color/contentBackground"
+    app:cardCornerRadius="@dimen/corner_radius"
+    app:cardElevation="12dp"
+    app:contentPadding="@dimen/small_space"
+    tools:visibility="visible">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/activeFiltersChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="24dp"
+            app:singleLine="true" />
+
+        <View
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/gradient" />
+
+        <ImageButton
+            android:id="@+id/clearFilterButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="@android:color/transparent"
+            android:rotation="45"
+            android:src="@drawable/ic_outline_add_circle" />
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

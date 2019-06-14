@@ -23,7 +23,9 @@ import com.hellmund.droidcon2019.data.model.EventDay
 import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.ui.schedule.details.EventDetailsFragment
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
+import com.hellmund.droidcon2019.ui.schedule.filter.FilterChip
 import com.hellmund.droidcon2019.ui.schedule.filter.FilterFragment
+import com.hellmund.droidcon2019.ui.schedule.filter.FilterStore
 import com.hellmund.droidcon2019.ui.schedule.search.SearchResultsAdapter
 import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import kotlinx.android.synthetic.main.fragment_schedule.contentContainer
@@ -32,6 +34,9 @@ import kotlinx.android.synthetic.main.fragment_schedule.searchRecyclerView
 import kotlinx.android.synthetic.main.fragment_schedule.tabLayout
 import kotlinx.android.synthetic.main.fragment_schedule.toolbar
 import kotlinx.android.synthetic.main.fragment_schedule.viewPager
+import kotlinx.android.synthetic.main.view_active_filters.activeFiltersChipGroup
+import kotlinx.android.synthetic.main.view_active_filters.activeFiltersContainer
+import kotlinx.android.synthetic.main.view_active_filters.clearFilterButton
 import org.threeten.bp.LocalDate
 import org.threeten.bp.format.DateTimeFormatter
 
@@ -79,15 +84,39 @@ class ScheduleFragment : BaseFragment() {
 
         setCurrentDay()
 
-        fab.setOnClickListener {
-            val fragment = FilterFragment.newInstance(this::onFilterChanged)
-            fragment.show(childFragmentManager, fragment.tag)
+        fab.setOnClickListener { openFilters() }
+        activeFiltersContainer.setOnClickListener { openFilters() }
+
+        clearFilterButton.setOnClickListener {
+            val store = FilterStore.getInstance()
+            store.clear()
+            onFilterChanged(Filter.empty())
         }
     }
 
-    private fun onFilterChanged(filter: Filter) {
-        val adapter = viewPager.adapter as DaysAdapter
+    private fun openFilters() {
+        val fragment = FilterFragment.newInstance(this::onFilterChanged)
+        fragment.show(childFragmentManager, fragment.tag)
+    }
 
+    private fun onFilterChanged(filter: Filter) {
+        val isFilterActive = filter != Filter.empty()
+        fab.isVisible = isFilterActive.not()
+        activeFiltersContainer.isVisible = isFilterActive
+
+        if (isFilterActive) {
+            activeFiltersChipGroup.removeAllViews()
+            val items = filter.getActiveFilters(requireContext())
+            val chips = items
+                .map { FilterChip(requireContext()).apply { text = it } }
+
+            chips.forEach {
+                it.disable()
+                activeFiltersChipGroup.addView(it)
+            }
+        }
+
+        val adapter = viewPager.adapter as DaysAdapter
         for (index in 0 until adapter.count) {
             val fragment = adapter.getFragmentAt(index)
             fragment?.applyFilter(filter)
@@ -98,7 +127,6 @@ class ScheduleFragment : BaseFragment() {
         super.onResume()
         val activity = requireActivity() as AppCompatActivity
         activity.setSupportActionBar(toolbar)
-
     }
 
     private fun setCurrentDay() {

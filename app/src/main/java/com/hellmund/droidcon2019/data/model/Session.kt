@@ -39,7 +39,7 @@ data class Session(
         filter: Filter,
         favoritesStore: FavoritesStore
     ): Boolean {
-        return if (filter == Filter.EMPTY) {
+        return if (filter == Filter.empty()) {
             true
         } else {
             var result = true
