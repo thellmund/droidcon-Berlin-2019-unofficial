@@ -86,6 +86,7 @@ class ScheduleFragment : BaseFragment() {
         tabLayout.setupWithViewPager(viewPager)
 
         setCurrentDay()
+        isCardHidden = false
         hideFilterCard()
 
         fab.setOnClickListener { openFilters() }
@@ -111,6 +112,7 @@ class ScheduleFragment : BaseFragment() {
         handler.post {
             activeFiltersContainer.animate()
                 .setDuration(600L)
+                .alpha(0f)
                 .translationYBy(400f)
                 .setInterpolator(OvershootInterpolator(1f))
                 .start()
@@ -128,6 +130,7 @@ class ScheduleFragment : BaseFragment() {
         handler.post {
             activeFiltersContainer.animate()
                 .setDuration(600L)
+                .alpha(1f)
                 .translationYBy(-400f)
                 .setInterpolator(OvershootInterpolator(1f))
                 .start()

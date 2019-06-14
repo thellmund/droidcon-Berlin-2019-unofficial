@@ -22,5 +22,5 @@
     <color name="chipSelected">#F7835F</color>
 
     <color name="levelActive">#000000</color>
-    <color name="levelInactive">#616161</color>
+    <color name="levelInactive">#A4A4A4</color>
 </resources>
