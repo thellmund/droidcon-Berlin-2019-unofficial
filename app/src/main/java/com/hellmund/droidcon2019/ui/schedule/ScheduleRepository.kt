@@ -21,7 +21,7 @@ class ScheduleRepository(
     }
 
     private fun loadEventsFromAssets(context: Context) {
-        val asset = context.assets.open("schedule_v2.json")
+        val asset = context.assets.open("schedule.json")
         val text = asset.bufferedReader().readText()
         events += gson.fromJson<List<Session>>(text, type)
     }

@@ -58,17 +58,17 @@ class DayFragment : BaseFragment() {
     private fun render(events: List<Session>) {
         adapter.update(events)
 
+        // Auto-scroll to current events
         if (LocalDate.now() == day.toDate()) {
             val now = LocalTime.now()
 
-            // TODO Test
             val currentTime = adapter.items
                 .mapIndexed { index, item -> index to item }
                 .filter { (_, item) -> item.isFirst }
                 .lastOrNull { (_, item) -> item.event.startTime.isBefore(now) }
 
             currentTime?.let { (index, _) ->
-                scheduleRecyclerView.scrollToPosition(index)
+                scheduleRecyclerView.smoothScrollToPosition(index)
             }
         }
     }

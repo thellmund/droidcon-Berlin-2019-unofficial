@@ -15,7 +15,7 @@ class SpeakersRepository(
     private val gson = Gson()
 
     private fun loadSpeakers() {
-        val asset = context.assets.open("speakers_v3.json")
+        val asset = context.assets.open("speakers.json")
         val text = asset.bufferedReader().readText()
         speakers += gson.fromJson<List<Speaker>>(text, type)
     }

@@ -104,33 +104,6 @@ class EventDetailsFragment : BaseFragment() {
             speakersRecyclerView.isVisible = false
         }
 
-        // TODO
-        /*
-        if (event.speakers.isNotEmpty()) {
-            val speakerName = event.formattedSpeakers
-            val speaker = speakersRepository.getSpeaker(speakerName)
-
-            Picasso.get()
-                .load(speaker.imageUrl)
-                .into(speakerImageView)
-
-            speakerNameTextView.text = speaker.name
-            speakerRoleTextView.text = speaker.role
-            speakerCompanyTextView.text = speaker.company
-
-            speakerCard.setOnClickListener {
-                requireFragmentManager().transaction {
-                    setCustomAnimations(R.anim.slide_in_right, R.anim.fade_out, R.anim.fade_in, R.anim.slide_out_right)
-                    replace(R.id.contentFrame, SpeakerDetailsFragment.newInstance(speaker))
-                    addToBackStack(null)
-                }
-            }
-        } else {
-            speakersHeader.isVisible = false
-            speakerCard.isVisible = false
-        }
-        */
-
         scrollView.viewTreeObserver.addOnScrollChangedListener(onScrollListener)
 
         updateFavoriteIcon()

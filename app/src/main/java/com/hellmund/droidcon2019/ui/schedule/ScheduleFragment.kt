@@ -151,7 +151,6 @@ class ScheduleFragment : BaseFragment() {
         } else {
             hideFilterCard()
         }
-        // activeFiltersContainer.isVisible = isFilterActive
 
         if (isFilterActive) {
             activeFiltersChipGroup.removeAllViews()

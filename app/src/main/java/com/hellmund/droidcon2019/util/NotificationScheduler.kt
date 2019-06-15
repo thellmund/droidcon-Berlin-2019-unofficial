@@ -58,7 +58,7 @@ class NotificationScheduler(
         fun setupNotificationChannel(context: Context) {
             val channel = NotificationChannel(
                 CHANNEL_ID,
-                "Event notifications",
+                "Session notifications",
                 NotificationManager.IMPORTANCE_HIGH).apply {
                 enableVibration(false)
                 enableLights(false)
