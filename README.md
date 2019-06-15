@@ -2,6 +2,8 @@
 
 This is an _unofficial_ app for [droidcon Berlin 2019](https://de.droidcon.com). Because there is no official API, the information in the app might become outdated if there are changes to the schedule. Still, I hope you find it useful.
 
+![](images/header_image.png)
+
 #### Features
 - Check out the conference schedule
 - Look up information about the speakers
