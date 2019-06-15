@@ -40,8 +40,7 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         }
         favoritesChip.setOnCloseIconClickListener {
             val chip = it as Chip
-            chip.isCloseIconVisible = false
-            chip.isCloseIconVisible = false
+            chip.isChecked = false
         }
 
         val stages = Stage.values().toList().minus(Stage.None).map { it.name }
@@ -58,7 +57,6 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
                 c.isChecked = false
-                c.isCloseIconVisible = false
             }
             stagesChipGroup.addView(chip)
         }
@@ -76,8 +74,7 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
             }
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
-                c.isCloseIconVisible = false
-                c.isCloseIconVisible = false
+                c.isChecked = false
             }
             typesChipGroup.addView(chip)
         }
@@ -95,8 +92,7 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
             }
             chip.setOnCloseIconClickListener {
                 val c = it as Chip
-                c.isCloseIconVisible = false
-                c.isCloseIconVisible = false
+                c.isChecked = false
             }
             levelChipGroup.addView(chip)
         }
