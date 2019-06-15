@@ -110,7 +110,8 @@ class ScheduleFragment : BaseFragment() {
 
         val handler = Handler(Looper.getMainLooper())
         handler.post {
-            activeFiltersContainer.animate()
+            val view = activeFiltersContainer ?: return@post
+            view.animate()
                 .setDuration(600L)
                 .alpha(0f)
                 .translationYBy(400f)
