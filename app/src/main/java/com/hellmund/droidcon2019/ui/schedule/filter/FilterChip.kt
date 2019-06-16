@@ -1,6 +1,7 @@
 package com.hellmund.droidcon2019.ui.schedule.filter
 
 import android.content.Context
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.util.AttributeSet
 import com.google.android.material.chip.Chip
@@ -17,6 +18,7 @@ class FilterChip @JvmOverloads constructor(
         isClickable = true
         isCheckedIconVisible = false
         isCloseIconVisible = false
+        closeIconTint = ColorStateList.valueOf(Color.WHITE)
         setTextColor(Color.WHITE)
         setChipBackgroundColorResource(R.color.selector_chip_background)
     }
