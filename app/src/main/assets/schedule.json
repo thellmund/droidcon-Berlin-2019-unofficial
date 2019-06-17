@@ -50,6 +50,19 @@
         "stage": "Pie"
     },
     {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Teresa Holfeld"
+        ],
+        "description": "Unleash your creativity while actively listening to talks! Sketchnoting is the art of using visuals to record and share ideas. Come to learn about taking notes, and how to make beautiful sketches with the help of lettering techniques.",
+        "startTime": "11:00",
+        "title": "Sketchnoting Workshop",
+        "endTime": "12:00",
+        "type": "Workshop",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
         "level": "",
         "speakers": [],
         "description": "",
@@ -972,7 +985,7 @@
         ],
         "description": "This talk will teach developers how to efficiently write & setup experiments (A/B Tests) and hence showcase a way to create apps that keep the customers at the centre of everything.\n\nIf you attend this talk you will learn how to frame the hypothesis, calculate runtime of an experiment, set up metrics to measure success so that you can act as a product manager yourself in future!\n\nHaving run over a 100 experiments alone in the last 2 years at Booking.com (One of the world’s biggest platform running massive number of A/B Tests) with 10% success rate, I’ll present some hard to believe facts related to user experience and design that developers often overlook while shipping features.\n\nThink of this talk as a crash course for Mobile Developers to become Product Owners.",
         "startTime": "16:10",
-        "title": "Customer Driven Development : What, Why & How?",
+        "title": "Customer Driven Development: What, Why & How?",
         "endTime": "16:50",
         "type": "Session",
         "day": "Tuesday",
@@ -1170,19 +1183,6 @@
         "stage": "Oreo"
     },
     {
-        "level": "Intermediate",
-        "speakers": [
-            "Rohan Taneja"
-        ],
-        "description": "One of Flutter's ideal use-cases is delivering high-quality apps for Android, iOS and beyond in a short span of time. In this talk, we share our experience about how we built the DroidCon Berlin App using Flutter for multiple platforms in less than 30 days and the lessons learned along the process.",
-        "startTime": "10:10",
-        "title": "Building a cross-platform DroidCon app using Flutter",
-        "endTime": "10:50",
-        "type": "Session",
-        "day": "Wednesday",
-        "stage": "Marshmallow"
-    },
-    {
         "level": "Introductory and overview",
         "speakers": [
             "Marcos Holgado"
@@ -1211,7 +1211,20 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Murat Yener", 
+            "Arnav Gupta"
+        ],
+        "description": "This will go through the journey of building a blogging app (Medium clone) using Kotlin, Nativescript and Flutter and discuss the differences in developer and user experience for the apps built using all these platforms.\n\n\n\nSo I took the famous realworld.io project (which is a clone of Medium) and implemented it in Kotlin for native Android, and then using Nativescript-Vue and finally in Flutter. Although separate platforms, the end result looks identical to the end user.\n\nWe will compare a bunch of things across these three platforms -\n\nDeveloper Experience\nPerformance (out of the box)\nPerformance optimisation learning curve\nMemory/CPU/App size differences\nLines of Code\nPerceptible jank, smoothness\nConstraints and limitations of each framework",
+        "startTime": "09:20",
+        "title": "What I learnt by building the exact same app in Kotlin (Native Android), Nativescript and Flutter",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Murat Yener",
             "Manuel Vivo"
         ],
         "description": "New UI Features are the most visible changes for you app users. As the OS and the other apps move forward, your app can easily left out with a broken experience.\n\nCome to this talk to learn more about new UI features that can make your application stand out. In this talk, you’ll learn how to implement the new Android Q UI features that will bring your app’s User Experience to a new level:\n\n- Foldables\n- Gestural Navigation and Edge to Edge display\n- Direct Share improvements\n- Bubbles\n- Settings Panels\nand more!",
@@ -1238,12 +1251,12 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Arnav Gupta"
+            "Rohan Taneja"
         ],
-        "description": "This will go through the journey of building a blogging app (Medium clone) using Kotlin, Nativescript and Flutter and discuss the differences in developer and user experience for the apps built using all these platforms.\n\n\n\nSo I took the famous realworld.io project (which is a clone of Medium) and implemented it in Kotlin for native Android, and then using Nativescript-Vue and finally in Flutter. Although separate platforms, the end result looks identical to the end user.\n\nWe will compare a bunch of things across these three platforms -\n\nDeveloper Experience\nPerformance (out of the box)\nPerformance optimisation learning curve\nMemory/CPU/App size differences\nLines of Code\nPerceptible jank, smoothness\nConstraints and limitations of each framework",
-        "startTime": "09:20",
-        "title": "What I learnt by building the exact same app in Kotlin (Native Android), Nativescript and Flutter",
-        "endTime": "10:00",
+        "description": "One of Flutter's ideal use-cases is delivering high-quality apps for Android, iOS and beyond in a short span of time. In this talk, we share our experience about how we built the DroidCon Berlin App using Flutter for multiple platforms in less than 30 days and the lessons learned along the process.",
+        "startTime": "10:10",
+        "title": "Building a cross-platform DroidCon app using Flutter",
+        "endTime": "10:50",
         "type": "Session",
         "day": "Wednesday",
         "stage": "Marshmallow"
@@ -1397,7 +1410,7 @@
             "Nicole Borrelli"
         ],
         "description": "Have a media app and want to support Android Automotive, or the Google Assistant's driving mode, but worry about how much work it will be? Wonder no longer. In this talk you'll hear we built support for the Google Assistant into UAMP, and what changes were needed to support Android Automotive. We'll dig into the MediaSession extension for ExoPlayer and see how it can make supporting these, and my other surfaces, work with ease. After the talk you'll understand how to make sure millions of drivers are able to use your app to listen to great music.",
-        "startTime": "11:30",
+        "startTime": "11:50",
         "title": "Android on the Road: Playing Music with UAMP in Cars",
         "endTime": "12:10",
         "type": "Lightning talk",
@@ -1463,7 +1476,7 @@
         ],
         "description": "You make your own fate and you make your own career. \n\nSuccess is relative , but there are things that the top developers, innovators, managers and leaders do that make them successful. It's not what you think it is, like \"Oh, they just work really hard all the time.\" or \"Oh, they are just so much smarter.\" or \"Oh, they are just charismatic\" or \"Oh, they are just really good negotiators\". It isn't even all about the title(s).\n\nIn this talk, we are going to go through self analysis and prep, then how to establish your personal brand based off of that analysis and finally how best to capitalize on that personal brand with the help of appropriate professionals. \n\nThis is the hidden stairway and the steps you climb to personal success.",
         "startTime": "16:50",
-        "title": "Fate is Bull$h!t : Get Happy, Get Known, Get Paid",
+        "title": "Fate is Bull$h!t: Get Happy, Get Known, Get Paid",
         "endTime": "17:30",
         "type": "Session",
         "day": "Wednesday",
