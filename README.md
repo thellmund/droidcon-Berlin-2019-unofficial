@@ -2,6 +2,8 @@
 
 This is an _unofficial_ app for [droidcon Berlin 2019](https://de.droidcon.com).
 
+[Download APK](https://github.com/thellmund/droidcon-Berlin-2019-unofficial/releases/download/0.7/app-release.apk)
+
 #### Features
 - Check out the conference schedule
 - Look up information about the speakers
