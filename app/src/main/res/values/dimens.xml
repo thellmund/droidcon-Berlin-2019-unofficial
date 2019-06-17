@@ -6,4 +6,5 @@
     <dimen name="large_space">24dp</dimen>
     <dimen name="corner_radius">8dp</dimen>
     <dimen name="material_list_inset">80dp</dimen>
+    <dimen name="fab_adjusted_bottom_padding">88dp</dimen>
 </resources>

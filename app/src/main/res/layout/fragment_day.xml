@@ -10,6 +10,8 @@
         android:id="@+id/scheduleRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/fab_adjusted_bottom_padding"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </FrameLayout>
