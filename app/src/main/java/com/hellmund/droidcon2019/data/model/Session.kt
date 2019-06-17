@@ -52,6 +52,9 @@ data class Session(
             if (filter.types.isNotEmpty()) {
                 result = result && filter.types.contains(type)
             }
+            if (filter.levels.isNotEmpty()) {
+                result = result && filter.levels.contains(level)
+            }
             return result
         }
     }
