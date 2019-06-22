@@ -70,16 +70,6 @@
         "name": "Vipul Shah"
     },
     {
-        "description": "Adrián has been involved in software industry for 13+ years, working both in web and mobile apps. GDG Guatemala, GuatemalaJS and Nodebots former co-organizer. Currently he leads the Innovation Lab at Galileo University and is a Google Developer Expert (GDE) for Android, IoT and Firebase.\n\nYury is Systems Engineer and Google Developer Expert for Android. He is passionate about technology and software development, working in mobile applications development since 2010. Yury is GDG Cochabamba organizer. He likes to learn and share with the communities of developers and entrepreneurs giving talks, workshops and mentoring. Globant , OLX Group former, He's currently working at Hipcam company as Android Technical Lead and he is also an independent consultant.",
-        "links": [
-
-        ],
-        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_cd246bc777384564b308383711590bfd~mv2.png",
-        "role": "Innovation Lab Director",
-        "company": "Android Software Engineer at Hipcam",
-        "name": "Adrian Catalan & Yury Camacho"
-    },
-    {
         "description": "Sebastian is working as an Android developer for more than 7 years. As the Tech Lead of the Android team, he's focused on delivering a fast and reliable Mail app for more than 8 million monthly active users. Together with a team of 12 developers, he develops the mail and cloud app for the brands GMX, WEB.DE, mail.com and 1&1.\n\nYusuf is an Android developer at 1&1. He's currently working on the Cloud apps where he can explore, try new technologies and bring cool features to users. He has a special passion for flying things, that might be the answer to why he loves working on Cloud apps.",
         "links": [
 
@@ -640,7 +630,7 @@
     {
         "description": "Krzysztof used to wrangle test automation, and shift pixels of Flight Search at Google in Zurich. After several years of that, he decided it's time for more independence and joined Callstack as one of senior engineers. While his colleagues heavily focus on React Native, he decided to take a different path and became the company's first full-time Flutter developer.​",
         "links": [
-
+            "https://twitter.com/kpsroka"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_03046114326e456cacfc8aa396ff8247~mv2.png",
         "role": "Lead Flutter Developer",
@@ -650,7 +640,7 @@
     {
         "description": "Florina is working as an Android Developer Advocate at Google, helping developers architect clean, testable apps using the Architecture Components libraries. She has been working with Android for 8 years, previous work covering news at upday, payment solutions at payleven and navigation services at Garmin.​",
         "links": [
-
+            "https://twitter.com/Fmuntenescu"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_65d0183bb2a54e95bb21ae4b5c6113bc~mv2.png",
         "role": "Android Developer Advocate",
@@ -660,7 +650,7 @@
     {
         "description": "Erik was raised in the dark woods of Sweden, where the was nothing to do but to learn how to write code for PCs. After many years of suffering through experiences of early C++, Visual basic, Delphi, and every version of Java and C#, he has now found Kotlin and feel comfortable that the future for software is bright again.",
         "links": [
-
+            "https://twitter.com/ErikHellman"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_1151330a827a470a80c4216226604a99~mv2.png",
         "role": "Owner",
@@ -680,22 +670,12 @@
     {
         "description": "Liam Sorta is a Technical Evangelist at Unity Technologies; From creating AR apps at Riot Games to VR apps that integrate with Alexa, he is keen to explore and push the bounds of XR and help other developers see the technology's potential.​",
         "links": [
-
+            "https://twitter.com/LiamSorta"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_6d0c60a55461419a9288a79addaef23f~mv2.png",
         "role": "Technical Evangelist",
         "company": "Unity Technologies",
         "name": "Liam Sorta"
-    },
-    {
-        "description": "Liz is a product manager in Android at Google in Mountain View, California. She is a member of the privacy product team.",
-        "links": [
-
-        ],
-        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_ab151edabe8c4982b8c6b19ae2bb9394~mv2.png",
-        "role": "Android Product Manager",
-        "company": "Google​",
-        "name": "Liz Louis"
     },
     {
         "description": "After graduating from the Technical University of Munich and a diploma thesis from Georgia Tech, Carsten started working at BMW and developed software for a range of innovative engine and transmission control units. His favorite project was the Hydrogen 7, the world’s first production car with a hydrogen combustion engine. At BMW Research and Technology, Carsten worked on learning navigation systems, indoor positioning and hybrid navigation system before he went to China to fund and establish the BMW Technology Office China. One of his main contributions was the start of the cooperation with Baidu on autonomous driving. After returning to Munich he took over a management position in BMW’s autonomous driving division working on sensor data fusion and driver monitoring. Before joining Google to build up an automotive team in Munich, Carsten worked as a Research Director at Gartner covering Smart Mobility, Autonomous Driving, Connected Cars and Artificial Intelligence in the automotive space.​",
@@ -870,7 +850,8 @@
     {
         "description": "Nick is an Android designer & developer who helps other designers and developers to understand and create beautiful material design apps.\n\nChris is an engineer working in Android Developer Relations at Google. He previously worked on the Android Support Libraries, most notably AppCompat, Design and Palette. He has worked on Android things for over 8 years, from open source libraries to media apps, social networks and most stuff in between.",
         "links": [
-
+            "https://twitter.com/crafty",
+            "https://twitter.com/chrisbanes"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_b31f4e86a080422291b9429c5a7dc912~mv2.png",
         "role": "Android Designer & Developer @ Google",
@@ -948,16 +929,6 @@
         "name": "Ivan Morgillo "
     },
     {
-        "description": "More than 5 years of Android developing experience. Now working as an infrastructure mobile developer in one of the largest IT companies in Russia.​",
-        "links": [
-
-        ],
-        "imageUrl": "https://static.wixstatic.com/media/6e1ab2_f52e059bc1034f0e83463568a929ccf0~mv2.png",
-        "role": "Senior Android Developer",
-        "company": "Avito",
-        "name": "Dima Merkurev "
-    },
-    {
         "description": "Android engineer at TUI with a past of 12 years’ experience building Object Oriented, real-time, and mobile applications. Super passionate about Android development, VR/AR and AI. Take part in many IT communities as an active member/leader, becoming Technical Leader of GDG-Rome and Mobile Tea, Facebook DevCircle  I’m having fun as a speaker in many IT and developer conferences, like Codemotion, Droidcon.​",
         "links": [
             "https://twitter.com/joaolaq"
@@ -980,7 +951,7 @@
     {
         "description": "Fábio Carballo is one of the Android developers at the mobile bank N26, currently focusing in delivering a smooth and quality banking experience. After a nice experience in a smaller company, he understood that he wanted a challenge where he could learn on to scale a team as well as its development processes. He has a special love for those who care about improving the user experience with well grounded user research and smart interactions.​",
         "links": [
-
+            "https://twitter.com/fabiocarballo"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_592243ee42334942b94fefb3ec1938f6~mv2.png",
         "role": "Android @ N26",
@@ -1065,7 +1036,9 @@
     }, 
     {
         "description": "An Android enthusiast. Developer. Design fanboy. Founder at Snapp Mobile Germany. Google Developer Expert on Android",
-        "links": [],
+        "links": [
+            "https://twitter.com/lehtimaeki"
+        ],
         "imageUrl": "https://sessionize.com/image?f=ba14d2aabeb5ad92d983883107e58885,200,200,True,False,6fb29347-594b-45d0-9703-4d908eaa7afb.jpg",
         "role": "Founder and Android Lead",
         "company": "Snapp Mobile",
@@ -1073,7 +1046,9 @@
     }, 
     {
         "description": "Danny built mobile applications for companies like Viacom, Groupon, eBay and Alcatel. He is a Google Developer Expert for Android Kotlin. Before there was Android he was already active in the Blackberry development community.",
-        "links": [],
+        "links": [
+            "https://twitter.com/preusslerberlin"
+        ],
         "imageUrl": "https://sessionize.com/image?f=17d9043162652153f147c6d889b5f829,200,200,True,False,b1-61e5-4a26-9ca3-c9f30e3eaa08.47115491-ddf4-4f76-bc65-4008353af5fa.jpg",
         "role": "Google Developer Expert",
         "company": "sporttotal.tv",

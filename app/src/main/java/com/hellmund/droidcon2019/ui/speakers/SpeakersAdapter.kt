@@ -70,9 +70,11 @@ class SpeakersAdapter(
             speaker: Speaker,
             onItemClick: (Speaker) -> Unit
         ) = with(itemView) {
-            Picasso.get()
-                .load(speaker.imageUrl)
-                .into(imageView)
+            if (speaker.imageUrl.isNotEmpty()) {
+                Picasso.get()
+                    .load(speaker.imageUrl)
+                    .into(imageView)
+            }
 
             nameTextView.text = speaker.name
             roleTextView.isVisible = speaker.role.isNotEmpty()

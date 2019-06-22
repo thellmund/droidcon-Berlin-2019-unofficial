@@ -15,8 +15,6 @@ import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_day.scheduleRecyclerView
 import org.jetbrains.anko.defaultSharedPreferences
-import org.threeten.bp.LocalDate
-import org.threeten.bp.LocalTime
 
 class DayFragment : BaseFragment() {
 
@@ -57,20 +55,6 @@ class DayFragment : BaseFragment() {
 
     private fun render(events: List<Session>) {
         adapter.update(events)
-
-        // Auto-scroll to current events
-        if (LocalDate.now() == day.toDate()) {
-            val now = LocalTime.now()
-
-            val currentTime = adapter.items
-                .mapIndexed { index, item -> index to item }
-                .filter { (_, item) -> item.isFirst }
-                .lastOrNull { (_, item) -> item.event.startTime.isBefore(now) }
-
-            currentTime?.let { (index, _) ->
-                scheduleRecyclerView.smoothScrollToPosition(index)
-            }
-        }
     }
 
     private fun onEventClick(event: Session) {

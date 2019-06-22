@@ -25,7 +25,6 @@ class SpeakersRepository(
             loadSpeakers()
         }
 
-        // TODO works?
         return speakers.firstOrNull { it.name.contains(name) }
     }
 

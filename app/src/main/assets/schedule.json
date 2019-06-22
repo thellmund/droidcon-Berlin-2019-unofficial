@@ -706,8 +706,7 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Vignesh Ramachandra",
-            "Jyoti Dubey"
+            "Vignesh Ramachandra & Jyoti Dubey"
         ],
         "description": "Cross platform development is a riddle that isn’t solved nor looks like it will be. There isn’t one concrete solution to which you could say, “Do it this way”. React Native, Flutter, Xamarin and others have their own backed approach to solve this. Let us introduce one more dish to the table - GoMobile. You can write code in what could be your favourite language(Golang) and port it to Android and iOS platforms. Come hear how it works and have a taste. Then decide if this is going to be your daily meal or occasional food :)",
         "startTime": "12:20",
@@ -863,7 +862,7 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Liz Louis"
+            "Nicole Borrelli"
         ],
         "description": "To improve user privacy, Android Q adds additional privacy features. This talk will cover recommended best practices for permissions, device identifiers, app launching, notifications, and foreground services.",
         "startTime": "14:50",
