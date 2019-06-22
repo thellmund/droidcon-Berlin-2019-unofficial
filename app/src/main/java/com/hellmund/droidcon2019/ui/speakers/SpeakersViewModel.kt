@@ -20,7 +20,7 @@ class SpeakersViewModel(application: Application) : AndroidViewModel(application
     init {
         compositeDisposable += repository
             .getSpeakers()
-            .subscribe(_speakers::postValue) // Error handling: ¯\_(ツ)_/¯
+            .subscribe(_speakers::postValue) {} // Error handling: ¯\_(ツ)_/¯
     }
 
     override fun onCleared() {

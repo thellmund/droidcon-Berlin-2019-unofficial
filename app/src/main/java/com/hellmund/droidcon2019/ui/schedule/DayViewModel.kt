@@ -26,7 +26,7 @@ class DayViewModel(
     init {
         compositeDisposable += repository
             .getEventsByDay(day)
-            .subscribe(_events::postValue) // Error handling: ¯\_(ツ)_/¯
+            .subscribe(_events::postValue) {} // Error handling: ¯\_(ツ)_/¯
     }
 
     override fun onCleared() {

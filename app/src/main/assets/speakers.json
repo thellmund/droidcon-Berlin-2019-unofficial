@@ -376,8 +376,8 @@
             "https://twitter.com/objcode"
         ],
         "imageUrl": "https://static.wixstatic.com/media/6e1ab2_5ed9454b62df421cb68974c45ac31adb~mv2.png",
-        "role": "Android ",
-        "company": "@ Google",
+        "role": "Android",
+        "company": "Google",
         "name": "Sean McQuillan"
     },
     {
@@ -1085,5 +1085,19 @@
         "company": "Freelancer",
         "name": "Kai Koenig",
         "role": "Software Solutions Architect"
+    },
+    {
+        "imageUrl": "",
+        "description": "TBC",
+        "company": "Google",
+        "name": "Niko Schröer",
+        "role": "Google Play Store"
+    },
+    {
+        "imageUrl": "https://sessionize.com/image?f=f88b4d7c6284077f6ed96519897f4a4e,200,200,True,False,5e-8195-42e3-9393-df8dd36a6cc6.d7305e71-badf-4956-9516-25f8fb9745ab.jpg",
+        "description": "Hawra Milani is an active community organiser, where she spends a lot of her time in organising, attending, and speaking at technical conferences around the world. A former high-school teacher, she is now the founder and CEO of ‘Code 2 Serve’ where she spends a lot of her time creating coding programmes and convincing youth that no matter what their educational or cultural background, they have a place in tech. She is the Lead Organiser for the Google Developer Group (GDG) Oxford, a Women Techmakers Ambassador in Iraq, and a STEM UK ambassador. She also teaches in Code Clubs and CoderDojos in various parts of London, and is an Apple, Google and Raspberry Pi Certified Educator. She holds a BSc in Computer Science, a PGCE in Computer Science, and an MA in Computer Science Education from King’s College London.",
+        "company": "",
+        "name": "Hawra Milani",
+        "role": "GDG and WTM Oxford Lead, GDG and WTM Najaf Lead, Computer Science Educator"
     }
 ]

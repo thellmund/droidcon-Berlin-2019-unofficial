@@ -36,14 +36,14 @@
         "level": "Introductory and overview",
         "speakers": [
             "Marcus Hoffmann",
-            "Kai Koenig", 
+            "Kai Koenig",
             "Vladimir Ivanov",
-            "Attendee TBA", 
+            "Niko Schröer",
             "Kevin McDonagh"
         ],
-        "description": "Android is open source but as recent events have shown, getting locked out of the PlayStore or as a Google Partner can have catastrophic consequences for developers and companies.\nWhile in many regions, the Google PlayStore reigns supreme and might even called a monopoly, other regions are able to thrive. With a recent spate of developer accounts being blocked with little or no recourse for developers, some are asking how they can affect positive change while protecting themselves, their companies and investments. Join us as our panelists discuss the PlayStore and the power of Google.",
+        "description": "Privately owned platforms and their governing laws shape the world's access to Apps & services. A recent US political decision forced Google to discontinue Chinese company Huawei's access to the Google Play store or any of the G-suite apps. Policy within the Play Store, Apple or Amazon's App store can be complicated but without proper consideration, developer accounts may be blocked with little or no recourse for developers. How is policy created, understood and then enforced? What essentials must you know? How might policy evolve? Hear from a host of corporate, startup and open source experiences in how they have navigated App Store restrictions.",
         "startTime": "11:00",
-        "title": "PlayStore and the Power of Google",
+        "title": "Play Store & App store policy experiences",
         "endTime": "12:00",
         "type": "Panel Discussion",
         "day": "Monday",
@@ -131,8 +131,8 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Carrie Hall", 
-            "Hasan Hosgel", 
+            "Carrie Hall",
+            "Hasan Hosgel",
             "Anastasia López",
             "Stefan Hoth",
             "Miriam Busch",
@@ -294,10 +294,10 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Erik Hellman", 
-            "Juhani Lehtimäki", 
-            "Pascal Welsch", 
-            "Stacy Devino", 
+            "Erik Hellman",
+            "Juhani Lehtimäki",
+            "Pascal Welsch",
+            "Stacy Devino",
             "Danny Preussler"
         ],
         "description": "Developers and companies are striving to deliver consistent user experiences across multiple platforms. But they also look at the costs and often we develop the exact same app twice. There is a potential cold war brewing between PWAs and Native apps with no clear shakeout in sight. Might the web win? Already Developers are confronted with a number of multi-platform technologies and frameworks such as Flutter, Kotlin/Native, React Native (and more…). Or do we all need to just be proficient at machine learning? And what we code, will it be functional? This panel will discuss what the landscape will look like for developers in the next few years and answer questions about how to stay current, future-proof your skillset and how you can influence the future.",
@@ -335,8 +335,7 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Hans-Christian Woger", 
-            "Felix Hilgert"
+            "Hans-Christian Woger & Felix Hilgert"
         ],
         "description": "Yes, this is a legal session by lawyers who will talk about legal stuff. Yes, there will be talk on fines for data protection violations and how to avoid getting sued when offering or developing mobile games. And actually this is a pretty good thing. Not getting sued gives you more time to develop your app and expand your business. It helps you to avoid awkward calls with your lawyers. And no one wants those.\n\nThe session will be for 60 minutes and cover two different topics. First we will provide you with an analyses from a few GDPR cases that actually lead to fines by data protection authorities. We will cover what were the factual and legal reasons for those fines and what are the lessons learned from these cases. The idea is to enable you to avoid data protection violations already committed by other parties in the past. The second part of the session will comprise nearly everything that has to do with mobile gaming. We will take about mobile payments and in-app purchases – not only interesting for the game developers – as well as how to avoid legal pitfalls concerning the content and marketing of games.\n\nBoth session will have a Q&A. Stop by and learn on how not to fall into a legal trap.",
         "startTime": "15:20",
@@ -371,12 +370,12 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Erik Hellman", 
-            "Pascal Welsch", 
-            "Danny Preussler", 
-            "Nicola Corti", 
-            "Ash Davies", 
-            "Florina Muntenescu", 
+            "Erik Hellman",
+            "Pascal Welsch",
+            "Danny Preussler",
+            "Nicola Corti",
+            "Ash Davies",
+            "Florina Muntenescu",
             "Andrea Falcone",
             "Anastasia López"
         ],
@@ -436,7 +435,7 @@
         "level": "",
         "speakers": [],
         "description": "",
-        "startTime": "17:50",
+        "startTime": "17:40",
         "title": "20 Min Session",
         "endTime": "18:00",
         "type": "",
@@ -447,7 +446,7 @@
         "level": "",
         "speakers": [],
         "description": "",
-        "startTime": "17:50",
+        "startTime": "17:40",
         "title": "20 Min Session",
         "endTime": "18:00",
         "type": "",
@@ -458,7 +457,7 @@
         "level": "",
         "speakers": [],
         "description": "",
-        "startTime": "17:50",
+        "startTime": "17:40",
         "title": "20 Min Session",
         "endTime": "18:00",
         "type": "",
@@ -469,13 +468,13 @@
         "level": "",
         "speakers": [],
         "description": "",
-        "startTime": "17:50",
+        "startTime": "17:40",
         "title": "20 Min Session",
         "endTime": "18:00",
         "type": "",
         "day": "Monday",
         "stage": "Nougat"
-    }, 
+    },
     {
         "level": "",
         "speakers": [],
@@ -567,9 +566,9 @@
             "Nicola Corti"
         ],
         "description": "Do you exactly know what's your app doing when you deliver it to your users? Are you 100% sure? Would you bet on this? You're probably confident with the code you wrote and you know what is doing.\n\nBut what about the code that others wrote?\n\nWe pull dependencies from the online repositories every day. Our applications strongly rely on external libraries that are hosted on public Maven repositories. What if one of those library contains some malicious code? Imagine a library that starts harvesting your user data without you knowing it.\n\nIn this talk we will see how to monitor and protect your application from malicious dependency on the web that might end up in your final compiled App.",
-        "startTime": "10:10",
+        "startTime": "14:00",
         "title": "I have no idea what my app is doing ¯\\_(ツ)_/¯",
-        "endTime": "10:50",
+        "endTime": "14:40",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Lollipop"
@@ -707,7 +706,7 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Vignesh Ramachandra", 
+            "Vignesh Ramachandra",
             "Jyoti Dubey"
         ],
         "description": "Cross platform development is a riddle that isn’t solved nor looks like it will be. There isn’t one concrete solution to which you could say, “Do it this way”. React Native, Flutter, Xamarin and others have their own backed approach to solve this. Let us introduce one more dish to the table - GoMobile. You can write code in what could be your favourite language(Golang) and port it to Android and iOS platforms. Come hear how it works and have a taste. Then decide if this is going to be your daily meal or occasional food :)",
@@ -802,9 +801,9 @@
             "Jon Markoff"
         ],
         "description": "Go through strategies for data encryption on Android and do a deep dive into the Jetpack Security library.\n\n1. Outline the currently problem with encryption on Android including rampant bad information online.\n2. Best practices for using Jetpack Security.\n3. Deep dive into why / how the JetSec was built, talk about design decisions and challenges building the library.\n4. Dive into Tink, an open source library powering JetSec.\n5. Overall takeaway, learn how to properly leverage the AndroidKeyStore and encrypt data properly.",
-        "startTime": "14:00",
+        "startTime": "10:10",
         "title": "Data Encryption on Android",
-        "endTime": "14:40",
+        "endTime": "10:50",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Lollipop"
@@ -825,11 +824,11 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Sean McQuillan"
+            "Hawra Milani"
         ],
-        "description": "Let the testing resume! Testing is a mix of engineering and art–nowhere is that more true than coroutines\n\nIn this talk you'll learn about the design and inspiration for the new kotlinx-coroutines-test library. After this talk you'll know how to effectively write tests with coroutines that never flake.\n\nIf you're just launching into coroutines on Android, or you've been an actor since before the 1.0 release - this talk is for you.",
+        "description": "The increased demand in tech-skilled workers has created a sudden surge of CS and Tech-related degree applications to colleges and universities around the world. Academia has not had time to catch up with the speed in which industry is developing, and most of these graduates don't have the skills required to succeed from the start. In this talk, we explore how experienced developers can leverage the power of social media to grow as mentors, and help students gain the most appropriate skills before joining the workforce.",
         "startTime": "14:50",
-        "title": "Coroutines + Testing = ❤️",
+        "title": "Leveraging the power of social media to grow as a developer",
         "endTime": "15:10",
         "type": "Lightning talk",
         "day": "Tuesday",
@@ -984,9 +983,9 @@
             "Ishan Khanna"
         ],
         "description": "This talk will teach developers how to efficiently write & setup experiments (A/B Tests) and hence showcase a way to create apps that keep the customers at the centre of everything.\n\nIf you attend this talk you will learn how to frame the hypothesis, calculate runtime of an experiment, set up metrics to measure success so that you can act as a product manager yourself in future!\n\nHaving run over a 100 experiments alone in the last 2 years at Booking.com (One of the world’s biggest platform running massive number of A/B Tests) with 10% success rate, I’ll present some hard to believe facts related to user experience and design that developers often overlook while shipping features.\n\nThink of this talk as a crash course for Mobile Developers to become Product Owners.",
-        "startTime": "16:10",
+        "startTime": "17:00",
         "title": "Customer Driven Development: What, Why & How?",
-        "endTime": "16:50",
+        "endTime": "17:40",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Nougat"
@@ -1049,9 +1048,9 @@
             "Francesco Romano"
         ],
         "description": "Today, most artificial intelligence services have to send your data to the Cloud in order to perform the analysis. With specific chipset capabilities, calculations can be done directly on the phone and this guarantees the privacy protection that a lot of different use cases need.\nFurthermore, AI apps tend to be real-time and mission-critical, any AI-use cases that enhance an experience can’t afford latency. With on-device computation you can improve the performance of your app and resolve privacy and cost related issues.\nIn this session, I will show you how to use HiAI: a mobile computing platforms that make the developers able to run artificial intelligence algorithms on device.",
-        "startTime": "17:00",
+        "startTime": "16:10",
         "title": "Make your app smarter",
-        "endTime": "17:40",
+        "endTime": "16:50",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Nougat"
@@ -1085,7 +1084,7 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "sourabh gupta"
+            "Sourabh Gupta"
         ],
         "description": "Session will be about what are the Key Metrics that Define the App as Best app and what are the best practices to solve it that includes Best Practices for user Facing problems like App Size Reduction with Right Library Integration , Faster Native app adoption without react Native , Improvement in App Launch time to reduce the bounce Rate , Why Vitals are important and how we can fix it, Why fps matters , App Rating why it matters and how to improve it. \n\nSome best Practices will be for Developer as well to save Developer time by optimizing the Build time , Integration of fastlane/jenkiins with slack to automate the build process and uploads , what all can be automated with the commits to keep check on all user critical app metrics.",
         "startTime": "17:50",
@@ -1111,11 +1110,11 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Frank Tamre"
+            "Sean McQuillan"
         ],
-        "description": "Approximately half of the world's s population is not connected to the internet.\nOf this number, it's projected that most of them will use low end devices to come online for the first time.\nI have spent a large portion of the last 6years enabling low end users get online and app developers and companies.\nIn this talk we delve into:\n1. considerations in developing your Android applications for low end users.\n2. How to deal with slow or poor internet.\n3. Performance issues in low end devices and solve for them.\n4. Coding for low end devices - a general overview.\n\nAt the end of this talk, attendees will leave with the knowledge of how to build for low end devices for the next billion users.",
+        "description": "Let the testing resume! Testing is a mix of engineering and art–nowhere is that more true than coroutines\n\nIn this talk you'll learn about the design and inspiration for the new kotlinx-coroutines-test library. After this talk you'll know how to effectively write tests with coroutines that never flake.\n\nIf you're just launching into coroutines on Android, or you've been an actor since before the 1.0 release - this talk is for you.",
         "startTime": "17:50",
-        "title": "Think of the next billion users: Building for Low End devices",
+        "title": "Coroutines + Testing = ❤️",
         "endTime": "18:30",
         "type": "Session",
         "day": "Tuesday",
@@ -1183,6 +1182,19 @@
         "stage": "Oreo"
     },
     {
+        "level": "Intermediate",
+        "speakers": [
+            "Arnav Gupta"
+        ],
+        "description": "This will go through the journey of building a blogging app (Medium clone) using Kotlin, Nativescript and Flutter and discuss the differences in developer and user experience for the apps built using all these platforms.\n\n\n\nSo I took the famous realworld.io project (which is a clone of Medium) and implemented it in Kotlin for native Android, and then using Nativescript-Vue and finally in Flutter. Although separate platforms, the end result looks identical to the end user.\n\nWe will compare a bunch of things across these three platforms -\n\nDeveloper Experience\nPerformance (out of the box)\nPerformance optimisation learning curve\nMemory/CPU/App size differences\nLines of Code\nPerceptible jank, smoothness\nConstraints and limitations of each framework",
+        "startTime": "09:20",
+        "title": "What I learnt by building the exact same app in Kotlin (Native Android), Nativescript and Flutter",
+        "endTime": "10:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
+    },
+    {
         "level": "Introductory and overview",
         "speakers": [
             "Marcos Holgado"
@@ -1207,19 +1219,6 @@
         "type": "Session",
         "day": "Wednesday",
         "stage": "Lollipop"
-    },
-    {
-        "level": "Intermediate",
-        "speakers": [
-            "Arnav Gupta"
-        ],
-        "description": "This will go through the journey of building a blogging app (Medium clone) using Kotlin, Nativescript and Flutter and discuss the differences in developer and user experience for the apps built using all these platforms.\n\n\n\nSo I took the famous realworld.io project (which is a clone of Medium) and implemented it in Kotlin for native Android, and then using Nativescript-Vue and finally in Flutter. Although separate platforms, the end result looks identical to the end user.\n\nWe will compare a bunch of things across these three platforms -\n\nDeveloper Experience\nPerformance (out of the box)\nPerformance optimisation learning curve\nMemory/CPU/App size differences\nLines of Code\nPerceptible jank, smoothness\nConstraints and limitations of each framework",
-        "startTime": "09:20",
-        "title": "What I learnt by building the exact same app in Kotlin (Native Android), Nativescript and Flutter",
-        "endTime": "10:00",
-        "type": "Session",
-        "day": "Wednesday",
-        "stage": "Marshmallow"
     },
     {
         "level": "Intermediate",
@@ -1472,12 +1471,13 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Stacy Devino"
+            "Anastasia López",
+            "Vivien Barousse"
         ],
-        "description": "You make your own fate and you make your own career. \n\nSuccess is relative , but there are things that the top developers, innovators, managers and leaders do that make them successful. It's not what you think it is, like \"Oh, they just work really hard all the time.\" or \"Oh, they are just so much smarter.\" or \"Oh, they are just charismatic\" or \"Oh, they are just really good negotiators\". It isn't even all about the title(s).\n\nIn this talk, we are going to go through self analysis and prep, then how to establish your personal brand based off of that analysis and finally how best to capitalize on that personal brand with the help of appropriate professionals. \n\nThis is the hidden stairway and the steps you climb to personal success.",
-        "startTime": "16:50",
-        "title": "Fate is Bull$h!t: Get Happy, Get Known, Get Paid",
-        "endTime": "17:30",
+        "description": "This talk will give you the tools to prepare for interviews, whether it’s making your hiring process better, or simply preparing for an interview as a candidate. \n\nAs a candidate, interviewing for a new job can be quite stressful and time consuming. It feels like you are being put through an exam. Often, we forget we are also evaluating the company we are interviewing with, especially when we start interviewing for the first time, and it is hard to know what to look for.\n\nOn the other hand, interviewing candidates for a position can be stressful too. You want to find the perfect person to join your team, but there are many factors that feel out of our hands (e.g. rain can affect the mood of the candidate and the person interviewing and impact the result). We need to effectively control the factors that we can.\n\nWith this talk we want to focus on the whole process of finding the right people to work with, from the job advert to the offer. And we want to do it from both points of view, as the company and as the candidate.\n\nWe want to show candidates behind the scenes of the interviewing process, to make it feel less intimidating. We want to teach them how to choose a job and a company that fits with them. We want to give some tips on how to prepare for interviews, and the sort of exercises they might encounter.\n\nWe also want to help companies improve their hiring process. There is no solution that works for everyone, but there are patterns everyone can follow to do better. We want to show them how to reach candidates, make sure qualified candidates apply, show them how to deal with the unavoidable biases they will face, help them understand the pros and cons of different types of exercises, and finally, help them find the perfect new hire for their team.\n\nHiring and interviewing is not easy, and there is no easy solution to it. But we hope that with this talk we would make it a little bit better for everyone involved.",
+        "startTime": "13:30",
+        "title": "Hire Better Faster Stronger",
+        "endTime": "14:10",
         "type": "Session",
         "day": "Wednesday",
         "stage": "Lollipop"
@@ -1485,7 +1485,7 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Nick Butcher", 
+            "Nick Butcher",
             "Chris Banes"
         ],
         "description": "The Android Theming system is powerful but easy to misuse. Proper use of it can make themes and styles easier to maintain, make branding updates less scary and make it straightforward to support dark modes.\n\nThis talk will start with a crash course in themes and styles. We’ll cover the platform, AppCompat and MaterialComponents functionality that you should know about and build upon. We’ll look at how to support both light and dark modes without going crazy. We’ll show how and when to create your own theme attributes, how to tint drawables, how to theme sub-sections of your screen and how to isolate your theme dependant resources to make them maintainable.",
@@ -1495,19 +1495,6 @@
         "type": "Session",
         "day": "Wednesday",
         "stage": "Pie"
-    },
-    {
-        "level": "Intermediate",
-        "speakers": [
-            "Krzysztof Sroka"
-        ],
-        "description": "In our Android application, we have a lot of code and tests (unit and UI). The problem is that we want to check all developers' changes as often as possible.\n\nWe spend a lot of time optimizing our build time using different ways. But in my talk, I want to tell you about an unusual way to reach it. We're using an impact analysis technique.\n\nThis talk focuses on how we look into developers' changes to avoid running redundant checks on our CI.\nI will tell you how we use developers' changes to understand what Gradle modules need to be checked, and what checks can be omitted.\nAlso, I will show you how sources and bytecode of our application (and test application) can help us to decide which UI tests were affected and must be executed.",
-        "startTime": "14:20",
-        "title": "Android CI: Impact Analysis",
-        "endTime": "15:00",
-        "type": "Session",
-        "day": "Wednesday",
-        "stage": "Oreo"
     },
     {
         "level": "Intermediate",
@@ -1616,7 +1603,7 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Oscar Wahltinez", 
+            "Oscar Wahltinez",
             "Caren Chang"
         ],
         "description": "Developing camera based applications on Android is often times frustrating due to the fragmentation of Android devices supported around the world. With the new Jetpack support library CameraX, developers’ lives are about to get much simpler!\n\nIn this talk we’ll take a look at the basic capabilities of CameraX, extension features that provide device-specific capabilities, and how to properly use it with lifecycle components.",
@@ -1630,7 +1617,7 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Kristzián Gödrei", 
+            "Kristzián Gödrei",
             "Tamás Papik"
         ],
         "description": "You choose cloud CI because it's easier, but sometimes the GUI doesn't quite cut it. During this talk, we'll show how using the CLI allows you to supercharge the build process through some neat tips and tricks, that'll be directly usable for most developers.",
@@ -1696,7 +1683,7 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Sebastian Paulus", 
+            "Sebastian Paulus",
             "Yusuf Figanioglu"
         ],
         "description": "We will present a powerful solution to remotely configure an Android app. If you want to configure features, URLs or other aspects (e.g. A/B testing) our tool will enable you to do that based on virtually everything such as app state, user accounts, actions and so on. CoCoS consists of a service, a client library and a command line tool to deliver, read and set up configurations. Configurations are based on a freely defined context sent from the app to the service. This service is comparable to Firebase Remote config but has infinite flexibility and will be open source. \n\nThis talk gives you an overview of the capabilities of CoCoS and how we use it to make our app remotely configurable in a powerful and easy way.",
@@ -1723,7 +1710,7 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Hiroyuki Mori", 
+            "Hiroyuki Mori",
             "Keisuke Kiuchi"
         ],
         "description": "As the mobile app market grows, the quality standards people request us for apps gets higher, our product gets more complex and our team gets bigger.\nIn that process, our legacy codebase became also larger than ever.\nWe had 700,000 lines of code, mainly written in Java, and some Activities were left very fat, unstable, and hard to understand.\nSo we decided to refactor our app with Kotlin and use extreme programming for our project.\nFirst we separated our app into many modules so that we can run tests repeatedly and rapidly, and adopted the Clean Architecture to facilitate future refactoring.\nThis talk will show how we refactor our app which has full of legacy code, and how important part multi-modularizing and the clean architecture played for our refactoring.\nWe will cover topics like architecture, refactoring, testing, and dependency breaking techniques using examples from our experiences.",
@@ -1737,13 +1724,12 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Anastasia López", 
-            "Vivien Barousse"
+            "Stacy Devino"
         ],
-        "description": "This talk will give you the tools to prepare for interviews, whether it’s making your hiring process better, or simply preparing for an interview as a candidate. \n\nAs a candidate, interviewing for a new job can be quite stressful and time consuming. It feels like you are being put through an exam. Often, we forget we are also evaluating the company we are interviewing with, especially when we start interviewing for the first time, and it is hard to know what to look for.\n\nOn the other hand, interviewing candidates for a position can be stressful too. You want to find the perfect person to join your team, but there are many factors that feel out of our hands (e.g. rain can affect the mood of the candidate and the person interviewing and impact the result). We need to effectively control the factors that we can.\n\nWith this talk we want to focus on the whole process of finding the right people to work with, from the job advert to the offer. And we want to do it from both points of view, as the company and as the candidate.\n\nWe want to show candidates behind the scenes of the interviewing process, to make it feel less intimidating. We want to teach them how to choose a job and a company that fits with them. We want to give some tips on how to prepare for interviews, and the sort of exercises they might encounter.\n\nWe also want to help companies improve their hiring process. There is no solution that works for everyone, but there are patterns everyone can follow to do better. We want to show them how to reach candidates, make sure qualified candidates apply, show them how to deal with the unavoidable biases they will face, help them understand the pros and cons of different types of exercises, and finally, help them find the perfect new hire for their team.\n\nHiring and interviewing is not easy, and there is no easy solution to it. But we hope that with this talk we would make it a little bit better for everyone involved.",
-        "startTime": "13:30",
-        "title": "Hire Better Faster Stronger",
-        "endTime": "14:10",
+        "description": "You make your own fate and you make your own career. \n\nSuccess is relative , but there are things that the top developers, innovators, managers and leaders do that make them successful. It's not what you think it is, like \"Oh, they just work really hard all the time.\" or \"Oh, they are just so much smarter.\" or \"Oh, they are just charismatic\" or \"Oh, they are just really good negotiators\". It isn't even all about the title(s).\n\nIn this talk, we are going to go through self analysis and prep, then how to establish your personal brand based off of that analysis and finally how best to capitalize on that personal brand with the help of appropriate professionals. \n\nThis is the hidden stairway and the steps you climb to personal success.",
+        "startTime": "16:50",
+        "title": "Fate is Bull$h!t: Get Happy, Get Known, Get Paid",
+        "endTime": "17:30",
         "type": "Session",
         "day": "Wednesday",
         "stage": "Lollipop"
@@ -1751,7 +1737,7 @@
     {
         "level": "Introductory and overview",
         "speakers": [
-            "Saiki Iijima", 
+            "Saiki Iijima",
             "Yugo Matsuda"
         ],
         "description": "~ Throw away your mouse, only after that can everything else begin. ~\n\nDon't you want to be a super engineer who writes codes at ultra high speed?\nWhy in the hell do we have to move our right hand back and forth between keyboard and mouse.\nIts nothing but pain unless you are training on your right hand. \n\nYou can write code much faster by putting your hands on home position!!\n\nIn this talk, a man struggling everyday with huge code (cool codebase over 700,000!) introduces that with live coding the ways for freely to move across entire your project without your mouse, and super convenient shortcuts.\n\nThis talk make you ultra high speed engineer and make your development to full of fun.\nYou can get relief from suffering by mouse code or sudden death of battery.\n\nNow, throw away your mouse!\n\n## Targets\n* From beginners to experts\n* Those who want to become super high speed engineer\n* Those whom mouses were broken",
@@ -1774,6 +1760,19 @@
         "type": "Session",
         "day": "Wednesday",
         "stage": "Oreo"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Frank Tamre"
+        ],
+        "description": "Approximately half of the world's s population is not connected to the internet.\nOf this number, it's projected that most of them will use low end devices to come online for the first time.\nI have spent a large portion of the last 6years enabling low end users get online and app developers and companies.\nIn this talk we delve into:\n1. considerations in developing your Android applications for low end users.\n2. How to deal with slow or poor internet.\n3. Performance issues in low end devices and solve for them.\n4. Coding for low end devices - a general overview.\n\nAt the end of this talk, attendees will leave with the knowledge of how to build for low end devices for the next billion users.",
+        "startTime": "17:50",
+        "title": "Think of the next billion users: Building for Low End devices",
+        "endTime": "18:30",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Marshmallow"
     },
     {
         "level": "Introductory and overview",

@@ -25,7 +25,8 @@ class SpeakersRepository(
             loadSpeakers()
         }
 
-        return speakers.firstOrNull {it.name == name }
+        // TODO works?
+        return speakers.firstOrNull { it.name.contains(name) }
     }
 
     fun getSpeakers(): Observable<List<Speaker>> {
