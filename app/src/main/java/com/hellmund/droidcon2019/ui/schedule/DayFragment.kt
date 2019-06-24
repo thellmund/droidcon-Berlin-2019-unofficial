@@ -5,14 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.EventDay
 import com.hellmund.droidcon2019.data.model.Session
 import com.hellmund.droidcon2019.data.repository.FavoritesStore
 import com.hellmund.droidcon2019.ui.schedule.filter.Filter
+import com.hellmund.droidcon2019.ui.schedule.filter.FilterStore
 import com.hellmund.droidcon2019.ui.shared.BaseFragment
-import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_day.scheduleRecyclerView
 import org.jetbrains.anko.defaultSharedPreferences
 
@@ -42,8 +43,13 @@ class DayFragment : BaseFragment() {
     ): View? = inflater.inflate(R.layout.fragment_day, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewModel.events.observe(viewLifecycleOwner, this::render)
+        viewModel.events.observe(viewLifecycleOwner, Observer<List<Session>> { render(it) })
         scheduleRecyclerView.adapter = adapter
+
+        val filterStore = FilterStore.instance
+        if (filterStore.filter != Filter.empty()) {
+            applyFilter(filterStore.filter)
+        }
 
         val intent = requireActivity().intent
         val eventFromNotification = intent.getParcelableExtra(KEY_EVENT) as? Session

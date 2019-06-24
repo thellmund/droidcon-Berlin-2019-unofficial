@@ -93,7 +93,7 @@ class ScheduleFragment : BaseFragment() {
         activeFiltersContainer.setOnClickListener { openFilters() }
 
         clearFilterButton.setOnClickListener {
-            val store = FilterStore.getInstance()
+            val store = FilterStore.instance
             store.clear()
             onFilterChanged(Filter.empty())
         }

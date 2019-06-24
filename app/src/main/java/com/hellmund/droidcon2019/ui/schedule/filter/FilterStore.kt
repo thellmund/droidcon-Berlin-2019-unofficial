@@ -70,16 +70,7 @@ class FilterStore {
     }
 
     companion object {
-
-        private var instance: FilterStore? = null
-
-        fun getInstance(): FilterStore {
-            if (instance == null) {
-                instance = FilterStore()
-            }
-            return instance!!
-        }
-
+        val instance: FilterStore by lazy { FilterStore() }
     }
 
 }

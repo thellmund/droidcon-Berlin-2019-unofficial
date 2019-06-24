@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.transaction
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.hellmund.droidcon2019.R
 import com.hellmund.droidcon2019.data.model.Speaker
@@ -20,7 +21,6 @@ import com.hellmund.droidcon2019.ui.shared.BaseFragment
 import com.hellmund.droidcon2019.ui.shared.MaterialDividerItemDecoration
 import com.hellmund.droidcon2019.ui.shared.Reselectable
 import com.hellmund.droidcon2019.ui.speakers.details.SpeakerDetailsFragment
-import com.hellmund.droidcon2019.util.observe
 import kotlinx.android.synthetic.main.fragment_speakers.recyclerView
 import kotlinx.android.synthetic.main.fragment_speakers.toolbar
 import kotlin.math.roundToInt
@@ -49,7 +49,7 @@ class SpeakersFragment : BaseFragment(), Reselectable, BackPressable {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.speakers.observe(viewLifecycleOwner, this::render)
+        viewModel.speakers.observe(viewLifecycleOwner, Observer<List<Speaker>> { render(it) })
         recyclerView.adapter = adapter
 
         val padding = requireContext().resources.getDimension(R.dimen.material_list_inset).roundToInt()

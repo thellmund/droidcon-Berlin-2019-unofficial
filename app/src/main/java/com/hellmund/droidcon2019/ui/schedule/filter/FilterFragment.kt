@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.fragment_filter.typesChipGroup
 
 class FilterFragment : RoundedBottomSheetDialogFragment() {
 
-    private val filterStore = FilterStore.getInstance()
+    private val filterStore = FilterStore.instance
 
     private var onFilterChanged: (Filter) -> Unit = {}
 
