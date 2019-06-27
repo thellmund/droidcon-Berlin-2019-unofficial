@@ -38,7 +38,7 @@
             "Marcus Hoffmann",
             "Kai Koenig",
             "Vladimir Ivanov",
-            "Niko Schröer",
+            "William Hoang",
             "Kevin McDonagh"
         ],
         "description": "Privately owned platforms and their governing laws shape the world's access to Apps & services. A recent US political decision forced Google to discontinue Chinese company Huawei's access to the Google Play store or any of the G-suite apps. Policy within the Play Store, Apple or Amazon's App store can be complicated but without proper consideration, developer accounts may be blocked with little or no recourse for developers. How is policy created, understood and then enforced? What essentials must you know? How might policy evolve? Hear from a host of corporate, startup and open source experiences in how they have navigated App Store restrictions.",
@@ -50,6 +50,17 @@
         "stage": "Pie"
     },
     {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "11:00",
+        "title": "30 Minute Slot",
+        "endTime": "11:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
         "level": "Introductory and overview",
         "speakers": [
             "Teresa Holfeld"
@@ -59,17 +70,6 @@
         "title": "Sketchnoting Workshop",
         "endTime": "12:00",
         "type": "Workshop",
-        "day": "Monday",
-        "stage": "Oreo"
-    },
-    {
-        "level": "",
-        "speakers": [],
-        "description": "",
-        "startTime": "11:00",
-        "title": "30 Minute Slot",
-        "endTime": "11:30",
-        "type": "",
         "day": "Monday",
         "stage": "Marshmallow"
     },
@@ -147,6 +147,30 @@
         "stage": "Pie"
     },
     {
+        "level": "",
+        "speakers": [],
+        "description": "",
+        "startTime": "13:00",
+        "title": "30 Minute Session",
+        "endTime": "13:30",
+        "type": "",
+        "day": "Monday",
+        "stage": "Oreo"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Francesco Romano"
+        ],
+        "description": "Today, most artificial intelligence services have to send your data to the Cloud in order to perform the analysis. With specific chipset capabilities, calculations can be done directly on the phone and this guarantees the privacy protection that a lot of different use cases need.\nFurthermore, AI apps tend to be real-time and mission-critical, any AI-use cases that enhance an experience can’t afford latency. With on-device computation you can improve the performance of your app and resolve privacy and cost related issues.\nIn this session, I will show you how to use HiAI: a mobile computing platforms that make the developers able to run artificial intelligence algorithms on device.",
+        "startTime": "13:00",
+        "title": "Make Your App Smarter - Workshop/Hands on Session",
+        "endTime": "14:30",
+        "type": "Workshop",
+        "day": "Monday",
+        "stage": "Marshmallow"
+    },
+    {
         "level": "Introductory and overview",
         "speakers": [
             "Salih Guler"
@@ -156,17 +180,6 @@
         "title": "Write your first Flutter application",
         "endTime": "14:30",
         "type": "Workshop",
-        "day": "Monday",
-        "stage": "Marshmallow"
-    },
-    {
-        "level": "",
-        "speakers": [],
-        "description": "",
-        "startTime": "13:00",
-        "title": "30 Minute Session",
-        "endTime": "13:30",
-        "type": "",
         "day": "Monday",
         "stage": "Nougat"
     },
@@ -319,31 +332,60 @@
         "endTime": "16:50",
         "type": "Workshop",
         "day": "Monday",
-        "stage": "Oreo"
-    },
-    {
-        "level": "",
-        "speakers": [],
-        "description": "",
-        "startTime": "15:20",
-        "title": "30 Minute Session",
-        "endTime": "15:50",
-        "type": "",
-        "day": "Monday",
-        "stage": "Marshmallow"
+        "stage": "Nougat"
     },
     {
         "level": "Introductory and overview",
         "speakers": [
             "Hans-Christian Woger & Felix Hilgert"
         ],
-        "description": "Yes, this is a legal session by lawyers who will talk about legal stuff. Yes, there will be talk on fines for data protection violations and how to avoid getting sued when offering or developing mobile games. And actually this is a pretty good thing. Not getting sued gives you more time to develop your app and expand your business. It helps you to avoid awkward calls with your lawyers. And no one wants those.\n\nThe session will be for 60 minutes and cover two different topics. First we will provide you with an analyses from a few GDPR cases that actually lead to fines by data protection authorities. We will cover what were the factual and legal reasons for those fines and what are the lessons learned from these cases. The idea is to enable you to avoid data protection violations already committed by other parties in the past. The second part of the session will comprise nearly everything that has to do with mobile gaming. We will take about mobile payments and in-app purchases – not only interesting for the game developers – as well as how to avoid legal pitfalls concerning the content and marketing of games.\n\nBoth session will have a Q&A. Stop by and learn on how not to fall into a legal trap.",
+        "description": "Yes, this is a legal session by lawyers who will talk about legal stuff. Yes, there will be talk on fines for data protection violations and how to avoid getting sued when offering or developing mobile games. And actually this is a pretty good thing. Not getting sued gives you more time to develop your app and expand your business. It helps you to avoid awkward calls with your lawyers. And no one wants those.\n\nThe session will be first part of 90 minutes and will provide you with an analyses from a few GDPR cases that actually lead to fines by data protection authorities. We will cover what were the factual and legal reasons for those fines and what are the lessons learned from these cases. The idea is to enable you to avoid data protection violations already committed by other parties in the past.",
         "startTime": "15:20",
-        "title": "How to avoid calling the lawyer – A legal session on mobile gaming and a case study of GDPR violation",
+        "title": "How to avoid calling the lawyer (part 1) - A case study of GDPR violation",
+        "endTime": "15:50",
+        "type": "Session",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Hans-Christian Woger & Felix Hilgert"
+        ],
+        "description": "Yes, this is a legal session by lawyers who will talk about legal stuff. Yes, there will be talk on how to avoid getting sued when offering or developing mobile games. And actually this is a pretty good thing. Not getting sued gives you more time to develop your app and expand your business. It helps you to avoid awkward calls with your lawyers. And no one wants those.\n\nThis second part of the session will comprise nearly everything that has to do with mobile gaming. We will take about mobile payments and in-app purchases – not only interesting for the game developers – as well as how to avoid legal pitfalls concerning the content and marketing of games.",
+        "startTime": "15:50",
+        "title": "How to avoid calling the lawyer (part 2) - A legal session on mobile gaming",
+        "endTime": "16:20",
+        "type": "Session",
+        "day": "Monday",
+        "stage": "Nougat"
+    },
+    {
+        "level": "Introductory and overview",
+        "speakers": [
+            "Hans-Christian Woger & Felix Hilgert"
+        ],
+        "description": "Yes, this is a legal session by lawyers who will talk about legal stuff. Yes, there will be talk on fines for data protection violations and how to avoid getting sued when offering or developing mobile games. And actually this is a pretty good thing. Not getting sued gives you more time to develop your app and expand your business. It helps you to avoid awkward calls with your lawyers. And no one wants those.\n\nThis session is the Q&A part. Stop by and learn on how not to fall into a legal trap.",
+        "startTime": "16:20",
+        "title": "How to avoid calling the lawyer (part 3) - A legal session on mobile gaming",
         "endTime": "16:50",
         "type": "Session",
         "day": "Monday",
         "stage": "Nougat"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Mathias Paech",
+            "Karim Mostafa"
+        ],
+        "description": "This workshop will challenge you to build a small app showing Vehicles on Google Maps. The Android crew at mytaxi use this task as a hiring challenge. We will cover how to get vehicle data from an API and use it to show it on the map. We will discuss how to organize the code with separation of concerns in mind.\nA Google developer account is required to create a Google Maps API key but it can be created at the workshop.",
+        "startTime": "15:20",
+        "title": "Vehicles on Google Maps Challenge",
+        "endTime": "16:50",
+        "type": "Workshop",
+        "day": "Monday",
+        "stage": "Marshmallow"
     },
     {
         "level": "",
@@ -381,7 +423,7 @@
         ],
         "description": "Watch speakers talking about random topics to slides they have never seen before. It's fun! At least for the audience",
         "startTime": "16:30",
-        "title": "Powerpoint Karaoke / improv / random slides",
+        "title": "Slide Karaoke",
         "endTime": "17:30",
         "type": "Session",
         "day": "Monday",
@@ -488,10 +530,12 @@
     },
     {
         "level": "",
-        "speakers": [],
+        "speakers": [
+            "Purnima Kochikar"
+        ],
         "description": "",
         "startTime": "09:00",
-        "title": "Keynote",
+        "title": "Keynote: Designing for Sustainable GROWTH/Digital Well Being",
         "endTime": "10:00",
         "type": "",
         "day": "Tuesday",
@@ -561,14 +605,14 @@
         "stage": "Nougat"
     },
     {
-        "level": "Introductory and overview",
+        "level": "Intermediate",
         "speakers": [
-            "Nicola Corti"
+            "Jon Markoff"
         ],
-        "description": "Do you exactly know what's your app doing when you deliver it to your users? Are you 100% sure? Would you bet on this? You're probably confident with the code you wrote and you know what is doing.\n\nBut what about the code that others wrote?\n\nWe pull dependencies from the online repositories every day. Our applications strongly rely on external libraries that are hosted on public Maven repositories. What if one of those library contains some malicious code? Imagine a library that starts harvesting your user data without you knowing it.\n\nIn this talk we will see how to monitor and protect your application from malicious dependency on the web that might end up in your final compiled App.",
-        "startTime": "14:00",
-        "title": "I have no idea what my app is doing ¯\\_(ツ)_/¯",
-        "endTime": "14:40",
+        "description": "Go through strategies for data encryption on Android and do a deep dive into the Jetpack Security library.\n\n1. Outline the currently problem with encryption on Android including rampant bad information online.\n2. Best practices for using Jetpack Security.\n3. Deep dive into why / how the JetSec was built, talk about design decisions and challenges building the library.\n4. Dive into Tink, an open source library powering JetSec.\n5. Overall takeaway, learn how to properly leverage the AndroidKeyStore and encrypt data properly.",
+        "startTime": "10:10",
+        "title": "Data Encryption on Android",
+        "endTime": "10:50",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Lollipop"
@@ -795,14 +839,14 @@
         "stage": "Nougat"
     },
     {
-        "level": "Intermediate",
+        "level": "Introductory and overview",
         "speakers": [
-            "Jon Markoff"
+            "Nicola Corti"
         ],
-        "description": "Go through strategies for data encryption on Android and do a deep dive into the Jetpack Security library.\n\n1. Outline the currently problem with encryption on Android including rampant bad information online.\n2. Best practices for using Jetpack Security.\n3. Deep dive into why / how the JetSec was built, talk about design decisions and challenges building the library.\n4. Dive into Tink, an open source library powering JetSec.\n5. Overall takeaway, learn how to properly leverage the AndroidKeyStore and encrypt data properly.",
-        "startTime": "10:10",
-        "title": "Data Encryption on Android",
-        "endTime": "10:50",
+        "description": "Do you exactly know what's your app doing when you deliver it to your users? Are you 100% sure? Would you bet on this? You're probably confident with the code you wrote and you know what is doing.\n\nBut what about the code that others wrote?\n\nWe pull dependencies from the online repositories every day. Our applications strongly rely on external libraries that are hosted on public Maven repositories. What if one of those library contains some malicious code? Imagine a library that starts harvesting your user data without you knowing it.\n\nIn this talk we will see how to monitor and protect your application from malicious dependency on the web that might end up in your final compiled App.",
+        "startTime": "14:00",
+        "title": "I have no idea what my app is doing ¯\\_(ツ)_/¯",
+        "endTime": "14:40",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Lollipop"
@@ -849,11 +893,11 @@
     {
         "level": "Intermediate",
         "speakers": [
-            "Elin Nilsson"
+            "Jossi Wolf"
         ],
-        "description": "The term “silver bullet” is used to describe a simple and seemingly magical solution to a complicated problem, which is how we tend to hear about frameworks. It’s how we introduced the Hub Framework at Spotify: our component-driven UI framework that was gonna make it so much faster and easier to create new and exciting features.\n\nWhat we don’t hear about as often is what happens next: how frameworks are adopted, and how they evolve over time. This talk is about how Hubs didn’t solve all of our problems. It’s about framework development, adoption, deprecation and rewrites: the complexity of building things for other developers.",
+        "description": "Building SDKs can be a challenging task: finding the right architecture, designing APIs that natural to use, keeping your code clean and finding ways to change APIs with grace after you decided to rewrite them once again. \n\nStarting with common pitfalls while building SDKs, you will learn useful tricks and how you can use Kotlins features to create and maintain a stable API, for example, the @Deprecated and @Experimental annotation, typealiases and class delegation. \nMoving on, you will get to know about finding the right balance between generalisation and customisation, magic tricks for initialisation and publishing your SDK to a private Maven repository.\n\nYou will leave this talk ready to build shiny, stable and testable SDKs that are a breeze to be used. Moreover, you will also know about the right way for you to distribute your SDK to the next billion developers.",
         "startTime": "14:50",
-        "title": "The Silver Bullet That Wasn’t - the story of Hubs",
+        "title": "Building SDKs - The Kotlin Way",
         "endTime": "15:10",
         "type": "Lightning talk",
         "day": "Tuesday",
@@ -977,14 +1021,14 @@
         "stage": "Marshmallow"
     },
     {
-        "level": "Introductory and overview",
+        "level": "Intermediate",
         "speakers": [
-            "Ishan Khanna"
+            "Francesco Romano"
         ],
-        "description": "This talk will teach developers how to efficiently write & setup experiments (A/B Tests) and hence showcase a way to create apps that keep the customers at the centre of everything.\n\nIf you attend this talk you will learn how to frame the hypothesis, calculate runtime of an experiment, set up metrics to measure success so that you can act as a product manager yourself in future!\n\nHaving run over a 100 experiments alone in the last 2 years at Booking.com (One of the world’s biggest platform running massive number of A/B Tests) with 10% success rate, I’ll present some hard to believe facts related to user experience and design that developers often overlook while shipping features.\n\nThink of this talk as a crash course for Mobile Developers to become Product Owners.",
-        "startTime": "17:00",
-        "title": "Customer Driven Development: What, Why & How?",
-        "endTime": "17:40",
+        "description": "Today, most artificial intelligence services have to send your data to the Cloud in order to perform the analysis. With specific chipset capabilities, calculations can be done directly on the phone and this guarantees the privacy protection that a lot of different use cases need.\nFurthermore, AI apps tend to be real-time and mission-critical, any AI-use cases that enhance an experience can’t afford latency. With on-device computation you can improve the performance of your app and resolve privacy and cost related issues.\nIn this session, I will show you how to use HiAI: a mobile computing platforms that make the developers able to run artificial intelligence algorithms on device.",
+        "startTime": "16:10",
+        "title": "Make your app smarter",
+        "endTime": "16:50",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Nougat"
@@ -1042,14 +1086,14 @@
         "stage": "Marshmallow"
     },
     {
-        "level": "Intermediate",
+        "level": "Introductory and overview",
         "speakers": [
-            "Francesco Romano"
+            "Ishan Khanna"
         ],
-        "description": "Today, most artificial intelligence services have to send your data to the Cloud in order to perform the analysis. With specific chipset capabilities, calculations can be done directly on the phone and this guarantees the privacy protection that a lot of different use cases need.\nFurthermore, AI apps tend to be real-time and mission-critical, any AI-use cases that enhance an experience can’t afford latency. With on-device computation you can improve the performance of your app and resolve privacy and cost related issues.\nIn this session, I will show you how to use HiAI: a mobile computing platforms that make the developers able to run artificial intelligence algorithms on device.",
-        "startTime": "16:10",
-        "title": "Make your app smarter",
-        "endTime": "16:50",
+        "description": "This talk will teach developers how to efficiently write & setup experiments (A/B Tests) and hence showcase a way to create apps that keep the customers at the centre of everything.\n\nIf you attend this talk you will learn how to frame the hypothesis, calculate runtime of an experiment, set up metrics to measure success so that you can act as a product manager yourself in future!\n\nHaving run over a 100 experiments alone in the last 2 years at Booking.com (One of the world’s biggest platform running massive number of A/B Tests) with 10% success rate, I’ll present some hard to believe facts related to user experience and design that developers often overlook while shipping features.\n\nThink of this talk as a crash course for Mobile Developers to become Product Owners.",
+        "startTime": "17:00",
+        "title": "Customer Driven Development: What, Why & How?",
+        "endTime": "17:40",
         "type": "Session",
         "day": "Tuesday",
         "stage": "Nougat"
@@ -1072,9 +1116,9 @@
         "speakers": [
             "Aziz Murtazaev"
         ],
-        "description": "Rendering UI takes a significant amount of CPU time, therefore it's important to keep this part of the computation as lean as possible. Whenever UI rendering regresses key metrics such as app startup, time-to-interaction, scroll performance are all affected which eventually affects product engagement negatively.\n\nIn this talk we'll be talking about how at Facebook we use benchmarks to make sure that UI rendering regressions do not slip through to production. Also we will discuss ways of iterating on UI rendering code to proactively improve UI performance.",
+        "description": "Rendering UI takes a significant amount of CPU time, therefore it's important to keep this part of the computation as lean as possible. Whenever UI rendering regresses key metrics such as app startup, time-to-interaction, scroll performance are all affected which eventually affects product engagement negatively. \n\nIn this talk we'll be talking about how at Facebook we use benchmarks to make sure that UI rendering regressions do not slip through to production. Also we will discuss ways of iterating on UI rendering code to proactively improve UI performance.",
         "startTime": "17:50",
-        "title": "Proactive and Reactive approaches to improving UI performance using benchmarks",
+        "title": "Tracking Regressions and Improving UI Performance using Benchmarking Approach",
         "endTime": "18:30",
         "type": "Session",
         "day": "Tuesday",
@@ -1357,7 +1401,7 @@
         ],
         "description": "Benchmark is one of the new interesting libraries recently released by the Jetpack team at Google. This library allows you to measure the speed of certain parts of your application. This is helpful to validate certain parts of your app that are repeatedly accessed such as going into details of items, or scrolling through an infinite list. \nThe measurements help you monitor if your app performance is slowing down. Because of this, you can integrate it to your CI. We'll show a real life scenario of benchmarks on the OLX app and show you how you can integrate it in your CI tool.",
         "startTime": "11:50",
-        "title": "Measure What Matters with Jetpack Benchmark (Lightning)",
+        "title": "Measure What Matters with Jetpack Benchmark",
         "endTime": "12:10",
         "type": "Lightning talk",
         "day": "Wednesday",
@@ -1494,6 +1538,19 @@
         "type": "Session",
         "day": "Wednesday",
         "stage": "Pie"
+    },
+    {
+        "level": "Intermediate",
+        "speakers": [
+            "Elin Nilsson"
+        ],
+        "description": "The term “silver bullet” is used to describe a simple and seemingly magical solution to a complicated problem, which is how we tend to hear about frameworks. It’s how we introduced the Hub Framework at Spotify: our component-driven UI framework that was gonna make it so much faster and easier to create new and exciting features.\n\nWhat we don’t hear about as often is what happens next: how frameworks are adopted, and how they evolve over time. This talk is about how Hubs didn’t solve all of our problems. It’s about framework development, adoption, deprecation and rewrites: the complexity of building things for other developers.",
+        "startTime": "14:20",
+        "title": "The Silver Bullet That Wasn’t - the story of Hubs",
+        "endTime": "15:00",
+        "type": "Session",
+        "day": "Wednesday",
+        "stage": "Oreo"
     },
     {
         "level": "Intermediate",
@@ -1766,9 +1823,9 @@
             "Frank Tamre"
         ],
         "description": "Approximately half of the world's s population is not connected to the internet.\nOf this number, it's projected that most of them will use low end devices to come online for the first time.\nI have spent a large portion of the last 6years enabling low end users get online and app developers and companies.\nIn this talk we delve into:\n1. considerations in developing your Android applications for low end users.\n2. How to deal with slow or poor internet.\n3. Performance issues in low end devices and solve for them.\n4. Coding for low end devices - a general overview.\n\nAt the end of this talk, attendees will leave with the knowledge of how to build for low end devices for the next billion users.",
-        "startTime": "17:50",
+        "startTime": "17:40",
         "title": "Think of the next billion users: Building for Low End devices",
-        "endTime": "18:30",
+        "endTime": "18:20",
         "type": "Session",
         "day": "Wednesday",
         "stage": "Marshmallow"

@@ -96,15 +96,8 @@ class EventDetailsFragment : BaseFragment() {
 
         if (event.speakers.isNotEmpty()) {
             val speakers = event.speakers.mapNotNull { speakersRepository.getSpeaker(it) }
-
-            // Some speakers are not included individually, but in a speaker pair. If only one of
-            // them participates in another session, they won't be displayed in its speaker list.
-            // This code addresses that.
-            val zipped = event.speakers.zip(speakers)
-            val modifiedSpeakers = zipped.map { it.second.copy(name = it.first) }
-
             val speakersAdapter = SpeakersAdapter(this::onSpeakerClick)
-            speakersAdapter.update(modifiedSpeakers)
+            speakersAdapter.update(speakers)
             speakersRecyclerView.adapter = speakersAdapter
         } else {
             speakersHeader.isVisible = false

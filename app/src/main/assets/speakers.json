@@ -1074,5 +1074,33 @@
         "company": "",
         "name": "Hawra Milani",
         "role": "GDG and WTM Oxford Lead, GDG and WTM Najaf Lead, Computer Science Educator"
+    },
+    {
+        "imageUrl": "https://sessionize.com/image?f=3b881598a5b0985704dd35fc68cfac40,200,200,True,False,59-b76b-4f88-a408-4fc6b4f77258.7a84aee0-8cba-44d1-a09f-92fb7862ef2c.jpg",
+        "description": "Purnima Kochikar is the Global Head of Apps and Games business development at Google Play where she oversees all aspects of the app ecosystem including strategy, operations, partnership management, technical support and developer marketing. Her team focuses on helping both world’s leading companies and fledging entrepreneurs create effective mobile businesses and reach global audiences. \nPrior to Google, Purnima held various roles at Nokia including leading developer activities worldwide, which took her to more than 30 countries working on initiatives as diverse as building mobile education centers in Africa, tech incubators in Singapore, Bangalore and Tel Aviv, and launching mobile apps to solve some of the most fundamental human problems including education, healthcare, and supply chain management for food and medicines.\nPurnima is passionate about K-12 education and entrepreneurship, and focuses on helping girls and women excel in both. A self professed geek, she is a tinkerer (her first toy was a meccano set), traveller, bookworm and a budding chef. She serves on the board of SVForum, which focuses on fostering entrepreneurship through education and mentorship.",
+        "company": "Google",
+        "name": "Purnima Kochikar",
+        "role": "Director, Apps and Games Business Development, Google Play"
+    },
+    {
+        "imageUrl": "https://sessionize.com/image?f=fe954f41d3858556faa522abb70b50b1,200,200,True,False,1a-4939-45fe-b384-877c829d125f.245c1d3d-631b-4691-b304-b5ac538fa334.png",
+        "description": "William Hoang is a seasoned developer experienced in building software and engineering teams.  Along with over 16 years of instructor and mentoring in technical functions, William now leads the effort of Axiom Technology Group.  \u2028 \u2028Before starting Axiom Technology Group, William worked as a Developer Advocate on the Mobile Engineering and the Developer Relations team at Couchbase. His love for coffee and code has transcended him into the world of mobile applications while appreciating the offline in-person experiences. \u2028 \u2028Prior, William was a team lead and worked on Developer Relations team over at Twitter, BlackBerry, and Microsoft.  William also worked on location-based applications as a Software Embedded GPS engineer at Research In Motion on the Operating Systems group.\u2028 \u2028William graduated from McGill University in Electrical & Software Engineering and attended Harvard University in Computer Science and has spoken at various technology conferences including:  GDC, Droidcon NYC & Montreal, Mobileweek NYC, AnDevCon Boston, PAX Seattle, Full Stack Conf, O'Reilly Fluent, Tectonic Summit and technology meetups in various cities.",
+        "company": "Droidcon China | Axiom Technology Group",
+        "name": "William Hoang",
+        "role": ""
+    },
+    {
+        "imageUrl": "https://sessionize.com/image?f=bb3f13ce33b740f5f39e24db23db9f02,200,200,True,False,24-d700-41f6-a4c0-a39c822f06d7.34b474de-fce6-473d-af78-663e1e6bd5d2.png",
+        "description": "started coding on amiga 500 now android chapter lead @mytaxi in hamburg, always trying to learn new things also beekeping",
+        "company": "mytaxi",
+        "name": "Mathias Paech",
+        "role": "Android Chapter Lead"
+    },
+    {
+        "imageUrl": "https://sessionize.com/image?f=39ae47b0d13e9335abcdacd0c6952eb6,200,200,True,False,4e39476f-4504-4346-9025-fe7f1486be83.jpg",
+        "description": "Android developer",
+        "company": "mytaxi",
+        "name": "Karim Mostafa",
+        "role": "Android Developer"
     }
 ]
