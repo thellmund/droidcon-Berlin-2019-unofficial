@@ -3,8 +3,6 @@ package com.hellmund.droidcon2019.ui.schedule
 import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.ArrayMap
 import android.view.LayoutInflater
 import android.view.Menu
@@ -12,7 +10,6 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.OvershootInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.view.isVisible
@@ -40,7 +37,6 @@ import kotlinx.android.synthetic.main.fragment_schedule.viewPager
 import kotlinx.android.synthetic.main.view_active_filters.activeFiltersChipGroup
 import kotlinx.android.synthetic.main.view_active_filters.activeFiltersContainer
 import kotlinx.android.synthetic.main.view_active_filters.clearFilterButton
-import org.threeten.bp.LocalDate
 import org.threeten.bp.format.DateTimeFormatter
 
 class ScheduleFragment : BaseFragment() {
@@ -85,9 +81,7 @@ class ScheduleFragment : BaseFragment() {
         tabLayout.addOnTabSelectedListener(onTabSelectedListener)
         tabLayout.setupWithViewPager(viewPager)
 
-        setCurrentDay()
-        isCardHidden = false
-        hideFilterCard()
+        onFilterChanged(FilterStore.instance.filter)
 
         fab.setOnClickListener { openFilters() }
         activeFiltersContainer.setOnClickListener { openFilters() }
@@ -99,45 +93,6 @@ class ScheduleFragment : BaseFragment() {
         }
     }
 
-    private var isCardHidden = false
-
-    private fun hideFilterCard() {
-        if (isCardHidden) {
-            return
-        }
-
-        isCardHidden = true
-
-        val handler = Handler(Looper.getMainLooper())
-        handler.post {
-            val view = activeFiltersContainer ?: return@post
-            view.animate()
-                .setDuration(600L)
-                .alpha(0f)
-                .translationYBy(400f)
-                .setInterpolator(OvershootInterpolator(1f))
-                .start()
-        }
-    }
-
-    private fun showFilterCard() {
-        if (isCardHidden.not()) {
-            return
-        }
-
-        isCardHidden = false
-
-        val handler = Handler(Looper.getMainLooper())
-        handler.post {
-            activeFiltersContainer.animate()
-                .setDuration(600L)
-                .alpha(1f)
-                .translationYBy(-400f)
-                .setInterpolator(OvershootInterpolator(1f))
-                .start()
-        }
-    }
-
     private fun openFilters() {
         val fragment = FilterFragment.newInstance(this::onFilterChanged)
         fragment.show(childFragmentManager, fragment.tag)
@@ -146,12 +101,7 @@ class ScheduleFragment : BaseFragment() {
     private fun onFilterChanged(filter: Filter) {
         val isFilterActive = filter != Filter.empty()
         fab.isVisible = isFilterActive.not()
-
-        if (isFilterActive) {
-            showFilterCard()
-        } else {
-            hideFilterCard()
-        }
+        activeFiltersContainer.isVisible = isFilterActive
 
         if (isFilterActive) {
             activeFiltersChipGroup.removeAllViews()
@@ -176,14 +126,6 @@ class ScheduleFragment : BaseFragment() {
         super.onResume()
         val activity = requireActivity() as AppCompatActivity
         activity.setSupportActionBar(toolbar)
-    }
-
-    private fun setCurrentDay() {
-        val today = LocalDate.now()
-        val dates = EventDay.values().map { it.toDate() }
-
-        val index = dates.indexOfFirst { it == today }.takeIf { it != -1 } ?: 0
-        viewPager.currentItem = index
     }
 
     private fun onEventClick(event: Session) {

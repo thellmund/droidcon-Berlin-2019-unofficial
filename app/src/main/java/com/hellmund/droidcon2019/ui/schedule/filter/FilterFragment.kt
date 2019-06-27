@@ -32,6 +32,8 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         closeButton.setOnClickListener { dismiss() }
 
         favoritesChip.isChecked = filterStore.filter.isFavorites
+        favoritesChip.isCloseIconVisible = favoritesChip.isChecked
+
         favoritesChip.setOnCheckedChangeListener { compoundButton, isChecked ->
             val chip = compoundButton as Chip
             chip.isCloseIconVisible = isChecked
@@ -47,6 +49,7 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         val stageChips = getChips(stages)
         stageChips.forEachIndexed { index, chip ->
             chip.isChecked = filterStore.filter.stages.contains(Stage.values()[index])
+            chip.isCloseIconVisible = chip.isChecked
 
             chip.setOnCheckedChangeListener { compoundButton, isChecked ->
                 val c = compoundButton as Chip
@@ -65,6 +68,7 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         val typeChips = getChips(types)
         typeChips.forEachIndexed { index, chip ->
             chip.isChecked = filterStore.filter.types.contains(Type.values()[index])
+            chip.isCloseIconVisible = chip.isChecked
 
             chip.setOnCheckedChangeListener { compoundButton, isChecked ->
                 val c = compoundButton as Chip
@@ -83,6 +87,7 @@ class FilterFragment : RoundedBottomSheetDialogFragment() {
         val levelChips = getChips(levels)
         levelChips.forEachIndexed { index, chip ->
             chip.isChecked = filterStore.filter.levels.contains(Level.values()[index])
+            chip.isCloseIconVisible = chip.isChecked
 
             chip.setOnCheckedChangeListener { compoundButton, isChecked ->
                 val c = compoundButton as Chip
