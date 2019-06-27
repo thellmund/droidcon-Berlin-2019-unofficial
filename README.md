@@ -2,7 +2,9 @@
 
 This is an _unofficial_ app for [droidcon Berlin 2019](https://de.droidcon.com).
 
-<img src="images/download_apk_button.png" width="200" />
+<a href="https://github.com/thellmund/droidcon-Berlin-2019-unofficial/releases/download/1.0/app-release.apk">
+  <img src="images/download_apk_button.png" width="200" />
+</a>
 
 #### Features
 - Check out the conference schedule
