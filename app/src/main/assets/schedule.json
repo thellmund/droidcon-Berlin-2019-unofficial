@@ -104,7 +104,7 @@
         "endTime": "12:00",
         "type": "",
         "day": "Monday",
-        "stage": "Marshmallow"
+        "stage": "Oreo"
     },
     {
         "level": "",
@@ -203,7 +203,7 @@
         "endTime": "14:00",
         "type": "",
         "day": "Monday",
-        "stage": "Nougat"
+        "stage": "Oreo"
     },
     {
         "level": "",
@@ -236,7 +236,7 @@
         "endTime": "14:30",
         "type": "",
         "day": "Monday",
-        "stage": "Nougat"
+        "stage": "Oreo"
     },
     {
         "level": "",
@@ -397,17 +397,6 @@
         "type": "",
         "day": "Monday",
         "stage": "Lollipop"
-    },
-    {
-        "level": "",
-        "speakers": [],
-        "description": "",
-        "startTime": "16:00",
-        "title": "20 Min Session",
-        "endTime": "16:20",
-        "type": "",
-        "day": "Monday",
-        "stage": "Marshmallow"
     },
     {
         "level": "Introductory and overview",
